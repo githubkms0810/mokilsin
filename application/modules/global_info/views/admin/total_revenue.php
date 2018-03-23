@@ -1,0 +1,1 @@
+<b>총매출액 <?=$total_revenue?></b>

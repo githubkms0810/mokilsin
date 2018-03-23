@@ -1,0 +1,25 @@
+.jy-td-name{
+    background-color : #333333;
+    color: #eeeeee;
+    width:150px;
+}
+
+.jy-line-height{
+    font-size: 15px;
+    line-height: 2 !important;
+}
+
+.jy-dim{
+    position: fixed;
+    opacity: 0.5;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+    z-index: 9999;
+}
+
+.jy-align-center{
+    width:100% !important;  margin:auto !important;
+}

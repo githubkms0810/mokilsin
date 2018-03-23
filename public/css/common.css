@@ -1,0 +1,20 @@
+.clickable {cursor : pointer; } 
+
+/* input에 타이핑했을때 배경색 */
+input[type="text"], textarea {
+    background-color :white; 
+}
+/* input 기본 배경색 */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+/* input text색 */
+input:-webkit-autofill {
+    -webkit-text-fill-color: black !important;
+}
+.linkButton { 
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer; 
+}
