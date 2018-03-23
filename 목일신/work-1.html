@@ -1,0 +1,445 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>작품집 &gt; 동요작가 목일신 &gt; 문화예술인 홈페이지</title>
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="js/cs_ops.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.truetech.util.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-5.5.0-packed.js"></script>
+<script type="text/javascript" src="js/jquery.util.hun.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+
+	$(document).ready( function() {
+		
+		var header_yn = "N";
+        var arr_navi = new Array();
+        arr_navi = '<a href="web?site_id=41">문화예술인 홈페이지</a> &gt; <a href="/web?site_id=41&menu_id=926">동요작가 목일신</a> &gt; <strong><a href="board?board_id=201      &site_id=7&menu_id=941">작품집</a></strong>'.split("&gt;");
+        arr_navi.shift();
+        arr_navi.shift();
+        if (header_yn !== "N") {
+            arr_navi.shift();
+        }
+        
+        // 중복제거
+        var arr_menu_id = [];
+        $.each(arr_navi, function(index, value) {
+            var menu_id = value.substring(value.indexOf("menu_id="), value.indexOf("\"", value.indexOf("menu_id=")));
+            if( $.inArray(menu_id, arr_menu_id) == -1 ) arr_menu_id.push(menu_id);
+        });
+        
+        // $.each(arr_menu_id, function(index, value) {});
+
+	});
+		
+	//sns퍼가기 시작	
+	function SNS(sns){
+		var url = encodeURIComponent(document.location.href);
+		var sns_url;
+		var long_URL = document.location.href;
+					
+        var defaults = {
+			version: '2.0.1',
+			login: 'towday', // 아이디
+			apiKey: 'R_d4811aaf390fe6332dc47fc57025f096', //apikey
+			history: '0',
+			//longUrl: encodeURI(longURL)
+			longUrl : url
+		};
+		var ret = '';
+		var daurl = "http://api.bit.ly/shorten?" +
+		"version=" +
+		defaults.version +
+		"&longUrl=" +
+		defaults.longUrl +
+		"&login=" +
+		defaults.login +
+		"&apiKey=" +
+		defaults.apiKey +
+		"&history=" +
+		defaults.history +
+		"&format=json&callback=?";
+		
+		jQuery.getJSON(daurl, function(data){
+			sns_url = data.results[long_URL].shortUrl;
+
+			if(sns == 'twitter'){
+				 twitter(sns_url)
+			}else if(sns == 'facebook'){
+				facebook(sns_url)
+			}else if(sns == 'me2day'){
+				me2day(sns_url)
+			}else if(sns == 'yozm'){
+				yozm(sns_url)
+			}
+		});	
+    }
+
+	function twitter(sns_url){
+		var sitelink = "http://twitter.com/share?url=" + sns_url + "&text=" + encodeURIComponent("고흥군 문화관광  |  | ");
+		window.open(sitelink);
+	}
+	function facebook(sns_url){
+		var sitelink = "http://facebook.com/sharer.php?u=" + sns_url + "&t=" + encodeURIComponent("고흥군 문화관광  |  | ");
+		window.open(sitelink);
+	}
+	function me2day(sns_url){
+		var sitelink = "http://me2day.net/posts/new?new_post[body]="  + encodeURIComponent("고흥군 문화관광  |  | ") + sns_url ;
+		window.open(sitelink);
+	}
+	function yozm(sns_url){
+		var sitelink = "http://yozm.daum.net/api/popup/prePost?prefix="  + encodeURIComponent("고흥군 문화관광  |  | ") + "&link=" + sns_url;
+		window.open(sitelink);
+	}	
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/_ART/base.css" />
+<link rel="stylesheet" type="text/css" href="css/_ART/sub.css" />
+<link rel="stylesheet" type="text/css" href="css/_ART/board.css" />
+<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
+<script type="text/javascript" src="js/_ART/global.js"></script>
+<script type="text/javascript" src="js/_ART/jquery.nivo.slider.pack.js"></script>
+<script>
+	$(window).load(function() {
+		$('#slider').nivoSlider({
+			effect: 'random',
+			directionNavHide: false,
+			pauseOnHover: true,
+			captionOpacity: 1,
+			
+		});
+	});
+</script>
+</head>
+
+
+<body>
+	
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75014621-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+	<div id="wrapper">
+		<div id="warp">
+			<div id ="container_wrap">
+				<div id="header">
+					<div class="util_wrap">
+						<h1><a href="http://art.goheung.go.kr/web?site_id=41"><img src="images/_ART/content/logo.gif" alt="고흥문화예술인 로고" /></a></h1>
+						<div class ="globalMenu">
+							<ul>
+								<li><a href="http://art.goheung.go.kr/web?site_id=41"><img src="images/_ART/content/util01.gif" alt="홈" /></a></li>    
+								<li>
+									
+										<a href="http://art.goheung.go.kr/loginlist?site_id=41&menu_id=962"><img src="images/_ART/content/util02.gif" alt="로그인"/></a>
+									
+									
+								</li> 
+								<li><a href="/sitemap?site_id=41&menu_id=963&"><img src="images/_ART/content/util03.gif" alt="사이트맵" /></a></li> 
+								<li><a href="http://www.goheung.go.kr/" target="_blank" title="새창으로"><img src="images/_ART/content/util04.gif" alt="고흥군" /></a></li> 
+								<li><a href="http://tour.goheung.go.kr/" target="_blank" title="새창으로"><img src="images/_ART/content/util05.gif" alt="고흥문화관광" /></a></li>                        
+							</ul>
+						</div>
+					 </div> 		
+					
+						
+							<h2 class="top_logo"><a href="/web?site_id=41&menu_id=926"><img src="images/_ART/content/top_img_logo01.png" alt="목일신" /></a></h2>
+							<!--상단 비주얼-->
+							<div class="slider-wrapper futurico-theme">
+								<div id="slider" class="nivoSlider">
+									<img src="images/_ART/content/top_img01.jpg" alt="동요작가 목일신" />
+									<img src="images/_ART/content/top_img0102.jpg" alt="동요작가 목일신" />
+									<img src="images/_ART/content/top_img0103.jpg" alt="동요작가 목일신" />
+								</div>
+							</div>
+							<!--//상단 비주얼-->
+							<div class="gnb">
+								<ul id="head_menu">
+									<li class="menu1"><a href="/web?site_id=41&menu_id=926" id="gnb1"><img src="images/_ART/content/menu01.gif" alt="생애/업적"/></a></li>
+									<li class="menu2"><a href="/board?board_id=201&site_id=41&menu_id=941" id="gnb2"><img src="images/_ART/content/menu02.gif" alt="작품집"/></a></li>
+									<li class="menu3"><a href="/web?site_id=41&menu_id=927" id="gnb2"><img src="images/_ART/content/menu03.gif" alt="동영상"/></a></li>
+									<li class="menu4"><a href="/web?site_id=41&menu_id=930" id="gnb4"><img src="images/_ART/content/menu04.gif" alt="목일신동요제"/></a>
+										<div class="submenu" style="display: none;">
+											<ul class="sub04">
+												<li><a href="/web?site_id=41&menu_id=930"><span class="font_c2">동요제 소개</span></a></li>
+												<!--<li><a href="/pgm/insert?site_id=41&menu_id=931&mng_no=61"><span class="font_c2">참가신청</span></a></li>-->
+												<li><a href="/board?board_id=541&site_id=41&menu_id=2001"><span class="font_c2">2017본선지정곡<span></a></li>
+												<!--<li><a href="/board?board_id=401&site_id=41&menu_id=1481"><span class="font_c2">2016본선지정곡<span></a></li>-->
+												<li><a href="/board?board_id=386&site_id=41&menu_id=1261">창작 동요곡 소개</a></li>
+												<li><a href="/board?board_id=661&site_id=41&menu_id=2201&">역대수상작</a></li>
+												<li><a href="/board?board_id=186&site_id=41&menu_id=935">역대행사다시보기</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu5"><a href="/web?site_id=41&menu_id=936" id="gnb5"><img src="images/_ART/content/menu05.gif" alt="목일신동시대회"/></a>
+										<div class="submenu" style="display: none;">
+											<ul class="sub05">
+												<li><a href="/web?site_id=41&menu_id=936">동시대회 소개</a></li>
+												<li><a href="/pgm/insert?site_id=41&menu_id=937&mng_no=62&">참가신청</a></li>
+												<li><a href="/board?board_id=342&site_id=41&menu_id=1242&">동시대회 우수작모음집</a></li>
+												<li><a href="/board?board_id=662&site_id=41&menu_id=2203&">역대수상작</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						
+						
+						
+						
+					
+					<script type="text/javascript">
+				
+						try { initNavigation(0, 0); } catch (e) { }	// 메인메뉴 활성화
+			
+					</script>
+				</div>			
+				<div id="container">
+					<!--타이틀 및 네비게이션 -->
+					<div class="title_info">
+						<h3 class="h3Tt">작품집</h3>
+						<div class="location">
+							<p><a href="/"><img src="images/_ART/content/navi.gif" alt="홈"/></a>
+								<a href="web?site_id=41"></a> &gt; <a href="/web?site_id=41&menu_id=926">동요작가 목일신</a> &gt; <strong><a href="board?board_id=201      &site_id=7&menu_id=941">작품집</a></strong>
+							</p>
+						</div>
+					</div>
+					   <div class="sns_wrap">
+						   <ul>
+							   <li class="dline"><a href="#content" onclick="print(); return false;"><img src="images/_ART/content/print.gif" alt="인쇄하기" /></a></li>
+		                        
+								<li><a href="javascript:SNS('twitter');"><img src="images/_ART/content/twitter.gif" alt="트위터로 보내기" /></a> </li>
+								<li><a href="javascript:SNS('facebook');"><img src="images/_ART/content/facebook.gif" alt="페이스북으로 보내기" /></a></li>
+								
+						   </ul>
+					   </div>
+			
+						<!-- s:메뉴구조 사용 -->
+						
+							
+								
+								
+							
+						     
+						<!-- e:메뉴구조 사용 -->
+												
+						<!--//타이틀 및 네비게이션-->
+						<div id="content">
+							
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery.meio.mask.min.js"></script>
+<script type="text/javascript" src="js/jquery.metadata.js"></script>
+
+<script type="text/javascript" src="resources/seditor/js/HuskyEZCreator.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+	var oEditors = [];
+
+	$(document).ready(function() {
+		
+		//첨부파일 다운로드
+		$("[name=btnAttach]").click(function(){
+			$.download("/download", {
+				catno : $(this).attr("catno")
+			});
+			return false;
+		});
+		
+		
+		$("#btnDel").click(function(){
+			if(confirm("삭제 하시겠습니까?\n\n삭제한 후에는 복구가 되지 않습니다.")) {
+				var url='/boarddelete?board_no=21952&menu_id=941&site_id=41';
+				$.post(url, {board_id : 201, _method: "POST"}, function(){
+					location.href='/board?board_id=201&menu_id=941&site_id=41';
+				}); 
+			}
+			return false;
+		});
+		
+	});
+</script>
+<script type="text/javascript">
+	function btnSub(){
+		var fm = document.frmBoardReply;
+		if($("[name=content]").val() == ""){
+			alert("내용을 입력해주세요.");
+			return;
+			
+		}else if(confirm("등록 하시겠습니까?")){
+			fm.action = "/boardviewreplymodify";
+			fm.target = "_self";
+			fm.submit();
+		}
+	}
+	
+	function btnlogin(){
+		if(confirm("로그인을 하셔야합니다.")){
+			location.href = "/loginlist?site_id=41&menu_id=941";
+		}
+		
+	}
+	
+	function btnDel(brno){
+		var fm = document.frmBoardReply;
+		if(confirm("삭제 하시겠습니까?")){
+			fm.action = "/boardviewreplydelete?brno="+brno;
+			fm.target = "_self";
+			fm.submit();
+		}
+	}
+</script>
+<div class="galleryWrap_book_view">
+    <div class="thmb">
+    	
+    	<a href="#" title="새창">
+    	
+    	
+			<img src="uploadfiles/thumbnail/comm_attach/2015/08/12/63800c1c8e187b0835279cbf329f8f42_500.jpg" style="cursor: pointer;" onclick="viewPopup('9008')"  width="320" height="240" />
+		
+		
+		</a>
+    </div>
+    <div class="cont">
+        <h4 class="titDepth02 dotlB pb15">목일신전집</h4>
+        <dl class="mt15">
+            <dt class="subDepth02 mb10">발간년도</dt>
+            <dd class="mb10">2013.05.10</dd>
+            <dt class="subDepth02 mb10">저자</dt>
+			<dd class="mb10">목일신</dd>
+			<dt class="subDepth02 mb10">출판사</dt>
+			<dd  class="mb10">소명출판</dd>
+            <dt class="subDepth02 mb10">조회수</dt>
+            <dd class="mb10">322</dd>
+            <dt class="subDepth02 mb10">페이지</dt>
+            <dd class="mb10">495</dd>
+        </dl>
+		<div class="cont_de_text"><div style="line-height: 1.5;"><span style="font-size: 12pt;">광주전남의 문학사 복원을 위하여 그동안 쌓인 먼지를 터는 두 번째 걸음이다.&nbsp;</span></div><div style="line-height: 1.5;"><span style="font-size: 12pt;">그의 문학적 성과가 규명되기를 바라면서「목일신전집」은 총 3부로 구성하였다.</span></div><div style="line-height: 1.5;"><span style="font-size: 12pt;">1부는 동요와 동시, 2부는 시와 노랫말, 3부는 산문으로 구성하였다.</span></div><div style="line-height: 1.5;"><span style="font-size: 12pt;">부록으로는 작품과 생애연보를 실었다. 이 전집으로 하여 지역문학사 뿐만 아니라 우리의 문학사가 더욱 풍성해지고 촘촘해질 수 있기를 바란다.</span></div></div>
+    </div>
+    <div class="cb pt20 ofv">
+    	
+		
+		</div>
+    </div>
+</div>
+<!-- <!--폼-->
+<!-- <div class="detailView"> -->
+<!-- 	<div class="viewHead"> -->
+
+<!--         <dl class="date"> -->
+<!-- 			<dt class="hidden">작성일</dt> -->
+<!-- 			<dd>2013-04-22</dd> -->
+<!-- 		</dl> -->
+<!-- 		<dl class="info"> -->
+<!-- 			<dt>작성자 : </dt> -->
+
+<!-- 			<dt>조회수 : </dt> -->
+
+<!-- 		</dl>		 -->
+<!-- 		<dl class="file"> -->
+<!-- 			<dt>첨부파일 : </dt>		 -->
+<!-- 					멀티 첨부파일 -->
+
+
+<!-- 		</dl>		 -->
+<!-- 	</div> -->
+<!-- 	<div class="viewBody"> -->
+
+
+
+<!-- 	</div> -->
+<!-- </div> -->
+
+<!-- 댓글 사용 -->
+
+<!-- /댓글 사용 -->
+    
+<div class="pagingType">
+	<div class="floatL">
+		
+		
+		
+	</div>
+	<div class="floatR">
+		<span class="button black"><a href="/board?board_id=201&site_id=41&menu_id=941">목록</a></span>
+	</div>
+</div>
+
+
+
+						</div>
+						<script type="text/javascript"> 
+						try { followBanner('scrollMenu', 'container'); } catch (e) { }
+						</script>
+						
+					</div>
+				</div>
+			<div id="aside">
+					<ul>
+						
+						
+						
+							<li><a href="/web?site_id=41&menu_id=940"><img src="images/_ART/content/aisde3_set02.gif" onmouseover="this.src='images/_ART/content/aisde3_set02_on.gif'" onmouseout="this.src='images/_ART/content/aisde3_set02.gif'" alt="국악인김연수" /></a></li>
+						
+						
+							<li><a href="/web?site_id=41&menu_id=950"><img src="images/_ART/content/aisde1_set02.gif" onmouseover="this.src='images/_ART/content/aisde1_set02_on.gif'" onmouseout="this.src='images/_ART/content/aisde1_set02.gif'" alt="시인송수권" /></a></li>
+						
+						
+							<li><a href="/board?board_id=181&site_id=41&menu_id=960&"><img src="images/_ART/content/aisde1_set03.gif" onmouseover="this.src='images/_ART/content/aisde1_set03_on.gif'" onmouseout="this.src='images/_ART/content/aisde1_set03.gif'" alt="커뮤니티" /></a></li>
+						
+						
+
+					</ul>			
+				</div>
+			</div>
+			<div id="footer_wrap">
+				
+<div class="footer_container">
+	<div class="footer">
+		<address>우 59542 전남 고흥군 고흥읍 고흥군청로 1 / 대표전화 061-830-5898 / 팩스 061-830-5577<br />COPYRIGHT(C) 2015 Goheung Country. ALL RIGHTS RESERVED. </address>
+	</div>
+</div>
+			</div>
+			<script type="text/javascript"> 
+			try { followBanner('aside', 'wrapper'); } catch (e) { }
+			</script>
+	</div>
+</body>
+</html>

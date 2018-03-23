@@ -1,0 +1,207 @@
+@charset "utf-8";
+/*서브 레이아웃*/
+/*동요작가 목일신*/
+.lifetime {width:916px;height:900px;border-bottom:1px solid #000;margin-bottom:21px}
+.lifetime div{float:left;}
+.lifetime .lifetime_text {width:760px;margin-left:20px;}
+.lifetime .lifetime_text p{margin-top:23px;line-height:27px;font-size:15px;}
+
+.profile {clear:both;width:950px;}
+.profile div{float:left;}
+.profile  .profile_text .profile_box {clear:both;width:641px;margin-top:30px;border-bottom:1px solid #ccc;}
+.profile  .profile_text .profile_box:last-child {border-bottom:none;margin-bottom:50px;}
+.profile  .profile_text .profile_box h5{float:left;}
+.profile  .profile_text .profile_box dl {width:466px;float:left;margin-bottom:30px;}
+.profile  .profile_text .profile_box dt {float:left;width:75px;line-height:27px;font-size:16px;}
+.profile  .profile_text .profile_box dd {float:left;width:391px;margin-bottom:10px;line-height:27px;font-size:16px;}
+
+/*국악인 김연수*/
+.lifetime_0201 {width:916px;height:720px;/*border-bottom:1px solid #000;*/margin-bottom:21px}
+.lifetime_0201 div{float:left;}
+.lifetime_0201 .lifetime_text {width:760px;margin-left:20px;}
+.lifetime_0201 .lifetime_text p{margin-top:23px;line-height: 27px;font-size:16px;}
+.lft_btn {margin: 20px 0 0 0;float: right;}
+.lft_btn li {float:left;padding-right: 10px;}
+
+.profile  .profile_text .profile_box ol {width:468px;float:left;margin-bottom:30px; float:left;width:75px;line-height:27px;}
+.profile  .profile_text .profile_box li {float:left;width:450px;margin-bottom:10px;line-height:27px;font-size:15px;}
+
+/*사이트맵*/
+.main_img {float:left;}
+.main_img dl {float:left;margin-top:20px;}
+.main_text {clear:both;}
+.main_text a {margin-right:5px; color:#666; font-weight:bold;}
+.main_text dl {float:left;width:215px;margin-top:13px; margin-left:10px; border-top:2px solid #999; padding-top:7px; min-height:280px}
+.main_text dt {float:none;clear:both; padding:5px 0px 15px 5px; font-size:15px; margin-bottom:10px; border-bottom:1px solid #b1b1b1;}
+.main_text dt a {color:#333; font-weight:bold;font-family: '맑은 고딕','돋움',Malgun Gothic,Dotum,AppleGothic,sans-serif;}
+.main_text dt a:hover {color:#36a693;}
+.main_text dd a:hover {text-decoration:underline;}
+.main_text dd {font-family: '맑은 고딕','돋움',Malgun Gothic,Dotum,AppleGothic,sans-serif;float:none; padding-left:15px; font-size:14px; line-height:17px; margin:0 0 10px 17px; background:url('/images/_ART/content/sitemap_bullet_s.gif') 0 3px no-repeat}
+.mg {padding-top:15px !important; padding-bottom:20px;border-top:1px solid #999; margin-top:13px; margin-bottom:20px; }
+
+
+/*로그인*/
+/*=========================================로그인=============================================================================================================*/
+.login_wrap {position:relative;margin-left:32px;background:url(/images/_SIHODO/login/login_wrap.gif) no-repeat;width:728px;height:173px;}
+.login_wrap p {line-height:18px;}
+.login_wrap .itemWrap {width:433px;margin:50px 0 0 138px;}
+.login_wrap .itemWrap label{font-weight:bold;width:66px;display:block;float:left;}
+.login_wrap .itemWrap input{border:1px solid #dbdbdb;background-color:#f3f3f3;width:231px;}
+.login_wrap .itemWrap .login_btn02 {position:absolute; top:80px; left:455px;border:none;background:none;width:94px;}
+.join_box {margin:10px 0 0 50px;height:100px;}
+.join_box ul {clear:both;}
+.join_box ul li {float:left;margin-bottom:5px;}
+.join_box ul .list_width {width:300px;}
+
+.login_wrapB {border:3px solid #dbdbdb;width:680px;height:150px;margin-left:32px;text-align:center;padding:20px;}
+.login_wrapB ul {width:598px;margin:0 auto;}
+.login_wrapB ul li {float:left;margin:10px 20px 0 0;}
+
+.movie_title {width:833px;text-align:right;}
+.movie_title01 {width:833px;padding-left: 50px;}
+.movie_img {background:url(/images/_ART/content/Mogilsin_movie02.gif) no-repeat right bottom;min-height:489px;padding-left:70px;}
+.movie_img02 {background:url(/images/_ART/content/Mogilsin_movie02.gif) no-repeat right bottom;min-height:1000px;padding-left:70px;}
+.movie_img02 p {margin:30px 0 30px 0;width:760px;}
+
+/*===================이미지 슬라이스==============================================================================================================================*/
+.futurico-theme.slider-wrapper {position: relative;width: 950px;height: 167px;}
+.futurico-theme .nivoSlider {position: relative;width: 950px;height: 167px;}
+.futurico-theme .nivoSlider img {display: none;position: absolute;width: 950px;height: 167px;top: 0;left: 0;}
+.futurico-theme .nivo-controlNav {position: absolute;bottom: -30px;left: 105px;}
+.futurico-theme .nivo-controlNav a {display: block;float: left;width: 16px;height: 16px;margin-right: 5px;text-indent: -9999px;background: #141517;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
+}
+.futurico-theme .nivo-controlNav a.active,
+.futurico-theme .nivo-caption span {
+	background: #a5cd4e;
+	background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+	background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+	background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
+	-moz-box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
+	box-shadow: inset 0px 1px 1px rgba(255,255,255, .4), 0px 1px 1px rgba(0,0,0, .3);
+}
+
+
+.futurico-theme .nivo-caption {
+	padding: 5px 0;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #e1e1e1;
+	
+	background: #000000;
+
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+
+.futurico-theme .nivo-caption span {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	margin: 0 5px 1px 5px;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.futurico-theme .nivo-caption em {
+	font-family: Georgia, sans-serif;
+	font-size: 11px;
+	color: #727581;
+}
+
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+	display:none;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+/* layer 2017-04-11 */
+.mlayer{position:fixed;top:0;left:0;width:100%;height:100%;z-index:88888}
+.mlayer .bg{position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.5;filter:alpha(opacity=50)}
+.mlayer .fg{position:absolute;top:50%;left:50%;width:530px;height:420px;margin:-200px 0 0 -265px;padding:0px;border:3px solid #a2454d;background:#fff}
+.mlayer .fg span { position:absolute; right:5px; bottom:5px}

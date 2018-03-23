@@ -1,0 +1,394 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>생애/업적 &gt; 동요작가 목일신 &gt; 문화예술인 홈페이지</title>
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="js/cs_ops.js"></script>
+<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="js/json2.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.truetech.util.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-5.5.0-packed.js"></script>
+<script type="text/javascript" src="js/jquery.util.hun.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+
+	$(document).ready( function() {
+		
+		var header_yn = "N";
+        var arr_navi = new Array();
+        arr_navi = '<a href="web?site_id=41">문화예술인 홈페이지</a> &gt; <a href="/web?site_id=41&menu_id=926">동요작가 목일신</a> &gt; <strong><a href="web?site_id=41&menu_id=926">생애/업적</a></strong>'.split("&gt;");
+        arr_navi.shift();
+        arr_navi.shift();
+        if (header_yn !== "N") {
+            arr_navi.shift();
+        }
+        
+        // 중복제거
+        var arr_menu_id = [];
+        $.each(arr_navi, function(index, value) {
+            var menu_id = value.substring(value.indexOf("menu_id="), value.indexOf("\"", value.indexOf("menu_id=")));
+            if( $.inArray(menu_id, arr_menu_id) == -1 ) arr_menu_id.push(menu_id);
+        });
+        
+        // $.each(arr_menu_id, function(index, value) {});
+
+	});
+		
+	//sns퍼가기 시작	
+	function SNS(sns){
+		var url = encodeURIComponent(document.location.href);
+		var sns_url;
+		var long_URL = document.location.href;
+					
+        var defaults = {
+			version: '2.0.1',
+			login: 'towday', // 아이디
+			apiKey: 'R_d4811aaf390fe6332dc47fc57025f096', //apikey
+			history: '0',
+			//longUrl: encodeURI(longURL)
+			longUrl : url
+		};
+		var ret = '';
+		var daurl = "http://api.bit.ly/shorten?" +
+		"version=" +
+		defaults.version +
+		"&longUrl=" +
+		defaults.longUrl +
+		"&login=" +
+		defaults.login +
+		"&apiKey=" +
+		defaults.apiKey +
+		"&history=" +
+		defaults.history +
+		"&format=json&callback=?";
+		
+		jQuery.getJSON(daurl, function(data){
+			sns_url = data.results[long_URL].shortUrl;
+
+			if(sns == 'twitter'){
+				 twitter(sns_url)
+			}else if(sns == 'facebook'){
+				facebook(sns_url)
+			}else if(sns == 'me2day'){
+				me2day(sns_url)
+			}else if(sns == 'yozm'){
+				yozm(sns_url)
+			}
+		});	
+    }
+
+	function twitter(sns_url){
+		var sitelink = "http://twitter.com/share?url=" + sns_url + "&text=" + encodeURIComponent("고흥군 문화관광  |  | ");
+		window.open(sitelink);
+	}
+	function facebook(sns_url){
+		var sitelink = "http://facebook.com/sharer.php?u=" + sns_url + "&t=" + encodeURIComponent("고흥군 문화관광  |  | ");
+		window.open(sitelink);
+	}
+	function me2day(sns_url){
+		var sitelink = "http://me2day.net/posts/new?new_post[body]="  + encodeURIComponent("고흥군 문화관광  |  | ") + sns_url ;
+		window.open(sitelink);
+	}
+	function yozm(sns_url){
+		var sitelink = "http://yozm.daum.net/api/popup/prePost?prefix="  + encodeURIComponent("고흥군 문화관광  |  | ") + "&link=" + sns_url;
+		window.open(sitelink);
+	}	
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/_ART/base.css" />
+<link rel="stylesheet" type="text/css" href="css/_ART/sub.css" />
+<link rel="stylesheet" type="text/css" href="css/_ART/board.css" />
+<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
+<script type="text/javascript" src="js/_ART/global.js"></script>
+<script type="text/javascript" src="js/_ART/jquery.nivo.slider.pack.js"></script>
+<script>
+	$(window).load(function() {
+		$('#slider').nivoSlider({
+			effect: 'random',
+			directionNavHide: false,
+			pauseOnHover: true,
+			captionOpacity: 1,
+			
+		});
+	});
+</script>
+</head>
+
+
+<body>
+	
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75014621-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+	<div id="wrapper">
+		<div id="warp">
+			<div id ="container_wrap">
+				<div id="header">
+					<div class="util_wrap">
+						<h1><a href="http://art.goheung.go.kr/web?site_id=41"><img src="images/_ART/content/logo.gif" alt="고흥문화예술인 로고" /></a></h1>
+						<div class ="globalMenu">
+							<ul>
+								<li><a href="http://art.goheung.go.kr/web?site_id=41"><img src="images/_ART/content/util01.gif" alt="홈" /></a></li>    
+								<li>
+									
+										<a href="http://art.goheung.go.kr/loginlist?site_id=41&menu_id=962"><img src="images/_ART/content/util02.gif" alt="로그인"/></a>
+									
+									
+								</li> 
+								<li><a href="/sitemap?site_id=41&menu_id=963&"><img src="images/_ART/content/util03.gif" alt="사이트맵" /></a></li> 
+								<li><a href="http://www.goheung.go.kr/" target="_blank" title="새창으로"><img src="images/_ART/content/util04.gif" alt="고흥군" /></a></li> 
+								<li><a href="http://tour.goheung.go.kr/" target="_blank" title="새창으로"><img src="images/_ART/content/util05.gif" alt="고흥문화관광" /></a></li>                        
+							</ul>
+						</div>
+					 </div> 		
+					
+						
+							<h2 class="top_logo"><a href="/web?site_id=41&menu_id=926"><img src="images/_ART/content/top_img_logo01.png" alt="목일신" /></a></h2>
+							<!--상단 비주얼-->
+							<div class="slider-wrapper futurico-theme">
+								<div id="slider" class="nivoSlider">
+									<img src="images/_ART/content/top_img01.jpg" alt="동요작가 목일신" />
+									<img src="images/_ART/content/top_img0102.jpg" alt="동요작가 목일신" />
+									<img src="images/_ART/content/top_img0103.jpg" alt="동요작가 목일신" />
+								</div>
+							</div>
+							<!--//상단 비주얼-->
+							<div class="gnb">
+								<ul id="head_menu">
+									<li class="menu1"><a href="/web?site_id=41&menu_id=926" id="gnb1"><img src="images/_ART/content/menu01.gif" alt="생애/업적"/></a></li>
+									<li class="menu2"><a href="/board?board_id=201&site_id=41&menu_id=941" id="gnb2"><img src="images/_ART/content/menu02.gif" alt="작품집"/></a></li>
+									<li class="menu3"><a href="/web?site_id=41&menu_id=927" id="gnb2"><img src="images/_ART/content/menu03.gif" alt="동영상"/></a></li>
+									<li class="menu4"><a href="/web?site_id=41&menu_id=930" id="gnb4"><img src="images/_ART/content/menu04.gif" alt="목일신동요제"/></a>
+										<div class="submenu" style="display: none;">
+											<ul class="sub04">
+												<li><a href="/web?site_id=41&menu_id=930"><span class="font_c2">동요제 소개</span></a></li>
+												<!--<li><a href="/pgm/insert?site_id=41&menu_id=931&mng_no=61"><span class="font_c2">참가신청</span></a></li>-->
+												<li><a href="/board?board_id=541&site_id=41&menu_id=2001"><span class="font_c2">2017본선지정곡<span></a></li>
+												<!--<li><a href="/board?board_id=401&site_id=41&menu_id=1481"><span class="font_c2">2016본선지정곡<span></a></li>-->
+												<li><a href="/board?board_id=386&site_id=41&menu_id=1261">창작 동요곡 소개</a></li>
+												<li><a href="/board?board_id=661&site_id=41&menu_id=2201&">역대수상작</a></li>
+												<li><a href="/board?board_id=186&site_id=41&menu_id=935">역대행사다시보기</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu5"><a href="/web?site_id=41&menu_id=936" id="gnb5"><img src="images/_ART/content/menu05.gif" alt="목일신동시대회"/></a>
+										<div class="submenu" style="display: none;">
+											<ul class="sub05">
+												<li><a href="/web?site_id=41&menu_id=936">동시대회 소개</a></li>
+												<li><a href="/pgm/insert?site_id=41&menu_id=937&mng_no=62&">참가신청</a></li>
+												<li><a href="/board?board_id=342&site_id=41&menu_id=1242&">동시대회 우수작모음집</a></li>
+												<li><a href="/board?board_id=662&site_id=41&menu_id=2203&">역대수상작</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<script>
+								/*
+								var $targetLi = $("#head_menu li[class^=menu]");
+								var $a = null;
+								var $img = null;
+								$targetLi.each(function(){
+									$a = $(this).children("a");
+									$img = $a.children("img");
+									if ($a.attr("href").indexOf("926") > -1) {
+										$img.attr("src", $img.attr("src").replace(/.gif/gi, "_on.gif"));
+										$(this).children("div").show();
+									} else {
+										$img.attr("src", $img.attr("src").replace(/_on.gif/gi, ".gif"));
+										$(this).children("div").hide();
+									}
+								});
+								*/
+							</script>
+						
+						
+						
+						
+					
+					<script type="text/javascript">
+				
+						try { initNavigation(0, 0); } catch (e) { }	// 메인메뉴 활성화
+			
+					</script>
+				</div>	
+				<div id="container">
+					<!--타이틀 및 네비게이션 -->
+					<div class="title_info">
+						<h3 class="h3Tt">생애/업적</h3>
+						<div class="location">
+							<p><a href="/"><img src="images/_ART/content/navi.gif" alt="홈"/></a>
+								<a href="web?site_id=41"></a> &gt; <a href="/web?site_id=41&menu_id=926">동요작가 목일신</a> &gt; <strong><a href="web?site_id=41&menu_id=926">생애/업적</a></strong>
+							</p>
+						</div>
+					</div>
+					   <div class="sns_wrap">
+						   <ul>
+							   <li class="dline"><a href="#content" onclick="print(); return false;"><img src="images/_ART/content/print.gif" alt="인쇄하기" /></a></li>
+		                        
+								<li><a href="javascript:SNS('twitter');"><img src="images/_ART/content/twitter.gif" alt="트위터로 보내기" /></a> </li>
+								<li><a href="javascript:SNS('facebook');"><img src="images/_ART/content/facebook.gif" alt="페이스북으로 보내기" /></a></li>
+								
+						   </ul>
+					   </div>
+					
+			
+						<!-- s:메뉴구조 사용 -->
+						     
+						<!-- e:메뉴구조 사용 -->
+												
+						<!--//타이틀 및 네비게이션-->
+						<div id="content">
+							
+
+<div class="lifetime">
+	<div><img src="images/_ART/content/photo1.jpg" alt="목일신 사진" /></div>
+	<div class="lifetime_text">
+		<h4><img src="images/_ART/content/h4.jpg" alt="목일신 (睦一新, 1913년 ~ 1986년)" /></h4>
+		<p>동요작가 목일신은 전라남도 고흥군 고흥읍 서문리에서 태어났다. 본관은 사천(泗川), 호는 은성(隱星)이며, 김부암(金富岩)·김소영·목옥순(睦玉順)을 필명으로 사용하였이다. 초등학교 5학년 때인 1926년 《동아일보》에 동시 〈산시내〉를 발표하였다. 1928년 고흥공립보통학교를 졸업한 뒤 전주 신흥중학교에 입학하였으며, 이해에 〈누가 누가 잠자나〉를 지었다. 1929년 광주학생운동에 참가하였다가 1개월간 복역하였다.<br /><br />1931년 《조선일보》 신춘문예에 동시 〈시골〉이 당선되었고, 이듬해 신춘문예에서도 《조선일보》에 동시 〈물레방아〉와 가요〈새날의 청춘〉이, 《내일신보》에 시 〈영춘곡(迎春曲)〉이 잇달아 당선되었다. 1937년 일본 오사카의 간사이대학[關西大學]을 졸업한 뒤 동화방송에서 근무하다가 1943년 순천 매산고등학교, 1948년 목포여자중고등학교, 1954년 서울 이화여자고등학교, 1958년 배화여자중고등학교 교사로 부임하여 1978년 퇴직하였다.<br /><br />〈자전거〉〈자장가〉〈비누방울〉〈아롱다롱 나비야〉〈산비둘기〉〈참새〉〈시냇물〉〈물결은 출렁출렁〉 등 초등학교 교과서에 실린 많은 동시를 지었으며, 한국아동문학가협의회 부회장과 한국음악저작권협의회 이사 등을 지냈다. 1960년 이후 경기도 부천군 소사읍 범박리(지금의 부천시 소사구 범박동) 신앙촌으로 이주하여 사망할 때까지 거주하였다. 부천시 원미구 중동에 있는 부천중앙공원에 시비(詩碑)가 세워졌고, 전라남도 고흥군에도 〈누가 누가 잠자나〉 노래비가 세워졌다.</p>
+		<p><img src="images/_ART/content/book_bg.jpg" alt="목일신 전집, 목일신 동요곡집" /></p>
+	</div>
+</div>
+<div class="profile">
+	<div><img src="images/_ART/content/pro_text.gif" alt="1930년대 '동요의 아버지' 동요작가 목일신(睦一新) 약력" /></div>
+	<div class="profile_text">
+		<p><img src="images/_ART/content/photo3.gif" alt="자전거 시가 적힌 조형물" /></p>
+		<div class="profile_box">
+				<h5><img src="images/_ART/content/year.gif" alt="1913~1948" /></h5>
+				<dl>
+					<dt>1913</dt>
+					<dd >전남 고흥군 고흥읍 서문리 425번지에서 출생(1월 18일)</dd>
+					<dt>1926</dt>
+					<dd >고흥공립보통학교 5학년 동아일보에 ‘산시내’ 발표, ‘자전거’ 작사</dd>
+					<dt>1928</dt>
+					<dd >고흥공립보통학교(현 고흥동초등학교) 졸업, 전주신흥중학교 입학</dd>
+					<dt>1929</dt>
+					<dd >광주학생사건으로 투옥</dd>
+					<dt>1930</dt>
+					<dd >동아일보 신춘문예에 동요 ‘참새’ 당선</dd>
+					<dt>1931</dt>
+					<dd >조선일보 신춘문예에 동요 ‘시골’ 당선</dd>
+					<dt>1932</dt>
+					<dd >전주 신흥중학교 졸업<br />조선일보 신춘문예에 동요 ‘물레방아’, 가요 ‘새날의 청춘’ 당선,<br />매일신보 신춘문예에 ‘영춘곡’ 당선</dd>
+					<dt>1933</dt>
+					<dd >월간 영화시대 현상모집에 시 ‘낙화 당선,<br />오케레코드사 현상모집에 가요 ‘명사십리’ 당선<br />콜롬비아레코드사 현상모집에 ‘뱃노래’, 청춘가‘ 당선</dd>
+					<dt>1937</dt>
+					<dd >일본 관서대학 문과 졸업, KBS전신 JODK 근무</dd>
+					<dt>1943</dt>
+					<dd >순천 매산중 국어교사 부임</dd>
+					<dt>1948</dt>
+					<dd >목포여중 교사 부임</dd>
+				</dl>
+		</div>
+		<div class="profile_box">
+				<h5><img src="images/_ART/content/year02.gif" alt="1913~1948" /></h5>
+				<dl>
+					<dt>1954</dt>
+					<dd >이화여고 교사 부임</dd>
+					<dt>1955</dt>
+					<dd >대한일보 현상모집에 국민가요 ‘대한의 노래’ 당선</dd>
+					<dt>1956</dt>
+					<dd >초등학교 교과서에 ‘비누방울’ 수록, 음악교과서에 자전거,<br />누가누가잠자나, 자장가, 아롱다롱 나비야, 산비둘기, 참새,<br />시냇물, 물결은 출렁출렁 등 수록</dd>
+					<dt>1957</dt>
+					<dd >동요집 ‘물레방아’ 발간(광주 국학도서출판관)</dd>
+					<dt>1958</dt>
+					<dd >배화여중고 교사 부임</dd>
+					<dt>1960</dt>
+					<dd >부천시 범박동에 이주</dd>
+					<dt>1967</dt>
+					<dd >정경자 여사와 결혼</dd>
+					<dt>1977</dt>
+					<dd >고흥동초등학교에 노래비 제막(누가누가잠자나)</dd>
+					<dt>1978</dt>
+					<dd >배화여중고교 정년퇴임, 국민포장 수상</dd>
+					<dt>1986</dt>
+					<dd >부천시 범박동에서 작고(10월 12일)</dd>
+					<dt>1992</dt>
+					<dd >건국훈장 애족장 추서</dd>
+				</dl>
+		</div>
+		<div class="profile_box">
+			<h5><img src="images/_ART/content/year03.gif" alt="1913~1948" /></h5>
+			<dl>
+				<dt>2000</dt>
+				<dd >동요집 ‘찌르릉 찌르릉 비켜나세요’ 출간(부천문화원)</dd>
+				<dt>2009</dt>
+				<dd >고흥문화회관에 시비 제막(자전거)</dd>
+				<dt>2010</dt>
+				<dd >제1회 고흥 목일신동요제 개최(고흥군)</dd>
+				<dt>2011</dt>
+				<dd >제2회 고흥 목일신동요제 개최, 목일신동시집 발간(고흥군),<br />고흥동초교 개교100주년 기념식에서 ‘자랑스러운 고흥동초등인상’ 수상</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+
+						</div>
+						<script type="text/javascript"> 
+						try { followBanner('scrollMenu', 'container'); } catch (e) { }
+						</script>
+						
+					</div>
+				</div>
+			<div id="aside">
+					<ul>
+						
+						
+						
+							<li><a href="/web?site_id=41&menu_id=940"><img src="images/_ART/content/aisde3_set02.gif" onmouseover="this.src='images/_ART/content/aisde3_set02_on.gif'" onmouseout="this.src='images/_ART/content/aisde3_set02.gif'" alt="국악인김연수" /></a></li>
+						
+						
+							<li><a href="/web?site_id=41&menu_id=950"><img src="images/_ART/content/aisde1_set02.gif" onmouseover="this.src='images/_ART/content/aisde1_set02_on.gif'" onmouseout="this.src='images/_ART/content/aisde1_set02.gif'" alt="시인송수권" /></a></li>
+						
+						
+							<li><a href="/board?board_id=181&site_id=41&menu_id=960&"><img src="images/_ART/content/aisde1_set03.gif" onmouseover="this.src='images/_ART/content/aisde1_set03_on.gif'" onmouseout="this.src='images/_ART/content/aisde1_set03.gif'" alt="커뮤니티" /></a></li>
+						
+						
+
+					</ul>			
+				</div>
+			</div>
+			<div id="footer_wrap">
+				
+<div class="footer_container">
+	<div class="footer">
+		<address>우 59542 전남 고흥군 고흥읍 고흥군청로 1 / 대표전화 061-830-5898 / 팩스 061-830-5577<br />COPYRIGHT(C) 2015 Goheung Country. ALL RIGHTS RESERVED. </address>
+	</div>
+</div>
+			</div>
+			<script type="text/javascript"> 
+			try { followBanner('aside', 'wrapper'); } catch (e) { }
+			</script>
+	</div>
+</body>
+</html>
