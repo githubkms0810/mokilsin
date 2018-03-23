@@ -20,15 +20,15 @@
                     <!-- End Featured Image -->
 
                     <!-- Begin Post Content -->
-                    <div class="article-post jy-align-center" >
+                    <div class="article-post jy-align-center" style="padding-bottom: 20px;">
                         <div class="portfolio_content-sort jy-align-center" >
                             <span class="author-meta jy-align-center">
                             <?php if ( $portfolio->buyer ==="회사" ): ?>
-                                <span class="post-name" style="font-size: 14px;">CLIENT</span>
+                                <span class="post-name" style="font-size: 14px; font-weight:bold;">CLIENT</span>
                                 <br/>
                                 <span class="post-date" style="font-size: 14px;"><?=$portfolio->company?></span>
                             <?php elseif($portfolio->buyer ==="개인"): ?>
-                                <span class="post-name" style="font-size: 14px;">CLIENT</span><br/>
+                                <span class="post-name" style="font-size: 14px; font-weight:bold;">CLIENT</span><br/>
                                 <span class="post-date" style="font-size: 14px;"><?=$portfolio->personal_name?></span>
                             <?php endif ?>
                             </span>
@@ -36,7 +36,7 @@
                         
                         <div class="portfolio_content-sort  jy-align-center">
                             <span class="author-meta  jy-align-center">
-                                <span class="post-name" style="font-size: 14px;">TRANSLATION</span>
+                                <span class="post-name" style="font-size: 14px; font-weight:bold;">TRANSLATION</span>
                                 <br/>
                                 <span class="post-date" style="font-size: 14px;"><?=$portfolio->translation_before?>/<?=$portfolio->translation_after?></span>
                             </span>
@@ -44,7 +44,7 @@
 
                         <div class="portfolio_content-sort  jy-align-center">
                             <span class="author-meta  jy-align-center">
-                                <span class="post-name" style="font-size: 14px;">CONTENTS</span>
+                                <span class="post-name" style="font-size: 14px; font-weight:bold;">CONTENTS</span>
                                 <br/>
                                 <span class="post-date" style="font-size: 14px;"><?=$portfolio->desc?></span>
                             </span>

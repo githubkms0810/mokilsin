@@ -14,7 +14,7 @@
 <?php if ( $this->className ==="base" ): ?>
 <section class="home-hero-freelancer">
 	<div class="animated fadeInUp">
-	<h2 class="home-hero-title-freelancer">FREELANCER</h2>
+	<h2 class="home-hero-title-freelancer">REGISTRATION</h2>
     <p class="home-hero-des-freelancer">
 		코리아 통번역 센터와 함께<br class="br_free">
         더 좋은 번역 산업의 미래를 만들어가고 싶으시다면<br class="br_free">

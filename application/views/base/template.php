@@ -90,7 +90,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="/content/list?board_key=notice">고객센터</a>
+                            <a href="/content/list?board_key=notice">고객 센터</a>
                         </li>
                         <li>
                             <a href="/translation_order/selectType" style="font-weight:400;">의뢰하기</a>
@@ -114,7 +114,7 @@
                     <div>
                         <a href="/small/partnership">업무 제휴 문의</a>
                         <a href="/small/security">기밀 유지 정책</a>
-                        <a href="/content/list?board_key=notice">고객센터</a>
+                        <a href="/content/list?board_key=notice">고객 센터</a>
                     </div>
                 </div>
                 <div class="home-footer__info">

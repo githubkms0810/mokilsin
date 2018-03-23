@@ -1,6 +1,6 @@
 <section class="home-hero">
     <div class="animated fadeInUp">
-    <h2 class="home-hero-title">코리아 통번역 센터<br>대한민국 대표<br>언어 전문<br class="display"> 서비스 기업</h2>
+    <h2 class="home-hero-title">대한민국 대표<br>언어 전문<br class="display"> 서비스 기업</h2>
     <p class="home-hero-des" style="color:white;">
         코리아 통번역 센터는 전문 번역 서비스는 물론<br>
         소프트웨어 현지화, 국제 회의 맞춤 통역 서비스 등을 제공하는<br>
