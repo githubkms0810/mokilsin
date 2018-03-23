@@ -40,6 +40,35 @@ html{}
 .gnb li a{font-size:14px; color:#333333; font-weight:bold}
 .gnb li.m-menu{display:none}
 
+
+.gnb ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 130px;
+    padding: 15px 0;
+    text-align: center;
+    left: -10px;
+    top: 66px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(149,186,219,0.3);
+  }
+  .gnb ul a {
+    color: #505460 !important;
+    height: 40px;
+    line-height: 40px;
+  }
+  .gnb__item {
+    background-image: url(../images/arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    position: relative;
+  }
+  .gnb__item:hover ul {
+    display: block;
+  }
+
+
 .util{position:absolute; right:50px; top:20px}
 .util a{display:inline-block; width:98px; height:38px; line-height:38px; text-align:center; font-size:14px; font-weight:bold; border-radius:5px}
 .util .login{background:#3891ac; border:1px solid #3891ac; color:#fff}
