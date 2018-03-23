@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>잡댄스 - 춤? 일? 같이 해!</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-base.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-style-detail.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-media.css" media="all">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<script src="../js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="../js/pace.js" type="text/javascript"></script>
+	<script src="../js/jquery.bxslider.min.js" type="text/javascript"></script>
+	<script src="../js/swiper.min.js" type="text/javascript"></script>
+	<script src="../js/front-ui.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<div class="wrap">
+		
+		<!-- header -->
+		<div class="header fixed">
+			<div>
+				<h1><a href="#"><img src="../images/logo.png" alt="잡댄스"></a></h1>
+				<ul class="gnb">
+					<li><a href="#">채용 정보</a></li>
+					<li><a href="#">인재 정보</a></li>
+					<li><a href="#">공연팀 정보</a></li>
+					<li><a href="#">지역별 채용 정보</a></li>
+					<li><a href="#">역세권별 채용 정보</a></li>
+					<li><a href="#">커뮤니티</a></li>
+					<li><a href="#">고객 센터</a></li>
+					<li class="m-menu login"><a href="#">로그인</a></li>
+					<li class="m-menu"><a href="#">가입하기</a></li>
+				</ul>
+				
+				<div class="util">
+					<a href="#" class="login">로그인</a>
+					<a href="#" class="join">가입하기</a>
+				</div>
+				
+				<a href="javascript:mMenuOn();" class="m-menu-btn">모바일 메뉴 열기</a>
+				<a href="javascript:mMenuOff();" class="m-menu-btn_close">모바일 메뉴 닫기</a>
+				<a href="javascript:mMenuOff();" class="m-menu-btn_close_x">모바일 메뉴 닫기</a>
+			</div>
+		</div>
+		<!-- //header -->
+		
+		<!-- btn_call -->
+		<div class="btn_call" onClick="javascript:location.href('#')">전화걸기</div>
+		<!-- //btn_call -->
+		
+		<!-- visual -->
+  	<div class="sub_visual" style="background:url('../images/detail_main_visual.png') no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+  	  <div class="in">
+    	  <span class="subject">스트릿댄스 방송댄스 강사님 모십니다</span>
+    	  <span class="info">월급 2,500,000원 &nbsp;&nbsp; | &nbsp;&nbsp; 기간 2017-02-22 ~ 2017-03-25 (모집인원 0명)</span>
+  	  </div>
+  	</div>
+  	<div id="circle-wrap">
+      <div class="detail_profile_circle">
+        <div class="out">
+          <div class="in" style="background:url('../images/detail_main_visual_profile.png') no-repeat center center;" title="케이댄스학원"></div>
+        </div>
+      </div>
+    </div>
+		<!-- //visual -->
+    
+  	<!-- contents_wrap -->
+  	<div id="contents_wrap_detail">
+  	
+  		<!-- sidebar -->
+  		<div id="sidebar-detail">
+  		  
+  		  <div style="width:78%;display:block;margin:130px auto 30px;">
+    		  
+      	  <div class="profile">
+        	  <div class="company">케이댄스학원</div>
+        	  <div class="name">교습소</div>
+      		</div>
+      		
+      	  <div class="supply">
+        	  <div class="button call">전화하기</div>
+        	  <div class="button mail">문의하기</div>
+        	  <div class="button fb">공유하기</div>
+        	  <div class="gbar1"></div>
+        	  <div class="gbar2"></div>
+      		</div>
+      		
+    			<div class="in-content" style="border:none;">
+      			<ul>
+              <li>
+                <span class="lb_icon1"><span class="subject">대표자</span></span>
+                <span class="content">김민성</span>
+              </li>
+              <li>
+                <span class="lb_icon2"><span class="subject">전화번호</span></span>
+                <span class="content">070-7099-5504</span>
+              </li>
+              <li>
+                <span class="lb_icon3"><span class="subject">FAX</span></span>
+                <span class="content">032-349-5530</span>
+              </li>
+              <li>
+                <span class="lb_icon4"><span class="subject">E-mail</span></span>
+                <span class="content">koreakms0810@gmail.com</span>
+              </li>
+              <li>
+                <span class="lb_icon5"><span class="subject">홈페이지</span></span>
+                <span class="content">www.jobdance.co.kr</span>
+              </li>
+              <li>
+                <span class="lb_icon6"><span class="subject">복리후생</span></span>
+                <span class="content">차량 유류 보조금 지원<br />각종 경조금 지원<br />주 5일 근무, 정기 휴가<br />인센티브 제도<br />기타 협의</span>
+              </li>
+              <li>
+                <span class="lb_icon7"><span class="subject">키워드</span></span>
+                <span class="content">유아, 취미댄스, 방송댄스, 무용, 요가, 교사, 댄스강사, KPOP, 요가강사, 운동, 댄스</span>
+              </li>
+              <li>
+                <span class="lb_icon8"><span class="subject">이용안내</span></span>
+                <span class="content">본 정보는 케이댄스학원에서 제공한 자료를 바탕으로 잡댄스에서 편집 및 그 표현방법을 수정하여 완성한 것입니다.<br />본 정보는 잡댄스의 동의 없이 무단 전재 또는 재배포, 재가공할 수 없으며, 게재된 채용 기업과 태용 담당자의 정보는 구직 활동 이외의 다른 용도로 사용될 수 없습니다.<br />(저작권자 ⓒ 잡댄스 무단전재-재배포 금지)</span>
+              </li>
+      			</ul>
+      		</div>
+      		
+        </div>
+        
+  		</div>
+  		<!-- //sidebar -->
+  		
+  		<!-- contents -->
+		  <div id="contents-detail">
+		    <div class="contents-wrap">
+		    <!-- <div class="tl-bar"></div> -->
+  		    
+    			<!-- //photo -->
+    			<div class="content-outer">
+    				<div class="content-inner">
+    				  <div class="tl-point"></div>
+    				  <div class="tl-point_out"></div>
+    			    <div class="tl-bar" style="height:50%;top:50%;"></div>
+      				<div class="content-out-wrap">
+          			<h2>대표 이미지</h2>
+          			<div class="photo-wrap">
+                  <ul>
+                    <li class="ih-item square effect6 top_to_bottom">
+                      <a href="#">
+                        <div class="img"><img src="../images/detail_photo_img1.png" alt=""></div>
+                        <div class="info"><h3></h3></div>
+                      </a>
+                    </li>
+                    <li class="ih-item square effect6 top_to_bottom">
+                      <a href="#">
+                        <div class="img"><img src="../images/detail_photo_img2.png" alt=""></div>
+                        <div class="info"><h3></h3></div>
+                      </a>
+                    </li>
+                    <li class="ih-item square effect6 top_to_bottom">
+                      <a href="#">
+                        <div class="img"><img src="../images/detail_photo_img3.png" alt=""></div>
+                        <div class="info"><h3></h3></div>
+                      </a>
+                    </li>
+                  </ul>
+          		  </div>
+        		  </div>
+      		  </div>
+    		  </div>
+  		    <!-- //photo -->
+    		  
+    			<!-- //information -->
+    			<div class="content-outer">
+    				<div class="content-inner">
+    				  <div class="tl-point"></div>
+    				  <div class="tl-point_out"></div>
+    			    <div class="tl-bar"></div>
+      				<div class="content-out-wrap">
+        			  
+          			<h2>근무 조건</h2>
+          			<div class="information-wrap">
+          			  
+          			  <div class="in-content">
+            			  
+              			<div class="map_box">
+                			
+                			<span class="map" style="background:url('../images/detail_info_map.png') no-repeat center center;"></span>
+                			<div class="map_info">
+                  			<div class="in-content" style="width:90%;margin-left:15px;">
+                    			<ul>
+                            <li>
+                              <span class="rb_icon_map"><span class="subject">위치</span></span>
+                              <span class="content" style="width:80%;">인천광역시 연수구 송도동 아트윈 푸르지오 102동 1903호</span>
+                            </li>
+                    			</ul>
+                    		</div>
+                      </div>
+  <!-- 다음지도 : 사용시 해당 값을 넣어주시면 됩니다 -->
+  <!--
+  <style type="text/css">
+  div#map {position: relative;}
+  div#map-canvas {width:100%; height:360px;}
+  </style>
+  
+  <input type="hidden" name="form-map-level" id="form-map-level" value="5"/>
+  <input type="hidden" name="map_latitude" id="map_latitude" value="경도좌표값"/>
+  <input type="hidden" name="map_longitude" id="map_longitude" value="위도좌표값"/>
+  <div id="map-canvas"></div>
+  <div style="float:left;width:100%;margin-top:10px;padding-bottom:10px;">
+  <div id="roadview" style="width:100%;height:350px;margin-top:0px;"></div>
+  
+  <script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=API키값" charset="utf-8"></script>
+  <script type="text/javascript"> 
+  /* <![CDATA[ */
+  $(document).ready(function () {
+  	var level = $('#form-map-level').val();
+  	var lat = $('#map_latitude').val();
+  	var lng = $('#map_longitude').val();
+  	
+  	var map; 
+  	var latLng = new daum.maps.LatLng(lat, lng);
+  	
+  	map =  new daum.maps.Map(document.getElementById('map-canvas'), {
+  		center: latLng,
+  		level : level,
+  		//mapTypeId: daum.maps.MapTypeId.HYBRID,
+  		//mapTypeId: daum.maps.MapTypeId.ROADMAP, 
+  		logo: true
+  	});
+  	
+  	var zoomControl = new daum.maps.ZoomControl();
+  	map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
+  	var mapTypeControl = new daum.maps.MapTypeControl();
+  	map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPRIGHT);
+  	
+  	var icon = new daum.maps.MarkerImage(
+  		'http://localimg.daum-img.net/localimages/07/2009/map/icon/blog_icon01_on.png',
+  		new daum.maps.Size(31, 34),
+  		new daum.maps.Point(16,34),
+  		"poly",
+  		"1,20,1,9,5,2,10,0,21,0,27,3,30,9,30,20,17,33,14,33"
+  	);
+  	
+  	var marker = new daum.maps.Marker({
+  		position: latLng,
+  		//image: icon, 아이콘 사용시 주석해제
+  		draggable: false
+  	});
+  	
+  	var infowindow = new daum.maps.InfoWindow({ 
+  	  content:'<p style="width:180px; text-align:center; margin:5px; font-size:12px">업체명(타이틀표시값)</p>'
+  	});
+  	infowindow.open(map, marker);
+  	marker.setMap(map);
+  	
+  	//로드뷰 출력
+  	var roadviewContainer = document.getElementById('roadview'); //로드뷰를 표시할 div
+      var roadview = new daum.maps.Roadview(roadviewContainer); //로드뷰 객체
+      var roadviewClient = new daum.maps.RoadviewClient(); //좌표로부터 로드뷰 파노ID를 가져올 로드뷰 helper객체
+      var position = new daum.maps.LatLng(lat, lng);
+      // 특정 위치의 좌표와 가까운 로드뷰의 panoId를 추출하여 로드뷰를 띄운다.
+      roadviewClient.getNearestPanoId(position, 50, function(panoId) {
+          roadview.setPanoId(panoId, position); //panoId와 중심좌표를 통해 로드뷰 실행
+      });
+  });
+  </script>
+    -->
+              			</div>
+              			
+              			<div class="information">
+                			<div class="in-content">
+                			  <ul>
+                          <li>
+                            <span class="rb_icon1"><span class="subject">채용 직종</span></span>
+                            <span class="content">유아-유아체육<br>유아-유아댄스<br>유아-정보없음</span>
+                          </li>
+                          <li>
+                            <span class="rb_icon2"><span class="subject">담당 업무</span></span>
+                            <span class="content">유아체육강사,유아댄스,강사,유아발레 강사</span>
+                          </li>
+                          <li>
+                            <span class="rb_icon3"><span class="subject">고용 형태</span></span>
+                            <span class="content">정규직</span>
+                          </li>
+                          <li>
+                            <span class="rb_icon4"><span class="subject">채용 직급</span></span>
+                            <span class="content">직원</span>
+                          </li>
+                          <li>
+                            <span class="rb_icon5"><span class="subject">근무 지역</span></span>
+                            <span class="content">경기도-고양시<br>서울-서대문구<br>서울-강남구</span>
+                          </li>
+                          <li>
+                            <span class="rb_icon6"><span class="subject">지하철</span></span>
+                            <span class="content">1호선</span>
+                          </li>
+                          <li>
+                            <span class="rb_icon7"><span class="subject">근무 요일</span></span>
+                            <span class="content">월~금</span>
+                          </li>
+                          <li>
+                            <span class="rb_icon8"><span class="subject">근무 시간</span></span>
+                            <span class="content">오전 10시 00분 ~ 오후 05시 00분</span>
+                          </li>
+                          <li>
+                            <span class="rb_icon9"><span class="subject">자격 조건</span></span>
+                            <span class="content">남자<br>나이 제한 없음<br>경력 1년~2년 이상<br>학력 무관</span>
+                          </li>
+                          <li>
+                            <span class="rb_icon10"><span class="subject">우대 사항</span></span>
+                            <span class="content">나대학/대학교졸업자, 자격증소유자, 군필</span>
+                          </li>
+                  			</ul>
+                  		</div>
+            		    </div>
+            		    
+          		    </div>
+        		    </div>
+      		    </div>
+      		  </div>
+    		    
+    		  </div>
+  		    <!-- //information -->
+  		    
+    			<!-- //detail -->
+    			<div class="content-outer">
+    				<div class="content-inner">
+    				  <div class="tl-point"></div>
+    				  <div class="tl-point_out"></div>
+    			    <div class="tl-bar" style="height:50%;bottom:50%;"></div>
+      				<div class="content-out-wrap">
+        			  
+          			<h2>상세 모집 요강</h2>
+          			<div class="detail-wrap">
+            			
+            			<div class="in-content">
+                    <b>[채용 직종]</b><br>
+                    유아-유아체육<br>
+                    유아-유아댄스<br>
+                    유아-정보없음<br>
+                    <br>
+                    <b>[담당 업무]</b><br>
+                    유아체육강사,유아댄스,강사,유아발레 강사<br>
+                    <br>
+                    <b>[고용 형태]</b><br>
+                    정규직<br>
+                    <br>
+                    <b>[채용 직급]</b><br>
+                    직원<br>
+                    <br>
+                    <b>[근무 지역]</b><br>
+                    경기도-고양시<br>
+                    서울-서대문구<br>
+                    서울-강남구<br>
+                    <br>
+                    <b>[지하철]</b><br>
+                    1호선<br>
+                    <br>
+                    <b>[근무 요일]</b><br>
+                    월~금<br>
+                    <br>
+                    <b>[근무 시간]</b><br>
+                    오전 10시 00분 ~ 오후 05시 00분<br>
+                    <br>
+                    <b>[자격 조건]</b><br>
+                    남자<br>
+                    나이 제한 없음<br>
+                    경력 1년~2년 이상<br>
+                    학력 무관<br>
+                    <br>
+                    <b>[우대 사항]</b><br>
+                    나대학/대학교졸업자, 자격증소유자, 군필<br>
+          				</div>
+        		    </div>
+        		  </div>
+      		  </div>
+    		  </div>
+  		    <!-- //detail -->
+		    </div>
+  		</div>
+		  <!-- //contents -->
+		  
+  	</div>
+  	<!-- //contents_wrap -->
+  	
+  	<div style="clear:both"></div>
+  	
+  	<!-- main content -->
+  	<div class="main content">
+			<div class="client" style="margin:0px;">
+				<div>
+					<ul>
+						<li><a href="#" target="_blank"><img src="../images/google-logo.png" alt="구글"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/facebook-logo.png" alt="페이스북"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/instagram-logo.png" alt="인스타그램"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/naver-logo.png" alt="네이버"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/skbroadband-logo.png" alt="sk브로드밴드"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/kglnicis-logo.png" alt="kg이니시스"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/okname-logo.png" alt="오케이네임"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/gabia-logo.png" alt="가비아"></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="support" style="padding-bottom:70px;">
+				<div>
+					<div class="left">
+						<h2>고객 지원 센터</h2>
+						<p class="num"><img src="../images/support_num.png" alt="1600-6583"></p>
+						<p class="num2">업무 시간 : AM 9:00 - PM 18:00</p>
+						<p class="num2">점심 시간 : PM 12:00 - PM 13:00</p>
+					</div>
+					
+					<div class="center">
+						<h2>온라인 디지털 콘텐츠 산업 발전법에 의한 표시</h2>
+						<p class="c-tit">콘텐츠의 명칭 : 취업 정보 및 구직 정보</p>
+						<p class="c-tit">콘텐츠의 제작 및 표시 : 2016년 8월 1일</p>
+						<p class="c-tit">콘텐츠의 제작자 : 아트다움</p>
+						<p class="c-tit">콘텐츠의 이용 조건 : 이용 약관 참조</p>
+						
+						<div class="c-link">
+							<ul>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">광고 문의</a></li>
+								<li><a href="#">세금 계산서</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="right">
+						<h2>카카오톡 상담 센터</h2>
+						<p class="kakao"><img src="../images/kakao-i.png" alt="KAKAO ID:JOBDANCE"></p>
+						<p class="kakao-tail">
+							카카오톡 플러스 친구에서<br>
+							JOBDANCE를 검색해보세요!
+						</p>
+					</div>
+				</div>
+			</div>
+		  
+  	</div>
+  	<!-- //main content -->
+  	
+		<!-- footer -->
+		<div class="footer">
+			<ul class="foot-menu">
+				<li><a href="#">회사 소개</a></li>
+				<li><a href="#">이용 약관</a></li>
+				<li><a href="#">개인 보호 정책</a></li>
+				<li><a href="#">이메일 주소 무단 수집 거부</a></li>
+			</ul>
+			
+			<ul class="social">
+				<li><a href="#"><img src="../images/google.png" alt="구글"></a></li>
+				<li><a href="#"><img src="../images/naver.png" alt="네이버"></a></li>
+				<li><a href="#"><img src="../images/facebook.png" alt="페이스북"></a></li>
+				<li><a href="#"><img src="../images/insta.png" alt="인스타그램"></a></li>
+			</ul>
+			
+			<div class="copy">
+				<p>상호명 : 아트다움 | 대표자 : 심민규 | E-mail : artdaum1@naver.com</p>
+				<p>주소 : 경기도 시흥시 능곡중앙로 33, 802동 1003호 (능곡동, 상록힐스테이트)</p>
+				<p>사업자 번호 : 738-09-00452 | 통신 판매업 신고 : 제2016-경기 시흥-0376호 | 직업 정보 제공 사업 신고 번호 : 안산지청 제 2016-04호</p>
+				<p>&copy; 2016 잡댄스. All rights reserverd.</p>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+	
+<script src="../js/jquery-2.1.4.js"></script>
+<script src="../js/sdb_jquery.menu-aim.js"></script>
+<script src="../js/sdb_main.js"></script> <!-- Resource jQuery -->
+
+</body>
+</html>

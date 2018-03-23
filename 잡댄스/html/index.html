@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>잡댄스 - 춤? 일? 같이 해!</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-base.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-media.css" media="all">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<script src="../js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="../js/pace.js" type="text/javascript"></script>
+	<script src="../js/jquery.bxslider.min.js" type="text/javascript"></script>
+	<script src="../js/swiper.min.js" type="text/javascript"></script>
+	<script src="../js/front-ui.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<div class="wrap">
+		
+		<!-- header -->
+		<div class="header fixed">
+			<div>
+				<h1><a href="#"><img src="../images/logo.png" alt="잡댄스"></a></h1>
+				<ul class="gnb">
+					<li><a href="#">채용 정보</a></li>
+					<li><a href="#">인재 정보</a></li>
+					<li><a href="#">공연팀 정보</a></li>
+					<li><a href="#">지역별 채용 정보</a></li>
+					<li><a href="#">역세권별 채용 정보</a></li>
+					<li><a href="#">고객 센터</a></li>
+					<li class="m-menu login"><a href="#">등록하기</a></li>
+					<li class="m-menu"><a href="#">마이페이지</a></li>
+					<li class="m-menu"><a href="#">로그아웃</a></li>
+				</ul>
+				
+				<div class="util">
+					<a href="#" class="login">등록하기</a>
+					<a href="#" class="join">마이페이지</a>
+					<a href="#" class="join">로그아웃</a>
+				</div>
+				
+				<a href="javascript:mMenuOn();" class="m-menu-btn">모바일 메뉴 열기</a>
+				<a href="javascript:mMenuOff();" class="m-menu-btn_close">모바일 메뉴 닫기</a>
+				<a href="javascript:mMenuOff();" class="m-menu-btn_close_x">모바일 메뉴 닫기</a>
+			</div>
+		</div>
+		<!-- //header -->
+		
+		<!-- visual -->
+		<div class="visual">
+			<ul class="v-slide">
+				<li>
+					<img src="../images/visual01.jpg" alt="" class="v-bg">
+					<div class="v-txt" style="right:15%; top:35%">
+						<p class="tit">착목한는 얼마나 풍부하게.</p>
+						<p class="tail">
+							역사를 찾아다녀도, 길지 광야에서 같으며,<br>
+							온갖 할지니, 것이다. 끓는 피어나기 구하지 할지니,<br>
+							있음으로써 싶이 때문이다.
+						</p>
+						<p class="btn"><a href="#" class="green">보러가기</a></p>
+					</div>
+				</li>
+				<li>
+					<img src="../images/visual02.jpg" alt="" class="v-bg">
+					<div class="v-txt" style="left:5%; top:30%">
+						<p class="tit">청춘은 두기 되려니와, 약동하다.</p>
+						<p class="tail">
+							이것은 갑 불어 있다. 오아이스도 꾸며 열락의 소금이라 타오르고<br>
+							만천하의 그리하였는가?
+						</p>
+						<p class="btn"><a href="#" class="green">보러가기</a></p>
+					</div>
+				</li>
+				<li>
+					<img src="../images/visual03.jpg" alt="" class="v-bg">
+					<div class="v-txt" style="right:20%; top:15%">
+						<p class="tit">인생을 바이며,</p>
+						<p class="tail">
+							지혜는 갑 공자는 끓는 무엇이 피고, 얼마나 없으면, 것이다.<br>
+							위하여서 그들은 청춘의 얼마나 기쁘며, 원대하고, 낙원을 끓는다.<br>
+							현저하게 가는 청춘에서만 자신과 이 얼마나 불어 뿐이다
+						</p>
+						<p class="btn"><a href="#" class="green">보러가기</a></p>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="v-counter">
+				<ul>
+					<li>
+						<p class="date">1,208 개</p>
+						<p class="tit">채용 정보</p>
+					</li>
+					<li>
+						<p class="date">3,208,930 개</p>
+						<p class="tit">인재 정보</p>
+					</li>
+					<li>
+						<p class="date">430 개</p>
+						<p class="tit">공연팀 정보</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //visual -->
+		
+		<!-- main content -->
+		<div class="main-content">
+			<div class="infor">
+				<h2>
+					<span>프리미엄</span> 채용 정보
+					<a href="#">광고 문의</a>	
+				</h2>
+				
+				<div class="infor-list">
+					<dl>
+						<dt style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<div class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></div>
+								<div class="tit">애플</div>
+								<div class="tail">
+									아이폰 7 시리즈 판매<br><div class="ghost">파트 타임 채용 공고</div>
+								</div>
+							</a>
+						</dt>
+						<dd class="tit"><a href="#">우리를 소개합니다!<span class="i-link">링크</span></a></dd>
+						<dd class="date">~상시채용</dd>
+					</dl>
+					<dl class="not-bg">
+						<dt>
+							<a href="#">
+								<div class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></div>
+								<div class="tit">애플</div>
+								<div class="tail">
+									아이폰 7 시리즈 판매<br>파트 타임 채용 공고
+								</div>
+							</a>
+						</dt>
+						<dd class="tit"><a href="#">우리를 소개합니다!<span class="i-link">링크</span></a></dd>
+						<dd class="date">~상시채용</dd>
+					</dl>
+					<dl>
+						<dt style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<div class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></div>
+								<div class="tit">애플</div>
+								<div class="tail">
+									아이폰 7 시리즈 판매<br>파트 타임 채용 공고
+								</div>
+							</a>
+						</dt>
+						<dd class="tit"><a href="#">우리를 소개합니다!<span class="i-link">링크</span></a></dd>
+						<dd class="date">~상시채용</dd>
+					</dl>
+					<dl class="book">
+						<dt>
+							<a href="#">
+								<div class="tit">채용 광고 문의하기</div>
+								<div class="tail">프리미엄 채용 정보</div>
+								<div class="book"><img src="../images/key-icon.png" alt=""></div>
+							</a>
+						</dt>
+						<dd class="book-icon"></dd>
+					</dl>
+				</div>
+			
+				<br><br><br><br><br>
+				
+				<h2>
+					<span>스페셜</span> 공연팀 정보
+					<a href="#">광고 문의</a>	
+				</h2>
+				
+				<div class="infor-list">
+					<dl>
+						<dt style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<div class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></div>
+								<div class="tit">애플</div>
+								<div class="tail">
+									아이폰 7 시리즈 판매<br>파트 타임 채용 공고
+								</div>
+							</a>
+						</dt>
+						<dd class="date"><span class="nemo">경력 - 9년 2개월</span></dd>
+					</dl>
+					<dl>
+						<dt style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<div class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></div>
+								<div class="tit">애플</div>
+								<div class="tail">
+									아이폰 7 시리즈 판매<br>파트 타임 채용 공고
+								</div>
+							</a>
+						</dt>
+						<dd class="date"><span class="nemo">경력 - 9년 2개월</span></dd>
+					</dl>
+					<dl>
+						<dt style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<div class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></div>
+								<div class="tit">애플</div>
+								<div class="tail">
+									아이폰 7 시리즈 판매<br>파트 타임 채용 공고
+								</div>
+							</a>
+						</dt>
+						<dd class="date"><span class="nemo">경력 - 9년 2개월</span></dd>
+					</dl>
+					<dl>
+						<dt style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<div class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></div>
+								<div class="tit">애플</div>
+								<div class="tail">
+									아이폰 7 시리즈 판매<br>파트 타임 채용 공고
+								</div>
+							</a>
+						</dt>
+						<dd class="date"><span class="nemo">경력 - 9년 2개월</span></dd>
+					</dl>
+				</div>
+				
+				<br><br><br><br><br>
+				
+				<h2>
+					<span>로얄</span> 채용 정보
+					<a href="#">광고 문의</a>	
+				</h2>
+				
+				<div class="infor-tbl">
+					<ul>
+						<li style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<span class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></span>
+								<div class="txt">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매<br>파트 타임 채용 공고</p>
+								</div>
+							</a>
+						</li>
+						<li class="not-bg">
+							<a href="#">
+								<span class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></span>
+								<div class="txt">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매<br>파트 타임 채용 공고</p>
+								</div>
+							</a>
+						</li>
+						<li style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<span class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></span>
+								<div class="txt">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매<br>파트 타임 채용 공고</p>
+								</div>
+							</a>
+						</li>
+						<li class="not-bg">
+							<a href="#">
+								<span class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></span>
+								<div class="txt">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매<br>파트 타임 채용 공고</p>
+								</div>
+							</a>
+						</li>
+						<li style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<span class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></span>
+								<div class="txt">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매<br>파트 타임 채용 공고</p>
+								</div>
+							</a>
+						</li>
+						<li class="not-bg">
+							<a href="#">
+								<span class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></span>
+								<div class="txt">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매<br>파트 타임 채용 공고</p>
+								</div>
+							</a>
+						</li>
+						<li style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<span class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></span>
+								<div class="txt">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매<br>파트 타임 채용 공고</p>
+								</div>
+							</a>
+						</li>
+						<li class="not-bg">
+							<a href="#">
+								<span class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></span>
+								<div class="txt">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매<br>파트 타임 채용 공고</p>
+								</div>
+							</a>
+						</li>
+						<li style="background:url(../images/infor-bg.jpg)">
+							<a href="#">
+								<span class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></span>
+								<div class="txt">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매<br>파트 타임 채용 공고</p>
+								</div>
+							</a>
+						</li>
+						<li class="not-bg">
+							<a href="#">
+								<span class="logo"><span class="won"><span><img src="../images/apple.png" alt=""></span></span></span>
+								<div class="txt">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매<br>파트 타임 채용 공고</p>
+								</div>
+							</a>
+						</li>
+						<li class="book">
+							<a href="#">
+								<div class="txt">
+									<p class="tit">채용 광고 문의하기</p>
+									<p class="tail">로얄 채용 정보</p>
+								</div>
+							</a>
+						</li>
+						<li class="book">
+							<a href="#">
+								<div class="txt">
+									<p class="tit">채용 광고 문의하기</p>
+									<p class="tail">로얄 채용 정보</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<br><br><br><br><br>
+				
+				<div class="vertical-infor">
+					<div class="left">
+						<h2>
+							<span>골드</span> 채용 정보
+							<a href="#">광고 문의</a>	
+						</h2>
+						
+						<ul>
+							<li>
+								<a href="#">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매 차트 타임 채용 공고</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매 차트 타임 채용 공고</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="tit black">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매 차트 타임 채용 공고</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매 차트 타임 채용 공고</p>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#">
+									<p class="tit">채용 광고 문의하기</p>
+									<p class="tail">골드 채용 정보</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="right">
+						<h2>
+							<span>긴급</span> 채용 정보
+							<a href="#">광고 문의</a>	
+						</h2>
+						
+						<ul>
+							<li>
+								<a href="#">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매 차트 타임 채용 공고</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="tit">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매 차트 타임 채용 공고</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="tit black">애플</p>
+									<p class="tail">아이폰 7 시리즈 판매 차트 타임 채용 공고</p>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#">
+									<p class="tit">채용 광고 문의하기</p>
+									<p class="tail">긴급 채용 정보</p>
+								</a>
+							</li>
+							<li class="book">
+								<a href="#">
+									<p class="tit">채용 광고 문의하기</p>
+									<p class="tail">긴급 채용 정보</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="client">
+				<div>
+					<ul>
+						<li><a href="#" target="_blank"><img src="../images/google-logo.png" alt="구글"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/facebook-logo.png" alt="페이스북"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/instagram-logo.png" alt="인스타그램"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/naver-logo.png" alt="네이버"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/skbroadband-logo.png" alt="sk브로드밴드"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/kglnicis-logo.png" alt="kg이니시스"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/okname-logo.png" alt="오케이네임"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/gabia-logo.png" alt="가비아"></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="support">
+				<div>
+					<div class="left">
+						<h2>고객 지원 센터</h2>
+						<p class="num"><img src="../images/support_num.png" alt="1600-6583"></p>
+						<p class="num2">업무 시간 : AM 9:00 - PM 18:00</p>
+						<p class="num2">점심 시간 : PM 12:00 - PM 13:00</p>
+					</div>
+					
+					<div class="center">
+						<h2>온라인 디지털 콘텐츠 산업 발전법에 의한 표시</h2>
+						<p class="c-tit">콘텐츠의 명칭 : 취업 정보 및 구직 정보</p>
+						<p class="c-tit">콘텐츠의 제작 및 표시 : 2016년 8월 1일</p>
+						<p class="c-tit">콘텐츠의 제작자 : 아트다움</p>
+						<p class="c-tit">콘텐츠의 이용 조건 : 이용 약관 참조</p>
+						
+						<div class="c-link">
+							<ul>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">광고 문의</a></li>
+								<li><a href="#">세금 계산서</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="right">
+						<h2>카카오톡 상담 센터</h2>
+						<p class="kakao"><img src="../images/kakao-i.png" alt="KAKAO ID:JOBDANCE"></p>
+						<p class="kakao-tail">
+							카카오톡 플러스 친구에서<br>
+							JOBDANCE를 검색해보세요!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //main content -->
+		
+		<!-- footer -->
+		<div class="footer">
+			<ul class="foot-menu">
+				<li><a href="#">회사 소개</a></li>
+				<li><a href="#">이용 약관</a></li>
+				<li><a href="#">개인 보호 정책</a></li>
+				<li><a href="#">이메일 주소 무단 수집 거부</a></li>
+			</ul>
+			
+			<ul class="social">
+				<li><a href="#"><img src="../images/google.png" alt="구글"></a></li>
+				<li><a href="#"><img src="../images/naver.png" alt="네이버"></a></li>
+				<li><a href="#"><img src="../images/facebook.png" alt="페이스북"></a></li>
+				<li><a href="#"><img src="../images/insta.png" alt="인스타그램"></a></li>
+			</ul>
+			
+			<div class="copy">
+				<p>상호명 : 아트다움 | 대표자 : 심민규 | E-mail : artdaum1@naver.com</p>
+				<p>주소 : 경기도 시흥시 능곡중앙로 33, 802동 1003호 (능곡동, 상록힐스테이트)</p>
+				<p>사업자 번호 : 738-09-00452 | 통신 판매업 신고 : 제2016-경기 시흥-0376호 | 직업 정보 제공 사업 신고 번호 : 안산지청 제 2016-04호</p>
+				<p>&copy; 2016 잡댄스. All rights reserverd.</p>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+	
+</body>
+</html>
+
+</body>
+</html>

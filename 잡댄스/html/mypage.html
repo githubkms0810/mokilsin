@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>잡댄스 - 춤? 일? 같이 해!</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.bxslider.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-base.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-media.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../css/front-style-mypage.css" media="all">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<script src="../js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="../js/pace.js" type="text/javascript"></script>
+	<script src="../js/jquery.bxslider.min.js" type="text/javascript"></script>
+	<script src="../js/swiper.min.js" type="text/javascript"></script>
+	<script src="../js/front-ui.js" type="text/javascript"></script>
+	
+<script>
+function	open_snb1()	{	
+  snb_Menu_02.style.display="none";
+  snb_Menu_03.style.display="none";
+  snb_Menu_04.style.display="none";
+  snb_Menu_05.style.display="none";
+}
+function	open_snb2()	{	
+  snb_Menu_01.style.display="none";
+  snb_Menu_03.style.display="none";
+  snb_Menu_04.style.display="none";
+  snb_Menu_05.style.display="none";
+}
+function	open_snb3()	{	
+  snb_Menu_01.style.display="none";
+  snb_Menu_02.style.display="none";
+  snb_Menu_04.style.display="none";
+  snb_Menu_05.style.display="none";
+}
+function	open_snb4()	{	
+  snb_Menu_01.style.display="none";
+  snb_Menu_02.style.display="none";
+  snb_Menu_03.style.display="none";
+  snb_Menu_05.style.display="none";
+}
+function	open_snb5()	{	
+  snb_Menu_01.style.display="none";
+  snb_Menu_02.style.display="none";
+  snb_Menu_03.style.display="none";
+  snb_Menu_04.style.display="none";
+}
+</script>
+</head>
+<body>
+
+	<div class="wrap">
+		
+		<!-- header -->
+		<div class="header fixed">
+			<div>
+			  <h1><a href="#"><span class="toplogo"><img src="../images/logo_my.png" alt="잡댄스"><span></a></h1>
+				<ul class="gnb">
+					<li><a href="#">채용 정보</a></li>
+					<li><a href="#">인재 정보</a></li>
+					<li><a href="#">공연팀 정보</a></li>
+					<li><a href="#">지역별 채용 정보</a></li>
+					<li><a href="#">역세권별 채용 정보</a></li>
+					<li><a href="#">고객 센터</a></li>
+					<li class="m-menu login"><a href="#">등록하기</a></li>
+					<li class="m-menu"><a href="#">마이페이지</a></li>
+					<li class="m-menu"><a href="#">로그아웃</a></li>
+				</ul>
+				
+				<div class="util">
+					<a href="#" class="login">등록하기</a>
+					<a href="#" class="join">마이페이지</a>
+					<a href="#" class="join">로그아웃</a>
+				</div>
+				
+				<a href="javascript:mMenuOn();" class="m-menu-btn">모바일 메뉴 열기</a>
+				<a href="javascript:mMenuOff();" class="m-menu-btn_close">모바일 메뉴 닫기</a>
+				<a href="javascript:mMenuOff();" class="m-menu-btn_close_x">모바일 메뉴 닫기</a>
+			</div>
+		</div>
+		<!-- //header -->
+		
+  	<!-- contents_wrap -->
+  	<div id="contents_wrap">
+  	  
+  		<!-- sidebar -->
+  		<div id="sidebar">
+    	  <div class="profile">
+      		<div class="circle">
+            <div class="out">
+              <div class="in" style="background:url('../images/sidebar_profile_img.png') no-repeat center center;" title="잡댄스"></div>
+            </div>
+      		</div>
+      	  <div class="company">잡댄스</div>
+      	  <div class="name">김민성 (단체 회원)</div>
+      	  <span class="member">010-8334-9254</span><br>
+      	  <span class="member">jobdance@artdaum.com</span>
+      	  <div class="modify">수정하기</div>
+    		</div>
+    		
+    	  <div class="lnb">
+          <!-- Dropdown // -->
+          <div class='swanky_wrapper'>
+            
+            <input id='Dashboard' name='radio' type='checkbox'>
+            <label for='Dashboard' onClick="snb_Menu_01.style.display=(snb_Menu_01.style.display=='block')?'none':'block';open_snb1();">
+              <img src='../images/sidebar_lnb_icon1.png'>
+              <span>Dashboard</span>
+              <div class='lil_arrow'></div>
+              <div class='bar'></div>
+              <div class='swanky_wrapper__content'>
+                <ul>
+                  <a href="#"><li>Tools</li></a>
+                  <a href="#"><li>Reports</li></a>
+                  <a href="#"><li>Analytics</li></a>
+                  <a href="#"><li>Code Blocks</li></a>
+                </ul>
+              </div>
+            </label>
+            
+            <input id='Sales' name='radio' type='checkbox'>
+            <label for='Sales' onClick="snb_Menu_02.style.display=(snb_Menu_02.style.display=='block')?'none':'block';open_snb2();">
+              <img src='../images/sidebar_lnb_icon2.png'>
+              <span>Sales</span>
+              <div class='lil_arrow'></div>
+              <div class='bar'></div>
+              <div class='swanky_wrapper__content'>
+                <ul>
+                  <a href="#"><li>New Sales</li></a>
+                  <a href="#"><li>Expired Sales</li></a>
+                  <a href="#"><li>Sales Reports</li></a>
+                  <a href="#"><li>Deliveries</li></a>
+                </ul>
+              </div>
+            </label>
+            
+            <input id='Messages' name='radio' type='checkbox'>
+            <label for='Messages' onClick="snb_Menu_03.style.display=(snb_Menu_03.style.display=='block')?'none':'block';open_snb3();">
+              <img src='../images/sidebar_lnb_icon3.png'>
+              <span>Messages</span>
+              <div class='lil_arrow'></div>
+              <div class='bar'></div>
+              <div class='swanky_wrapper__content'>
+                <ul>
+                  <a href="#"><li>Inbox</li></a>
+                  <a href="#"><li>Outbox</li></a>
+                  <a href="#"><li>Sent</li></a>
+                  <a href="#"><li>Archived</li></a>
+                </ul>
+              </div>
+            </label>
+            
+            <input id='Users' name='radio' type='checkbox'>
+            <label for='Users' onClick="snb_Menu_04.style.display=(snb_Menu_04.style.display=='block')?'none':'block';open_snb4();">
+              <img src='../images/sidebar_lnb_icon4.png'>
+              <span>Users</span>
+              <div class='lil_arrow'></div>
+              <div class='bar'></div>
+              <div class='swanky_wrapper__content'>
+                <ul>
+                  <a href="#"><li>New User</li></a>
+                  <a href="#"><li>User Groups</li></a>
+                  <a href="#"><li>Permissions</li></a>
+                  <a href="#"><li>Passwords</li></a>
+                </ul>
+              </div>
+            </label>
+            
+            <input id='Settings' name='radio' type='checkbox'>
+            <label for='Settings' onClick="snb_Menu_05.style.display=(snb_Menu_05.style.display=='block')?'none':'block';open_snb5();">
+              <img src='../images/sidebar_lnb_icon5.png'>
+              <span>Settings</span>
+              <div class='lil_arrow'></div>
+              <div class='swanky_wrapper__content'>
+                <ul>
+                  <a href="#"><li>Databases</li></a>
+                  <a href="#"><li>Design</li></a>
+                  <a href="#"><li>Change User</li></a>
+                  <a href="#"><li>Log Out</li></a>
+                </ul>
+              </div>
+            </label>
+            
+              <div class='swanky_wrapper__content2'>
+                
+                <ul id="snb_Menu_01">
+                  <a href="#"><li>Tools</li></a>
+                  <a href="#"><li>Reports</li></a>
+                  <a href="#"><li>Analytics</li></a>
+                  <a href="#"><li>Code Blocks</li></a>
+                </ul>
+                
+                <ul id="snb_Menu_02">
+                  <a href="#"><li>New Sales</li></a>
+                  <a href="#"><li>Expired Sales</li></a>
+                  <a href="#"><li>Sales Reports</li></a>
+                  <a href="#"><li>Deliveries</li></a>
+                </ul>
+                
+                <ul id="snb_Menu_03">
+                  <a href="#"><li>Inbox</li></a>
+                  <a href="#"><li>Outbox</li></a>
+                  <a href="#"><li>Sent</li></a>
+                  <a href="#"><li>Archived</li></a>
+                </ul>
+                
+                <ul id="snb_Menu_04">
+                  <a href="#"><li>New User</li></a>
+                  <a href="#"><li>User Groups</li></a>
+                  <a href="#"><li>Permissions</li></a>
+                  <a href="#"><li>Passwords</li></a>
+                </ul>
+                
+                <ul id="snb_Menu_05">
+                  <a href="#"><li>Databases</li></a>
+                  <a href="#"><li>Design</li></a>
+                  <a href="#"><li>Change User</li></a>
+                  <a href="#"><li>Log Out</li></a>
+                </ul>
+                
+              </div>
+            
+          </div>
+          <!-- // End Dropdown -->
+          <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+          
+    		</div>
+    		
+  		</div>
+  		<!-- //sidebar -->
+  		
+  		<!-- contents -->
+		  <div id="contents-mypage">
+		    
+		    <!-- //dash-board -->
+  			<div class="dash-board">
+  			  
+  			  <div class="left_box">
+    				<ul>
+    				  <li onClick="javascript:location.href='#';">
+      					  <p class="icon_all"></p>
+      						<p class="count">7</p>
+      						<p class="tit">나의 전체 채용 정보</p>
+      						<p class="line"></p>
+      						<p class="link">내역<span>보러가기</span></p>
+      						<div class="hidd">
+        						<p class="tit2">전체 채용 정보</p>
+        						<p class="link2">내역<br><span>보러가기</span></p>
+      						</div>
+    					</li>
+    				  <li onClick="javascript:location.href='#';">
+      					  <p class="icon_ing"></p>
+      						<p class="count">2</p>
+      						<p class="tit">나의 진행중인 채용 정보</p>
+      						<p class="line"></p>
+      						<p class="link">내역<span>보러가기</span></p>
+      						<div class="hidd">
+        						<p class="tit2">진행중 채용 정보</p>
+        						<p class="link2">내역<br><span>보러가기</span></p>
+      						</div>
+    					</li>
+    				  <li onClick="javascript:location.href='#';">
+      					  <p class="icon_end"></p>
+      						<p class="count">5</p>
+      						<p class="tit">나의 마감한 채용 정보</p>
+      						<p class="line"></p>
+      						<p class="link">내역<span>보러가기</span></p>
+      						<div class="hidd">
+        						<p class="tit2">마감 채용 정보</p>
+        						<p class="link2">내역<br><span>보러가기</span></p>
+      						</div>
+    					</li>
+    				</ul>
+  				</div>
+  			  <div class="right_box">
+    				<ul>
+    					<li>
+    					  <div class="left">
+      					  <a href="#">
+        					  <p class="icon_chk"></p>
+        						<p class="tit">출석체크하기</p>
+      						</a>
+      					</div>
+    					  <div class="blank"></div>
+    					  <div class="right">
+      					  <a href="#">
+        					  <p class="icon_coupon"></p>
+        						<p class="tit">쿠폰 등록하기</p>
+      						</a>
+      					</div>
+    					  <div class="point_title">포인트</div>
+    					  <div class="point_value">1,500 point</div>
+    					  <!--
+      					<div class="point_box">
+      					  <span class="point_title">포인트</span>
+      					  <span class="point_value">1,500 point</span>
+      					</div>
+      					-->
+    					</li>
+    				</ul>
+  				</div>
+  				
+  			</div>
+  			<!-- //dash-board -->
+  			
+  			<!-- //list-wrap -->
+				<div class="list-wrap">
+  				
+  				<div class="my-recruit-wrap">
+  				  
+  				  <div class="recruit-list">
+    				  
+    				  <h2>
+    						나의 <span>진행중</span>인 채용 정보
+    					</h2>
+    					
+    					<ul>
+    					
+    						<li>
+    						  <div class="s-dot"></div>
+    							<div class="li-box">
+    								<p class="s-tit"><a href="#">치키토 스포츠에서 유아체육, 유아댄스,요가,발레 선생님을 모십니다.</a></p>
+    								<p class="s-tail">유료 서비스를 이용하고 있지 않습니다! <a href="#"><span>유료 서비스 사용하기</span></a></p>
+      							<div class="s-info">
+        							<div>직종<br><span>경영.기획.사무.홍보</span></div>
+        							<div>담당 업무<br><span>기구설계, 전자제어, 연구기획</span></div>
+        							<div>최종수정일<br><span>2017-01-01</span></div>
+      							</div>
+      							<div class="s-option">
+        							<div class="s-opt">
+        								<ul>
+        									<li><a href="#">수정<span>하기</span></a></li>
+        									<li></li>
+        									<li><a href="#">마감<span>하기</span></a></li>
+        									<li></li>
+        									<li><a href="#">삭제<span>하기</span></a></li>
+        								</ul>
+        							</div>
+        							<div class="s-cost"><span>급여 <span>2000만원~2600만원</span></div>
+      							</div>
+    							</div>
+    						</li>
+    						
+    						<li>
+    						  <div class="s-dot"></div>
+    							<div class="li-box">
+    								<p class="s-tit"><a href="#">치키토 스포츠에서 유아체육, 유아댄스,요가,발레 선생님을 모십니다.</a></p>
+    								<p class="s-tail">유료 서비스를 이용하고 있지 않습니다! <a href="#"><span>유료 서비스 사용하기</span></a></p>
+      							<div class="s-info">
+        							<div>직종<br><span>경영.기획.사무.홍보</span></div>
+        							<div>담당 업무<br><span>기구설계, 전자제어, 연구기획</span></div>
+        							<div>최종수정일<br><span>2017-01-01</span></div>
+      							</div>
+      							<div class="s-option">
+        							<div class="s-opt">
+        								<ul>
+        									<li><a href="#">수정<span>하기</span></a></li>
+        									<li></li>
+        									<li><a href="#">마감<span>하기</span></a></li>
+        									<li></li>
+        									<li><a href="#">삭제<span>하기</span></a></li>
+        								</ul>
+        							</div>
+        							<div class="s-cost"><span>급여 <span>2000만원~2600만원</span></div>
+      							</div>
+    							</div>
+    						</li>
+    						
+    						<li>
+    						  <div class="s-dot"></div>
+    							<div class="li-box">
+    								<p class="s-tit"><a href="#">치키토 스포츠에서 유아체육, 유아댄스,요가,발레 선생님을 모십니다.</a></p>
+    								<p class="s-tail">유료 서비스를 이용하고 있지 않습니다! <a href="#"><span>유료 서비스 사용하기</span></a></p>
+      							<div class="s-info">
+        							<div>직종<br><span>경영.기획.사무.홍보</span></div>
+        							<div>담당 업무<br><span>기구설계, 전자제어, 연구기획</span></div>
+        							<div>최종수정일<br><span>2017-01-01</span></div>
+      							</div>
+      							<div class="s-option">
+        							<div class="s-opt">
+        								<ul>
+        									<li><a href="#">수정<span>하기</span></a></li>
+        									<li></li>
+        									<li><a href="#">마감<span>하기</span></a></li>
+        									<li></li>
+        									<li><a href="#">삭제<span>하기</span></a></li>
+        								</ul>
+        							</div>
+        							<div class="s-cost"><span>급여 <span>2000만원~2600만원</span></div>
+      							</div>
+    							</div>
+    						</li>
+    						
+    		      </ul>
+    		      
+  		      </div>
+  		    </div>
+  		    
+  				<div class="news-wrap">
+  				  
+  				  <div class="news-list">
+    				  
+    				  <h2>
+    						오늘의 <span>잡댄스</span> 중요 소식
+    						<a href="#"><span class="news-menu"></span></a>
+    					</h2>
+    					
+    					
+    					<ul>
+    					
+    						<li>
+    							<div class="news-box">
+    								<a href="#">
+    								  <div class="s-img">
+    								    <div class="out">
+    								      <div class="in" style="background:url('../images/mypage_news_list_img1.png') no-repeat center center;"></div>
+        								  <div class="s-box">
+          									<p class="s-tit">잡댄스 정식 오픈 기념 이벤트 안내</p>
+          									<p class="s-tail">이력서 올리고 아메리카노 공짜로 먹자!</p>
+        								  </div>
+    								    </div>
+    								  </div>
+    								</a>
+    							</div>
+    							<div class="s-dot"></div>
+    						</li>
+    						
+    						<li>
+    							<div class="news-box">
+    								<a href="#">
+    								  <div class="s-img">
+    								    <div class="out">
+    								      <div class="in" style="background:url('../images/mypage_news_list_img2.png') no-repeat center center;"></div>
+        								  <div class="s-box">
+          									<p class="s-tit">연말 정산에 지친 당신을 위한</p>
+          									<p class="s-tail">복잡한 연말 정산을 간단하게 줄일 TIP</p>
+        								  </div>
+    								    </div>
+    								  </div>
+    								</a>
+    							</div>
+    							<div class="s-dot"></div>
+    						</li>
+    						
+    		      </ul>
+    		      
+  				  </div>
+  				  
+  		    </div>
+  		    
+  		  </div>
+		    <!-- //list-wrap -->
+		    
+  		</div>
+		  <!-- //sidebar -->
+		  
+  	</div>
+  	<!-- //contents_wrap -->
+  	
+  	<div style="clear:both">
+  	
+  	<!-- main content -->
+  	<div class="main content">
+			<div class="client" style="margin:0px;">
+				<div>
+					<ul>
+						<li><a href="#" target="_blank"><img src="../images/google-logo.png" alt="구글"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/facebook-logo.png" alt="페이스북"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/instagram-logo.png" alt="인스타그램"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/naver-logo.png" alt="네이버"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/skbroadband-logo.png" alt="sk브로드밴드"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/kglnicis-logo.png" alt="kg이니시스"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/okname-logo.png" alt="오케이네임"></a></li>
+						<li><a href="#" target="_blank"><img src="../images/gabia-logo.png" alt="가비아"></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="support" style="padding-bottom:70px;">
+				<div>
+					<div class="left">
+						<h2>고객 지원 센터</h2>
+						<p class="num"><img src="../images/support_num.png" alt="1600-6583"></p>
+						<p class="num2">업무 시간 : AM 9:00 - PM 18:00</p>
+						<p class="num2">점심 시간 : PM 12:00 - PM 13:00</p>
+					</div>
+					
+					<div class="center">
+						<h2>온라인 디지털 콘텐츠 산업 발전법에 의한 표시</h2>
+						<p class="c-tit">콘텐츠의 명칭 : 취업 정보 및 구직 정보</p>
+						<p class="c-tit">콘텐츠의 제작 및 표시 : 2016년 8월 1일</p>
+						<p class="c-tit">콘텐츠의 제작자 : 아트다움</p>
+						<p class="c-tit">콘텐츠의 이용 조건 : 이용 약관 참조</p>
+						
+						<div class="c-link">
+							<ul>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">광고 문의</a></li>
+								<li><a href="#">세금 계산서</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="right">
+						<h2>카카오톡 상담 센터</h2>
+						<p class="kakao"><img src="../images/kakao-i.png" alt="KAKAO ID:JOBDANCE"></p>
+						<p class="kakao-tail">
+							카카오톡 플러스 친구에서<br>
+							JOBDANCE를 검색해보세요!
+						</p>
+					</div>
+				</div>
+			</div>
+		  
+  	</div>
+  	<!-- //main content -->
+  	
+		<!-- footer -->
+		<div class="footer">
+			<ul class="foot-menu">
+				<li><a href="#">회사 소개</a></li>
+				<li><a href="#">이용 약관</a></li>
+				<li><a href="#">개인 보호 정책</a></li>
+				<li><a href="#">이메일 주소 무단 수집 거부</a></li>
+			</ul>
+			
+			<ul class="social">
+				<li><a href="#"><img src="../images/google.png" alt="구글"></a></li>
+				<li><a href="#"><img src="../images/naver.png" alt="네이버"></a></li>
+				<li><a href="#"><img src="../images/facebook.png" alt="페이스북"></a></li>
+				<li><a href="#"><img src="../images/insta.png" alt="인스타그램"></a></li>
+			</ul>
+			
+			<div class="copy">
+				<p>상호명 : 아트다움 | 대표자 : 심민규 | E-mail : artdaum1@naver.com</p>
+				<p>주소 : 경기도 시흥시 능곡중앙로 33, 802동 1003호 (능곡동, 상록힐스테이트)</p>
+				<p>사업자 번호 : 738-09-00452 | 통신 판매업 신고 : 제2016-경기 시흥-0376호 | 직업 정보 제공 사업 신고 번호 : 안산지청 제 2016-04호</p>
+				<p>&copy; 2016 잡댄스. All rights reserverd.</p>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+	
+</body>
+</html>
