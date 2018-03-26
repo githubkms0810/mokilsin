@@ -2,7 +2,7 @@
 /* CSS Document */
 html { overflow-y:scroll; }
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,label{margin:0px; padding:0px;}
-body,input,div,dt,dd,li,th,td,textarea,p,select,option {font-size:12px;line-height:18px;font-size:12px; text-decoration:none; color:#333; }
+body,input,div,dt,dd,li,th,td,textarea,p,select,option {font-size:12px;line-height:18px;font-size:12px; text-decoration:none; }
 
 /* link */
 a {color:#333; text-decoration:none;} 

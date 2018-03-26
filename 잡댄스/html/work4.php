@@ -62,6 +62,8 @@
 <link rel="stylesheet" type="text/css" href="../css/base.css" />
 <link rel="stylesheet" type="text/css" href="../css/sub.css" />
 <link rel="stylesheet" type="text/css" href="../css/board.css" />
+<link rel="stylesheet" href="../css/beautiful.css">
+
 
 
 <section class="home-hero-cs">

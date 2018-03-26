@@ -59,6 +59,8 @@
         
 <link type="text/css" media="all" href="../css/bootstrap.min.css" rel="stylesheet">
 <link type="text/css" media="all" href="../css/mediumish.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/beautiful.css">
+
 
 
 
@@ -78,10 +80,14 @@
 	================================================== -->
 	<section class="featured-posts" style="margin:100px 0 150px 0;">
 	<div class="section-title">
-		<h2><span><a href="birth.php" style="color: #292b2c; font-weight: 400; font-size: 22px;">동요작가 목일신</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;
+		<h2><span>
             <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">작품집</a></span></h2>
 		
 	</div>
+        <div>
+        <p style="text-align:right;"><a href="birth.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">동요작가 목일신</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">작품집</a></p>
+        </div>
 	<div class="card-columns listfeaturedtag">
 		<!-- begin post -->
 		<div class="card">

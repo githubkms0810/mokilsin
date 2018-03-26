@@ -22,8 +22,8 @@
 /* ui */
 html{}
 .wrap{position:relative; padding:84px 0 0 0}
-.header{position:relative; height:80px; background:#fff; border-bottom:1px solid #dcdcdc}
-.header.fixed{position:fixed; left:0; top:0px; width:100%; z-index:9999; padding-top:4px}
+.header{position:relative; height:84px; background:#fff; border-bottom:1px solid #dcdcdc}
+.header.fixed{position:fixed; left:0; top:0px; width:100%; z-index:9999; padding-top:6px}
 .header h1{position:absolute; left:50px; top:25px}
 .header > div{width:100%; min-width:1480px; height:80px; margin:0 auto; position:relative}
 

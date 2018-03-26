@@ -24,7 +24,7 @@
 		<!-- header -->
 		<header class="header fixed">
 			<div>
-				<h1><a href="#"><img src="../images/logo.png" alt="잡댄스" style="vertical-align:top;"></a></h1>
+				<h1><a href="index.html"><img src="../images/logo.png" alt="잡댄스" style="vertical-align:top;"></a></h1>
 				<ul class="gnb">
 					<li><a href="birth.php">생애/업적</a></li>
 					<li class="gnb__item">
@@ -62,6 +62,8 @@
 <link rel="stylesheet" type="text/css" href="../css/base.css" />
 <link rel="stylesheet" type="text/css" href="../css/sub.css" />
 <link rel="stylesheet" type="text/css" href="../css/board.css" />
+<link rel="stylesheet" href="../css/beautiful.css">
+
 
 <section class="home-hero-cs">
 	<div class="animated fadeInUp">
