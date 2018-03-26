@@ -67,23 +67,23 @@
 
 <section class="home-hero-cs">
 	<div class="animated fadeInUp">
-    <h2 class="home-hero-title-cs" style="font-weight:bold;">목일신 동시집</h2>
+    <h2 class="home-hero-title-cs" style="font-weight:bold;">동시대회 소개</h2>
     <p class="home-hero-des-cs">
-        work1<br class="br_portfolio">
+        동시대회 소개 페이지 <br class="br_portfolio">
     </p>
-</div>
+    </div>
 </section>
 <!-- Begin Article
 ================================================== -->
-<div class="container">
 	<div class="row">
 
 		<!-- Begin Fixed Left Share -->
+
 		<!-- End Fixed Left Share -->
 
 		<!-- Begin Post -->
 		<div style="margin:0 auto;">
-			<div class="mainheading" style="margin-top:100px;">
+            <div class="mainheading" style="margin-top:100px;">
 
 				<!-- Begin Top Meta -->
                 <!-- 불필요해보여서 주석처리 함 시작 -->
@@ -100,62 +100,36 @@
                 <!-- 불필요해보여서 주석처리 함 끝 -->
 				<!-- End Top Menta -->
 
-				<h1 class="posttitle">목일신 동시집</h1>
+				<div class="section-title">
+		<h2><span>
+            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시대회 소개</a></span></h2>
+                    
+                    <div>
+        <p style="text-align:right;"><a href="birth.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">동요작가 목일신</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="introduce.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시대회 소개</a></p>
+        </div>
+		
+	</div>
+                
 
 			</div>
-
-			<!-- Begin Featured Image -->
-			<!-- <img class="featured-image img-fluid" src="/public/subpage/img/demopic/10.jpg" alt=""> -->
-			<!-- End Featured Image -->
-
-			<!-- Begin Post Content -->
-			<div class="galleryWrap_book_view">
-    <div class="thmb">
-    	
-    	<a href="#" title="새창">
-    	
-    	
-			<img src="../uploadfiles/thumbnail/comm_attach/2015/08/12/f3b152d757dbfb76569e4fda99c8728a_500.jpg" style="cursor: pointer;" onclick="viewPopup('9010')"  width="320" height="240" />
-		
-		
-		</a>
-    </div>
-    <div class="cont">
-        <h4 class="titDepth02 dotlB pb15">목일신 동시집</h4>
-        <dl class="mt15">
-            <dt class="subDepth02 mb10">발간년도</dt>
-            <dd class="mb10">2011</dd>
-            <dt class="subDepth02 mb10">저자</dt>
-			<dd class="mb10">비매품</dd>
-			<dt class="subDepth02 mb10">출판사</dt>
-			<dd  class="mb10">고흥군청</dd>
-            <dt class="subDepth02 mb10">조회수</dt>
-            <dd class="mb10">325</dd>
-            <dt class="subDepth02 mb10">페이지</dt>
-            <dd class="mb10">50</dd>
-        </dl>
-		<div class="cont_de_text"><div style="line-height: 1.5;"><span style="font-size: 12pt;">고흥군청에서 발간한 목일신 동시집이며 비매품이다.</span></div><div style="line-height: 1.5;"><span style="font-size: 12pt;">테마를 계절, 자연, 동물, 사람, 사물로 나누었으며 약 160여편의 동시가 수록되어있다.</span></div></div>
-    </div>
-    <div class="cb pt20 ofv">
-    	
-		
-		</div>
-    </div>
-			<!-- End Post Content -->
-<!-- Begin Tags -->
-            <div class="after-post-tags" style="margin-bottom:150px;">
-				<ul class="tags">
-					<li><a href="list.php">목록으로</a></li>
-				</ul>
-			</div>
-			<!-- End Tags -->
 			
 
+			<!-- Begin Post Content -->
+			
+<div>
+<p class="txt_center"><img src="../images/_ART/content/songfestival2017_01.jpg" alt=""></p>
+<p class="txt_center"><img src="../images/_ART/content/songfestival2017_02.jpg" alt=""> </p>
+</div>
+			<!-- End Post Content -->
+<!-- Begin Tags -->
+
+			<!-- End Tags -->
+			
 		</div>
 		<!-- End Post -->
 
-	</div>
-</div>
+    </div>
 <!-- End Article
 ================================================== -->
 <!-- Bootstrap core JavaScript
@@ -167,8 +141,7 @@
 <script src="/public/subpage/js/002_sub/customer/ie10-viewport-bug-workaround.js"></script>
 
         
-        
-               <div class="footer">
+          <div class="footer">
 			<ul class="foot-menu">
 				<li><a href="#">회사 소개</a></li>
 				<li><a href="#">이용 약관</a></li>
@@ -196,3 +169,4 @@
 
 </body>
 </html>
+
