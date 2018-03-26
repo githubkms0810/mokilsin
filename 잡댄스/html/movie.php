@@ -37,8 +37,8 @@
                                 </li>
                             </ul>
                     </li>
-					<li><a href="#">동영상</a></li>
-					<li><a href="#">목일신 동요제</a></li>
+					<li><a href="movie.php">동영상</a></li>
+					<li><a href="introduce.php">목일신 동요제</a></li>
 					<li><a href="#">목일신 동시대회</a></li>
 					<li class="m-menu login"><a href="#">등록하기</a></li>
 					<li class="m-menu"><a href="#">마이페이지</a></li>
@@ -67,9 +67,9 @@
 
 <section class="home-hero-cs">
 	<div class="animated fadeInUp">
-    <h2 class="home-hero-title-cs" style="font-weight:bold;">생애/업적</h2>
+    <h2 class="home-hero-title-cs" style="font-weight:bold;">동영상</h2>
     <p class="home-hero-des-cs">
-        생애/업적페이지 <br class="br_portfolio">
+        동영상 페이지 <br class="br_portfolio">
     </p>
     </div>
 </section>

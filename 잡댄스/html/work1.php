@@ -37,8 +37,8 @@
                                 </li>
                             </ul>
                     </li>
-					<li><a href="#">동영상</a></li>
-					<li><a href="#">목일신 동요제</a></li>
+					<li><a href="movie.php">동영상</a></li>
+					<li><a href="introduce.php">목일신 동요제</a></li>
 					<li><a href="#">목일신 동시대회</a></li>
 					<li class="m-menu login"><a href="#">등록하기</a></li>
 					<li class="m-menu"><a href="#">마이페이지</a></li>
