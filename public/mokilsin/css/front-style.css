@@ -34,39 +34,105 @@ html{}
 
 .loading-screen{width:100%; height:100%; position:fixed; left:0; top:80px; right:0; bottom:0; background:url(../images/loading-back.jpg) left top no-repeat; background-color:#fff; background-size:100%; z-index:1000}
 
-.gnb{width:857px; position:absolute; left:310px; top:32px}
-.gnb li{float:left; margin-right:60px}
-.gnb li:nth-child(7){margin-right:0}
-.gnb li a{font-size:14px; color:#333333; font-weight:bold}
 .gnb li.m-menu{display:none}
 
+.gnb{
+width:857px; 
+position:absolute;
+left:310px; 
+top:15px;
+}
 
-.gnb ul {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    width: 130px;
-    padding: 15px 0;
-    text-align: center;
-    left: -10px;
-    top: 66px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(149,186,219,0.3);
-  }
-  .gnb ul a {
-    color: #505460 !important;
-    height: 40px;
-    line-height: 40px;
-  }
-  .gnb__item {
-    background-image: url(../images/arrow_down.png);
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    position: relative;
-  }
-  .gnb__item:hover ul {
-    display: block;
-  }
+.gnb ul{
+background: #fff;
+height:50px;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.gnb li{
+margin-right:30px;
+float:left;
+}
+.gnb li:nth-child(7){margin-right:0}
+
+.gnb li a{
+font-size:14px;
+color:#333333; 
+font-weight:bold;
+background: #fff;
+display:block;
+line-height:50px;
+margin:0px;
+padding:0px 25px;
+text-align:center;
+text-decoration:none;
+}
+
+.gnb li a:hover, .gnb ul li:hover a{
+background: #fff;
+color:#000;
+text-decoration:none;
+}
+
+.gnb li ul{
+display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+height:auto;
+position:absolute;
+z-index:200;
+/*top:1em;
+/*left:0;*/
+background-color: #fff;
+width: 150px;
+text-align: left;
+border-radius: 20px;
+box-shadow: 0 4px 20px rgba(149,186,219,1);
+}
+
+.gnb li:hover ul{
+display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
+.gnb li li {
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+background-color: white;
+width: 150px;
+border-radius: 20px;
+}
+
+.gnb li:hover li a{
+background:none;
+}
+
+.gnb li ul a{
+display:block;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+color: #505460 !important;
+height: 40px;
+line-height: 40px;
+text-align: left;
+}
+
+.gnb li ul a:hover, .gnb li ul li:hover a{
+background: #fff;
+border:0px;
+color:#000;
+text-decoration:none;
+border-radius: 20px;
+}
+
+.gnb p{
+clear:left;
+}
+
 
 
 .util{position:absolute; right:50px; top:20px}
