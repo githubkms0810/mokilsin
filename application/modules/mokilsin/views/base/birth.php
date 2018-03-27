@@ -1,185 +1,153 @@
-<section class="home-hero-about_us">
-    <div class="animated fadeInUp">
-    <h2 class="home-hero-title-about_us">ABOUT US</h2>
-    <p class="home-hero-des-about_us">
-        코리아 통번역 센터는 전문 번역 서비스는 물론<br class="br_aboutus">
-        소프트웨어 현지화, 국제 회의 맞춤 통역 서비스 등을 제공하는<br class="br_aboutus">
-        대한민국 대표 언어 전문 서비스 기업입니다.
+
+        
+<link type="text/css" media="all" href="/public/mokilsin/css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" media="all" href="/public/mokilsin/css/mediumish.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/public/mokilsin/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/public/mokilsin/css/sub.css" />
+<link rel="stylesheet" type="text/css" href="/public/mokilsin/css/board.css" />
+<link rel="stylesheet" href="/public/mokilsin/css/beautiful.css">
+
+
+<section class="home-hero-cs">
+	<div class="animated fadeInUp">
+    <h2 class="home-hero-title-cs" style="font-weight:bold;">생애/업적</h2>
+    <p class="home-hero-des-cs">
+        생애/업적 페이지 <br class="br_portfolio">
     </p>
-    <a href="/translation_order/list" class="home-btn">포트폴리오 보러가기</a></div>
-</section>
-<section class="home-logo">
-    <div class="home-logo__wrap">
-        <ul class="home-logo--list">
-            <div>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-1.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-2.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-3.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-4.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-5.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-6.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-7.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-8.png">
-                </li>
-            </div>
-            <div>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-1.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-2.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-3.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-4.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-5.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-6.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-7.png">
-                </li>
-                <li class="home-logo--list__item">
-                    <img src="/public/images/logo-8.png">
-                </li>
-            </div>
-        </ul>
     </div>
 </section>
-<section class="home-section home-section_padding2">
-    <div class="bc-container">
-        <div>
-            <h2 class="home-title">통번역 산업<sapn>의 표준화</sapn></h2>
-            <p class="home-des" style="font-size:16px;">
-                코리아 통번역 센터는 대한민국의 통번역 표준화를 위해 힘씁니다.<br class="br">
-                전시적 언어 자원 관리 시스템, 인재 DB, 전 프로젝트 PM을 통한<br class="br">
-                책임 공정 및 상시 CS팀 운영 등으로 주먹구구식 운영을 지양하고,<br class="br">
-                프로젝트 통합 관리 시스템을 도입함으로 업계의 방향을 제시합니다.
-            </p>
-        </div>
-        <img src="/public/images/peolple2.png" class="image">
+<!-- Begin Article
+================================================== -->
+	<div class="row">
+
+		<!-- Begin Fixed Left Share -->
+
+		<!-- End Fixed Left Share -->
+
+		<!-- Begin Post -->
+		<div style="margin:0 auto;">
+            <div class="mainheading" style="margin-top:100px;">
+
+				<!-- Begin Top Meta -->
+                <!-- 불필요해보여서 주석처리 함 시작 -->
+				<!-- <div class="row post-top-meta">
+					<div class="col-md-2">
+						<a href="author.html"><img class="author-thumb" src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x" alt="Sal"></a>
+					</div>
+					<div class="col-md-10">
+						<a class="link-dark" href="author.html"><?=$row->displayName?></a><a href="#" class="btn follow">Follow</a>
+						<span class="author-description">Founder of WowThemes.net and creator of <b>"Mediumish"</b> theme that you're currently previewing. Developing professional premium themes, templates, plugins, scripts since 2012.</span>
+						<span class="post-date">22 July 2017</span><span class="dot"></span><span class="post-read">6 min read</span>
+					</div>
+				</div> -->
+                <!-- 불필요해보여서 주석처리 함 끝 -->
+				<!-- End Top Menta -->
+
+				<h1 class="posttitle">목일신 (睦一新, 1913년 ~ 1986년)</h1>
+
+			</div>
+			
+
+			<!-- Begin Post Content -->
+			<div class="lifetime">
+	<div><img src="/public/mokilsin/images/_ART/content/photo1.jpg" alt="목일신 사진" /></div>
+	<div class="lifetime_text">
+		<h4><img src="/public/mokilsin/images/_ART/content/h4.jpg" alt="목일신 (睦一新, 1913년 ~ 1986년)" /></h4>
+		<p>동요작가 목일신은 전라남도 고흥군 고흥읍 서문리에서 태어났다. 본관은 사천(泗川), 호는 은성(隱星)이며, 김부암(金富岩)·김소영·목옥순(睦玉順)을 필명으로 사용하였이다. 초등학교 5학년 때인 1926년 《동아일보》에 동시 〈산시내〉를 발표하였다. 1928년 고흥공립보통학교를 졸업한 뒤 전주 신흥중학교에 입학하였으며, 이해에 〈누가 누가 잠자나〉를 지었다. 1929년 광주학생운동에 참가하였다가 1개월간 복역하였다.<br /><br />1931년 《조선일보》 신춘문예에 동시 〈시골〉이 당선되었고, 이듬해 신춘문예에서도 《조선일보》에 동시 〈물레방아〉와 가요〈새날의 청춘〉이, 《내일신보》에 시 〈영춘곡(迎春曲)〉이 잇달아 당선되었다. 1937년 일본 오사카의 간사이대학[關西大學]을 졸업한 뒤 동화방송에서 근무하다가 1943년 순천 매산고등학교, 1948년 목포여자중고등학교, 1954년 서울 이화여자고등학교, 1958년 배화여자중고등학교 교사로 부임하여 1978년 퇴직하였다.<br /><br />〈자전거〉〈자장가〉〈비누방울〉〈아롱다롱 나비야〉〈산비둘기〉〈참새〉〈시냇물〉〈물결은 출렁출렁〉 등 초등학교 교과서에 실린 많은 동시를 지었으며, 한국아동문학가협의회 부회장과 한국음악저작권협의회 이사 등을 지냈다. 1960년 이후 경기도 부천군 소사읍 범박리(지금의 부천시 소사구 범박동) 신앙촌으로 이주하여 사망할 때까지 거주하였다. 부천시 원미구 중동에 있는 부천중앙공원에 시비(詩碑)가 세워졌고, 전라남도 고흥군에도 〈누가 누가 잠자나〉 노래비가 세워졌다.</p>
+		<p><img src="/public/mokilsin/images/_ART/content/book_bg.jpg" alt="목일신 전집, 목일신 동요곡집" /></p>
+	</div>
+</div>
+<div class="profile">
+	<div><img src="/public/mokilsin/images/_ART/content/pro_text.gif" alt="1930년대 '동요의 아버지' 동요작가 목일신(睦一新) 약력" /></div>
+	<div class="profile_text">
+		<p><img src="/public/mokilsin/images/_ART/content/photo3.gif" alt="자전거 시가 적힌 조형물" /></p>
+		<div class="profile_box">
+				<h5><img src="/public/mokilsin/images/_ART/content/year.gif" alt="1913~1948" /></h5>
+				<dl>
+					<dt>1913</dt>
+					<dd >전남 고흥군 고흥읍 서문리 425번지에서 출생(1월 18일)</dd>
+					<dt>1926</dt>
+					<dd >고흥공립보통학교 5학년 동아일보에 ‘산시내’ 발표, ‘자전거’ 작사</dd>
+					<dt>1928</dt>
+					<dd >고흥공립보통학교(현 고흥동초등학교) 졸업, 전주신흥중학교 입학</dd>
+					<dt>1929</dt>
+					<dd >광주학생사건으로 투옥</dd>
+					<dt>1930</dt>
+					<dd >동아일보 신춘문예에 동요 ‘참새’ 당선</dd>
+					<dt>1931</dt>
+					<dd >조선일보 신춘문예에 동요 ‘시골’ 당선</dd>
+					<dt>1932</dt>
+					<dd >전주 신흥중학교 졸업<br />조선일보 신춘문예에 동요 ‘물레방아’, 가요 ‘새날의 청춘’ 당선,<br />매일신보 신춘문예에 ‘영춘곡’ 당선</dd>
+					<dt>1933</dt>
+					<dd >월간 영화시대 현상모집에 시 ‘낙화 당선,<br />오케레코드사 현상모집에 가요 ‘명사십리’ 당선<br />콜롬비아레코드사 현상모집에 ‘뱃노래’, 청춘가‘ 당선</dd>
+					<dt>1937</dt>
+					<dd >일본 관서대학 문과 졸업, KBS전신 JODK 근무</dd>
+					<dt>1943</dt>
+					<dd >순천 매산중 국어교사 부임</dd>
+					<dt>1948</dt>
+					<dd >목포여중 교사 부임</dd>
+				</dl>
+		</div>
+		<div class="profile_box">
+				<h5><img src="/public/mokilsin/images/_ART/content/year02.gif" alt="1913~1948" /></h5>
+				<dl>
+					<dt>1954</dt>
+					<dd >이화여고 교사 부임</dd>
+					<dt>1955</dt>
+					<dd >대한일보 현상모집에 국민가요 ‘대한의 노래’ 당선</dd>
+					<dt>1956</dt>
+					<dd >초등학교 교과서에 ‘비누방울’ 수록, 음악교과서에 자전거,<br />누가누가잠자나, 자장가, 아롱다롱 나비야, 산비둘기, 참새,<br />시냇물, 물결은 출렁출렁 등 수록</dd>
+					<dt>1957</dt>
+					<dd >동요집 ‘물레방아’ 발간(광주 국학도서출판관)</dd>
+					<dt>1958</dt>
+					<dd >배화여중고 교사 부임</dd>
+					<dt>1960</dt>
+					<dd >부천시 범박동에 이주</dd>
+					<dt>1967</dt>
+					<dd >정경자 여사와 결혼</dd>
+					<dt>1977</dt>
+					<dd >고흥동초등학교에 노래비 제막(누가누가잠자나)</dd>
+					<dt>1978</dt>
+					<dd >배화여중고교 정년퇴임, 국민포장 수상</dd>
+					<dt>1986</dt>
+					<dd >부천시 범박동에서 작고(10월 12일)</dd>
+					<dt>1992</dt>
+					<dd >건국훈장 애족장 추서</dd>
+				</dl>
+		</div>
+		<div class="profile_box">
+			<h5><img src="/public/mokilsin/images/_ART/content/year03.gif" alt="1913~1948" /></h5>
+			<dl>
+				<dt>2000</dt>
+				<dd >동요집 ‘찌르릉 찌르릉 비켜나세요’ 출간(부천문화원)</dd>
+				<dt>2009</dt>
+				<dd >고흥문화회관에 시비 제막(자전거)</dd>
+				<dt>2010</dt>
+				<dd >제1회 고흥 목일신동요제 개최(고흥군)</dd>
+				<dt>2011</dt>
+				<dd >제2회 고흥 목일신동요제 개최, 목일신동시집 발간(고흥군),<br />고흥동초교 개교100주년 기념식에서 ‘자랑스러운 고흥동초등인상’ 수상</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+
+			<!-- End Post Content -->
+<!-- Begin Tags -->
+
+			<!-- End Tags -->
+			
+		</div>
+		<!-- End Post -->
+
     </div>
-</section>
-<section class="home-section home-section_padding">
-    <div class="bc-container">
-        <img src="/public/images/peolple.png" class="image">
-        <div>
-            <h2 class="home-title"><span>완벽한 </span>통번역<span>의 중요성</span></h2>
-            <p class="home-des" style="font-size:16px">
-                코리아 통번역 센터는 영어, 일본어, 중국어 등 <br class="br">
-                사용도가 높은 언어는 물론 다문화 사회로 나아가는 과도기에 <br class="br">
-                점점 증가하는 다국 언어까지, 전 세계 120개 국가, <br class="br">
-                50개 이상의 언어로 현지화 서비스를 지원합니다.
-            </p>
-        </div>
-    </div>
-</section>
-<section class="home-map">
-    <style>
-      #map {
-        height: 500px;
-        width: 100%;
-       }
-    </style>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 37.616217, lng: 126.834748};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom:15,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKbIHosDBHBNIkoV-t6x-Fl1EpBE-rQc4&callback=initMap">
-    </script>
-</section>
-<section class="home-section">
-    <div class="bc-container" style="max-width:1024px;">
-        <h2 class="home-title">고객 만족<sapn> 경영 시스템</sapn></h2>
-        <ul class="home-text">
-            <li class="home-text__item home-text__item_right">
-                <p>
-                    고객님의 소중한 의견을 존중하여<br class="br_aboutus2">
-                    항상 고객의 입장에서 생각하고 행동하겠습니다.
-                </p>
-                <img src="/public/images/profile1.png">
-            </li>
-            <li class="home-text__item">
-                <p>
-                    고객님의 요청사항을<br class="br_aboutus2">
-                    정확, 신속, 친절하게 처리하겠습니다.
-                </p>
-                <img src="/public/images/profile2.png">
-            </li>
-            <li class="home-text__item">
-                <p>
-                    고객 만족 경영 시스템, 3CS를 도입하여<br class="br_aboutus2">
-                    고객 만족을 위하여 끊임없이 노력하겠습니다.
-                </p>
-                <img src="/public/images/profile3.png">
-            </li>
-            <li class="home-text__item">
-                <p>
-                    고객님의 정보 보호를 위하여<br class="br_aboutus2">
-                    보안 사항을 철저히 지키겠습니다.
-                </p>
-                <img src="/public/images/profile4.png">
-            </li>
-            <li class="home-text__item">
-                <p>
-                    저희는 고객님의 작은 소리에도<br class="br_aboutus2">
-                    귀 기울이며 잘못된 점은 즉시 바로잡겠습니다.
-                </p>
-                <img src="/public/images/profile5.png">
-            </li>
-            <li class="home-text__item">
-                <p>
-                    앞으로도 고객님께 최상의 서비스를 제공하고<br class="br_aboutus2">
-                    대한민국 대표로서의 사명을 다하겠습니다.
-                </p>
-                <img src="/public/images/profile6.png">
-            </li>
-        </ul>
-    </div>
-</section>
-<script>
-    // Changing the defaults
-window.sr = ScrollReveal({ reset: true });
+<!-- End Article
+================================================== -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/public/subpage/js/002_sub/customer/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="/public/subpage/js/002_sub/customer/bootstrap.min.js"></script>
+<script src="/public/subpage/js/002_sub/customer/ie10-viewport-bug-workaround.js"></script>
 
-// Customizing a reveal set
-sr.reveal('.home-title', { duration: 1500 });
-
-sr.reveal('.home-des',{duration:1500});
-
-sr.reveal('.home-list__item',{duration:1500});
-
-sr.reveal('.home-text__item',{duration:1500});
-
-sr.reveal('.image',{duration:1500});
-</script>
+        

@@ -259,7 +259,7 @@ hr { display:none}
 .button,
 .button a,
 .button button,
-.button input { position:relative; margin:0; display:-moz-inline-stack; display:inline-block; text-decoration:none !important; border:0; font-size:12px; white-space:nowrap; background:url(/images/_ART/common/buttonBlack.gif) no-repeat; overflow:visible; color:#fff;}
+.button input { position:relative; margin:0; display:-moz-inline-stack; display:inline-block; text-decoration:none !important; border:0; font-size:12px; white-space:nowrap; background:url(/public/mokilsin/images/_ART/common/buttonBlack.gif) no-repeat; overflow:visible; color:#fff;}
 .button { height:23px; padding:0; vertical-align:middle; margin-right:2px; background-position:left top;}
 .button a,
 .button button,
@@ -294,7 +294,7 @@ hr { display:none}
 .button.green,
 .button.green a,
 .button.green button,
-.button.green input { background-image:url(/images/_ART/common/buttonGreen.gif); color:#fff; font-size:12px;}
+.button.green input { background-image:url(/public/mokilsin/images/_ART/common/buttonGreen.gif); color:#fff; font-size:12px;}
 .button.green *:hover,
 .button.green *:active,
 .button.green *:focus{ color:#CFF;}
@@ -303,7 +303,7 @@ hr { display:none}
 .button.black,
 .button.black a,
 .button.black button,
-.button.black input { background-image:url(/images/_ART/common/buttonBlack.gif); color:#fff;}
+.button.black input { background-image:url(/public/mokilsin/images/_ART/common/buttonBlack.gif); color:#fff;}
 .button.black *:hover,
 .button.black *:active,
 .button.black *:focus{ color:#CFF;}
@@ -312,7 +312,7 @@ hr { display:none}
 .button.red,
 .button.red a,
 .button.red button,
-.button.red input { background-image:url(/images/_ART/common/buttonRed.gif); color:#fff;}
+.button.red input { background-image:url(/public/mokilsin/images/_ART/common/buttonRed.gif); color:#fff;}
 .button.red *:hover,
 .button.red *:active,
 .button.red *:focus{ color:#CFF;}
@@ -321,7 +321,7 @@ hr { display:none}
 .button.blue,
 .button.blue a,
 .button.blue button,
-.button.blue input { background-image:url(/images/_ART/common/buttonBlue.gif); color:#fff;}
+.button.blue input { background-image:url(/public/mokilsin/images/_ART/common/buttonBlue.gif); color:#fff;}
 .button.blue *:hover,
 .button.blue *:active,
 .button.blue *:focus{ color:#CFF;}
@@ -330,7 +330,7 @@ hr { display:none}
 .button.gray,
 .button.gray a,
 .button.gray button,
-.button.gray input {background-image:url(/images/_ART/common/buttonGray.gif); color:#666;}
+.button.gray input {background-image:url(/public/mokilsin/images/_ART/common/buttonGray.gif); color:#666;}
 .button.gray *:hover,
 .button.gray *:active,
 .button.gray *:focus{ color:#999;}
@@ -339,7 +339,7 @@ hr { display:none}
 .button.white02,
 .button.white02 a,
 .button.white02 button,
-.button.white02 input {background-image:url(/images/_ART/common/buttonWhite02.gif); color:#0066b3; font-weight:bold;}
+.button.white02 input {background-image:url(/public/mokilsin/images/_ART/common/buttonWhite02.gif); color:#0066b3; font-weight:bold;}
 .button.white02 *:hover,
 .button.white02 *:active,
 .button.white02 *:focus{ color:#666;}
@@ -348,7 +348,7 @@ hr { display:none}
 .button.white,
 .button.white a,
 .button.white button,
-.button.white input {background-image:url(/images/_ART/common/buttonWhite.gif); color:#666;}
+.button.white input {background-image:url(/public/mokilsin/images/_ART/common/buttonWhite.gif); color:#666;}
 .button.white *:hover,
 .button.white *:active,
 .button.white *:focus{ color:#666;}
@@ -392,13 +392,13 @@ hr { display:none}
 .tableStyle_02 .blLine {border-left:1px solid #dadada !important;}
 
 /* bullet style */
-.dep01 {color:#333; background:url('/images/_ART/common/bullet/b.gif') 0 1px no-repeat; padding-left:20px; font-size:14px;height:25px;}
+.dep01 {color:#333; background:url('/public/mokilsin/images/_ART/common/bullet/b.gif') 0 1px no-repeat; padding-left:20px; font-size:14px;height:25px;}
 .dep_con {padding-left:30px; line-height:20px; margin-bottom:10px;}
 
-.dep02 dt {background:url('/images/_ART/common/bullet/icon2.gif') 32px 3px no-repeat; padding-left:48px; margin-bottom:5px;color:#555;font-weight:bold;}
-.dep02 dd {background:url('/images/_ART/common/bullet/icon3.gif') 50px no-repeat; padding-left:59px; margin-bottom:3px;}
-.dep02 li {background:url('/images/_ART/common/bullet/icon3.gif') 50px no-repeat; padding-left:59px; margin-bottom:3px;}
-.dep02_none li {background:url('/images/_ART/common/bullet/icon3.gif') 21px no-repeat; padding-left:30px; margin-bottom:3px;}
+.dep02 dt {background:url('/public/mokilsin/images/_ART/common/bullet/icon2.gif') 32px 3px no-repeat; padding-left:48px; margin-bottom:5px;color:#555;font-weight:bold;}
+.dep02 dd {background:url('/public/mokilsin/images/_ART/common/bullet/icon3.gif') 50px no-repeat; padding-left:59px; margin-bottom:3px;}
+.dep02 li {background:url('/public/mokilsin/images/_ART/common/bullet/icon3.gif') 50px no-repeat; padding-left:59px; margin-bottom:3px;}
+.dep02_none li {background:url('/public/mokilsin/images/_ART/common/bullet/icon3.gif') 21px no-repeat; padding-left:30px; margin-bottom:3px;}
 
 /* tabmenu */		
 /*컨텐츠 탭메뉴*/
@@ -438,27 +438,27 @@ hr { display:none}
 .slideshow {margin: 0 auto;}
 
 
-#main_wrapper {background:#f2f4f4 url('/images/_ART/main/main_wrapper_bg.gif') no-repeat top center;min-height:929px;}
+#main_wrapper {background:#f2f4f4 url('/public/mokilsin/images/_ART/main/main_wrapper_bg.gif') no-repeat top center;min-height:929px;}
 #main_wrapper #main_hearder_wr {height:90px;background:#3e4352;}
-#main_wrapper #main_hearder_wr .main_hearder {width:980px;margin:0 auto;background:url('/images/_ART/main/main_hearder_bg.gif') no-repeat left top;height:90px;}
+#main_wrapper #main_hearder_wr .main_hearder {width:980px;margin:0 auto;background:url('/public/mokilsin/images/_ART/main/main_hearder_bg.gif') no-repeat left top;height:90px;}
 #main_wrapper #main_hearder_wr .main_hearder h1{padding-top:15px;float:left;}
 #main_wrapper #main_hearder_wr .main_hearder .utilmenu {float:right;padding-top:30px;}
 #main_wrapper #main_hearder_wr .main_hearder .utilmenu li{float:left;}
-#main_wrapper #main_container_wr {width:980px;margin:0 auto;background:url('/images/_ART/main/main_container_wr_bg.gif') no-repeat top left;}
+#main_wrapper #main_container_wr {width:980px;margin:0 auto;background:url('/public/mokilsin/images/_ART/main/main_container_wr_bg.gif') no-repeat top left;}
 #main_wrapper #main_container_wr .visual_warp{height:383px;}
 #main_wrapper #main_container_wr .main_menu {float:left;margin-bottom:25px;}
 #main_wrapper #main_container_wr .main_menu dl{float:left;}
-#main_wrapper #main_container_wr .main_menu .main_notice_wr{float:left;background:url('/images/_ART/main/menu04.png') no-repeat;width:245px;height:321px;}
+#main_wrapper #main_container_wr .main_menu .main_notice_wr{float:left;background:url('/public/mokilsin/images/_ART/main/menu04.png') no-repeat;width:245px;height:321px;}
 #main_wrapper #main_container_wr .main_menu .main_notice_wr dt{margin:46px 0 0 80px;}
 #main_wrapper #main_container_wr .main_menu .main_notice_wr dd{margin:29px 0 0 20px;}
 #main_wrapper #main_container_wr .main_menu .main_notice_wr ul{height:130px;}
-#main_wrapper #main_container_wr .main_menu .main_notice_wr ul li{background:url('/images/_ART/main/notice_title_list_bul.gif') no-repeat left center;width:200px;padding-left:7px;margin-bottom:5px;}
+#main_wrapper #main_container_wr .main_menu .main_notice_wr ul li{background:url('/public/mokilsin/images/_ART/main/notice_title_list_bul.gif') no-repeat left center;width:200px;padding-left:7px;margin-bottom:5px;}
 #main_wrapper #main_container_wr .main_menu .main_notice_wr ul li a{font-size:14px;font-weight:bold;display: block;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;color:#fff;}
 #main_wrapper #main_container_wr .main_menu .main_notice_wr ul li a:hover{text-decoration:underline;color:#fff;}
 #main_wrapper #main_container_wr .main_menu .main_notice_wr dd p{margin:20px 0 0 150px;}
 #main_wrapper #main_container_wr .main_menu .main_notice_wr dd p a{color:#d4e9e6;}
 #main_wrapper #main_container_wr .main_menu .main_notice_wr dd p a:hover{text-decoration:underline;color:#d4e9e6;}
-#main_wrapper #footer_wr {clear:both;background:url('/images/_ART/main/footer_bg.gif') repeat-x;height:67px;}
+#main_wrapper #footer_wr {clear:both;background:url('/public/mokilsin/images/_ART/main/footer_bg.gif') repeat-x;height:67px;}
 #main_wrapper #footer_wr .footer{width:650px;margin:0 auto;background:#f2f4f4;}
 #main_wrapper #footer_wr .footer address {text-align:center;padding-top:20px;}
 /*=================================================================================================
@@ -466,7 +466,7 @@ hr { display:none}
 	페이지구성//
 
 =================================================================================================*/
-#wrapper {background:url('/images/_ART/content/art_wrapper_bg.gif') no-repeat top center;min-height:801px;}
+#wrapper {background:url('/public/mokilsin/images/_ART/content/art_wrapper_bg.gif') no-repeat top center;min-height:801px;}
 #warp {width:1111px;margin:0 auto;overflow:hidden}
 #container_wrap {float:left;width:950px;margin-bottom:100px;}
 #aside {padding:400px 0 0 0;width:161px;margin:0; float:left; position:relative;}
@@ -486,7 +486,7 @@ hr { display:none}
 #head_menu li { float:left}
 #head_menu li, #head_menu li a { display:block}
 #head_menu li div.submenu {display:none;position:absolute; top:70px;}
-#head_menu li div.submenu li { float:left; background:url(/images/_RADIO/common/gnbLine.gif) no-repeat 0 10px}
+#head_menu li div.submenu li { float:left; background:url(/public/mokilsin/images/_RADIO/common/gnbLine.gif) no-repeat 0 10px}
 #head_menu li div.submenu li a {text-decoration:none;line-height:25px;color:#000;font-size:15px;font-weight:bold;display:block;padding-right:40px;}
 #head_menu li div.submenu li a:hover{color:#393;font-weight:bold;display:block}
 #head_menu li.menu4 div.submenu  { left:100px; z-index:64; } /* 목일신동요제 */
@@ -503,9 +503,9 @@ hr { display:none}
 #container_wrap #container .sns_wrap {float:right;}
 #container_wrap #container .sns_wrap ul li {float:left;}
 
-#content {clear:both;width:916px;padding-top: 30px;}
+#content {clear:both;width:916px;padding-top: 30px; margin: 0 auto;}
 
-#footer_wrap {clear:both;background:url('/images/_ART/content/art_footer_bg.gif') repeat-x;height:56px;}
+#footer_wrap {clear:both;background:url('/public/mokilsin/images/_ART/content/art_footer_bg.gif') repeat-x;height:56px;}
 #footer_wrap .footer_container{width:1111px;margin:0 auto;}
 #footer_wrap .footer_container .footer{width:950px;float:left;}
 #footer_wrap .footer_container .footer address{background-color:#fff;height:50px;width:605px;margin:0 auto;text-align:center;}
@@ -514,25 +514,25 @@ hr { display:none}
 .tabMenu{position:relative;height:35px;padding-left:0px;margin-bottom:15px; clear:both}
 .tabMenu ul,.tabMenu ul li{margin:0;padding:0}
 .tabMenu ul li{list-style:none}
-.tabMenu ul li,.tabMenu ul li a{background:url(/images/_ART/content/tabOff.gif) no-repeat; font-size:14px;letter-spacing:-0.1em }
+.tabMenu ul li,.tabMenu ul li a{background:url(/public/mokilsin/images/_ART/content/tabOff.gif) no-repeat; font-size:14px;letter-spacing:-0.1em }
 .tabMenu ul li{float:left;margin-right:0px;margin-bottom:10px;line-height:32px}
 .tabMenu ul li a{display:inline-block;padding:2px 32px 1px;_padding:3px 26px 0;background-position: 100% 0;font-weight:bold;color:#333;text-decoration:none !important}
-.tabMenu ul li.on,.tabMenu ul li.on a{background-image:url(/images/_ART/content/tabOn.gif)}
+.tabMenu ul li.on,.tabMenu ul li.on a{background-image:url(/public/mokilsin/images/_ART/content/tabOn.gif)}
 .tabMenu ul li.on a{color:#1a8371;}
 .tabMenu .btnTop { position:absolute; top:10px; right:0;}
 
 /*게시판*/
 .tableStyle01 {width:100%;border-top:solid 2px #5a5a5a;border-bottom:2px solid #c0bdb5;table-layout:fixed;border-spacing:0;empty-cells:show;border-collapse: collapse;margin-bottom:20px;}
-.tableStyle01 th {padding:6px 0 5px;border-bottom:solid 1px #86837e; border-right:1px solid #c0bdb5;font-size:13px;color:#333;font-weight:bold; background:#fafafa;}
+.tableStyle01 th {text-align: center; padding:6px 0 5px;border-bottom:solid 1px #86837e; border-right:1px solid #c0bdb5;font-size:13px;color:#333;font-weight:bold; background:#fafafa;}
 .tableStyle01 .bgNone {background: none!important;}
 .tableStyle01 .liNone {border-right:none!important;}
 .tableStyle01 td {padding:5px 8px 4px;border-bottom:1px solid #c0bdb5;border-right:1px solid #c0bdb5;text-align:center; line-height:18px}
 .tableStyle01 dt { font-weight:bold; margin-bottom:5px}
-.tableStyle01 dd { background:url(/images/_KOR/common/bulDot.gif) no-repeat 0 9px; padding-left:8px; color:#666; margin-bottom:5px}
+.tableStyle01 dd { background:url(/public/mokilsin/images/_KOR/common/bulDot.gif) no-repeat 0 9px; padding-left:8px; color:#666; margin-bottom:5px}
 
 .td_prize_left {text-align:left !important;padding-left:20px !important;}
 
 /* 비밀글 레이어팝업 */
-.secret_warp {position:relative; background:url('/images/_KOR/pgm/secret_warp.png') no-repeat 0 0; width:383px; height:191px;}
+.secret_warp {position:relative; background:url('/public/mokilsin/images/_KOR/pgm/secret_warp.png') no-repeat 0 0; width:383px; height:191px;}
 .secret_warp .secret_box {padding:75px 0 0 106px;}
 .secret_warp .secret_btn_close {position:absolute; top:2px; right:2px;}

@@ -21,46 +21,46 @@
             <!-- header -->
             <header class="header fixed">
 			<div>
-				<h1><a href="index.html"><img src="../images/logo.png" alt="잡댄스"></a></h1>
+				<h1><a href="/main/index"><img src="/public/mokilsin/images/logo.png" alt="잡댄스"></a></h1>
 				<div class="gnb">
                 <ul>
 					<li>
                         <a href="#">목일신</a>
                             <ul>
                                 <li>
-                                    <a style="font-size:12px; font-weight:400;" href="birth.php">생애/업적</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/contact/add">작품집</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/small/security">홍보 영상</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/birth">생애/업적</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/list">작품집</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/movie">홍보 영상</a>
                                 </li>
                             </ul>
                     </li>
 					<li>
-                        <a href="list.php">목일신 동요제</a>
+                        <a href="#">목일신 동요제</a>
                             <ul>
                                 <li>
-                                    <a style="font-size:12px; font-weight:400;" href="/freelancer/add">동요제 소개</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/contact/add">참가 신청</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/small/security">역대 수상자</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/introduce_music">동요제 소개</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">참가 신청</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/winner_music_eight">역대 수상자</a>
                                 </li>
                             </ul>
                     </li>
                     <li>
-                        <a href="list.php">목일신 동시대회</a>
+                        <a href="#">목일신 동시대회</a>
                             <ul>
                                 <li>
-                                    <a style="font-size:12px; font-weight:400;" href="/freelancer/add">동시대회 소개</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/contact/add">참가 신청</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/small/security">역대 수상자</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/introduce_poem">동시대회 소개</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">참가 신청</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/winner_poem_seven">역대 수상자</a>
                                 </li>
                             </ul>
                     </li>
                     <li>
-                        <a href="list.php">커뮤니티</a>
+                        <a href="#">커뮤니티</a>
                             <ul>
                                 <li>
-                                    <a style="font-size:12px; font-weight:400;" href="/freelancer/add">공지사항</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/contact/add">자료실</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/small/security">자유 게시판</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">공지사항</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">자료실</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">자유 게시판</a>
                                 </li>
                             </ul>
                     </li>

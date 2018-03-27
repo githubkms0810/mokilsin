@@ -7,7 +7,7 @@
 .headMent .mentBox { border:2px solid #dddddd; background-color:#f6f6f7;text-align:left; padding:10px 20px; overflow:hidden}
 .headMent .mentBox .info {font-size:15px;font-family: '맑은 고딕','돋움',Malgun Gothic,Dotum,AppleGothic,sans-serif;font-weight:bold;line-height:18px; float:left; width:95%; margin-left:5px; vertical-align:top}
 .headMent .mentBox .list { float:left; width:95%; margin-left:5px; vertical-align:top}
-.headMent .mentBox .list li { line-height:18px; float:left; width:95%; vertical-align:top; background:url(/images/_ART/common/bulDot.gif) no-repeat 0 45%; text-indent:8px}
+.headMent .mentBox .list li { line-height:18px; float:left; width:95%; vertical-align:top; background:url(/public/mokilsin/images/_ART/common/bulDot.gif) no-repeat 0 45%; text-indent:8px}
 
 /* 페이지 네비게이션*/
 .pagingType{padding:20px 0 30px;line-height:normal;text-align:center;width:916px;}
@@ -24,14 +24,14 @@
 /* 전체목록수 */
 .totalNum {text-align: right;width:100%; margin-bottom:5px}
 .totalNum dt,.totalNum dd { display:inline; color:#666;}
-.totalNum dt { padding:0 5px; background:url(/images/_ART/common/bul_dot.gif) left 7px no-repeat; }
+.totalNum dt { padding:0 5px; background:url(/public/mokilsin/images/_ART/common/bul_dot.gif) left 7px no-repeat; }
 .totalNum dd { padding-right:8px;}
 .totalNum dd strong { color:#FF6600}
 
 
 /* 게시판 목록_기본형 */
-.boardList {width:100%;border-top:solid 2px #5a5a5a;border-bottom:1px solid #5a5a5a;table-layout:fixed;border-spacing:0;empty-cells:show;border-collapse: collapse; background:url(/images/_ART/common/thBg.gif) repeat-x left top}
-.boardList th {padding:9px 0 8px;border-bottom:solid 1px #5a5a5a;vertical-align:top;font-size:13px;color:#333;font-weight:bold;background:url(/images/board/thBar.gif) no-repeat scroll right 15px  }
+.boardList {width:100%;border-top:solid 2px #5a5a5a;border-bottom:1px solid #5a5a5a;table-layout:fixed;border-spacing:0;empty-cells:show;border-collapse: collapse; background:url(/public/mokilsin/images/_ART/common/thBg.gif) repeat-x left top}
+.boardList th {padding:9px 0 8px;border-bottom:solid 1px #5a5a5a;vertical-align:top;font-size:13px;color:#333;font-weight:bold;background:url(/public/mokilsin/images/board/thBar.gif) no-repeat scroll right 15px  }
 .boardList th:last-child {background: none!important;}
 .boardList .bgNone {background: none!important;}
 .boardList td {padding:9px 0 8px;border-bottom:1px dotted #dedede;text-align:center}
@@ -42,7 +42,7 @@
 /* 갤러리 목록화면 */
 .galleryWrap ul{overflow:hidden;position:relative;border-top:2px solid #5a5a5a;border-bottom:1px solid #5a5a5a;border-left:0;border-right:0;list-style:none;padding-top:10px; clear:both}
 .galleryWrap ul:after{display:block;clear:both;content:""}
-.galleryWrap li{overflow:hidden;float:left;position:relative;top:1px;width:25%;height:210px;background:url(/images/_ART/common/galleryBg.gif) no-repeat 50% 0;margin-bottom:10px}
+.galleryWrap li{overflow:hidden;float:left;position:relative;top:1px;width:25%;height:210px;background:url(/public/mokilsin/images/_ART/common/galleryBg.gif) no-repeat 50% 0;margin-bottom:10px}
 .galleryWrap .thumb{display:block;overflow:hidden;position:absolute;top:39px;height:98px;text-align:center;white-space:nowrap;border:1px solid #CCC}
 .galleryWrap .thumb img{display:block;width:130px;height:98px;border:0}
 .galleryWrap a{display:block;width:130px;margin:0 auto;padding:20px 0 0 0;text-decoration:none;cursor:pointer;}
@@ -87,14 +87,14 @@ dl.prevNext dd{text-indent:15px;padding:10px 0;}
 .formTable {width:100%;border-top:solid 2px #5a5a5a;border-bottom:1px solid #5a5a5a;table-layout:fixed;border-spacing:0;empty-cells:show;border-collapse: collapse;padding-bottom:20px; clear:both }
 .formTable th,
 .formTable td{padding:8px;border:0;vertical-align:top}
-.formTable tbody th{border-bottom:1px dotted #d5e4ee;background:url(/images/board/tdLine.gif) no-repeat right 11px;text-align:left; font-weight:bold; color:#333}
+.formTable tbody th{border-bottom:1px dotted #d5e4ee;background:url(/public/mokilsin/images/board/tdLine.gif) no-repeat right 11px;text-align:left; font-weight:bold; color:#333}
 .formTable tfoot th{border-bottom:1px dotted #d5e4ee}
 .formTable tbody td{border-bottom:1px dotted #d5e4ee;}
 .formTable tfoot td{border-bottom:1px dotted #d5e4ee;font-weight:bold;color:#333}
 .formTable .item{position:relative;margin:-4px 0;}
 .formTable .item .i_help{position:absolute;top:4px;right:0}
 .formTable .item .i_label{ top:6px; left:10px}
-.formTable .item .i_dsc{margin:2px 0; font-size:11px; background:url(/images/_ART/common/iconPoint.gif) no-repeat left 0; text-indent:20px; line-height:14px;}
+.formTable .item .i_dsc{margin:2px 0; font-size:11px; background:url(/public/mokilsin/images/_ART/common/iconPoint.gif) no-repeat left 0; text-indent:20px; line-height:14px;}
 .formTable .item .i_check,
 .formTable .item .i_radio{width:13px;height:13px;margin:2px 5px 2px 0;padding:0;vertical-align:middle}
 .formTable .item .i_text{position:relative;margin:2px;padding:3px 4px;border:1px solid #b7b7b7;border-right-color:#e1e1e1;border-bottom-color:#e1e1e1;background:transparent}
@@ -121,7 +121,7 @@ dl.prevNext dd{text-indent:15px;padding:10px 0;}
 /* 북갤러리 목록화면 */
 .galleryWrap_book ul{overflow:hidden;position:relative;border-top:2px solid #5a5a5a;border-bottom:1px solid #5a5a5a;border-left:0;border-right:0;list-style:none;padding-top:10px; clear:both;padding-bottom:50px;}
 .galleryWrap_book ul:after{display:block;clear:both;content:""}
-.galleryWrap_book li{margin-top:50px;overflow:hidden;float:left;position:relative;top:1px;width:50%;height:162px;background:url(/images/_ART/common/bg_book.gif) no-repeat bottom center;}
+.galleryWrap_book li{margin-top:50px;overflow:hidden;float:left;position:relative;top:1px;width:50%;height:162px;background:url(/public/mokilsin/images/_ART/common/bg_book.gif) no-repeat bottom center;}
 .galleryWrap_book .thumb{display:block;overflow:hidden;position:absolute;top:0px;left:50px;height:150px;text-align:center;white-space:nowrap;border:1px solid #CCC}
 .galleryWrap_book .thumb img{display:block;width:110px;height:155px;border:0}
 .galleryWrap_book a{display:block;margin:0 auto;padding:20px 0 0 0;text-decoration:none;cursor:pointer;}
@@ -134,7 +134,7 @@ dl.prevNext dd{text-indent:15px;padding:10px 0;}
 .galleryWrap_book_view .thmb img{border: 1px solid #CCC;width: 250px;height: 400px;}
 .galleryWrap_book_view .cont {float:left;width:620px;}
 .galleryWrap_book_view .cont h4{font-size: 18px;  font-family: '맑은 고딕','돋움',Malgun Gothic,Dotum,AppleGothic,sans-serif;border-bottom: 1px dashed #CCC;height:30px;}
-.galleryWrap_book_view .cont dl dt{font-family: '맑은 고딕','돋움',Malgun Gothic,Dotum,AppleGothic,sans-serif;float:left;width:15%;color: #0070AF;background: url(/images/_ART/common/bulDepth04.gif) 0 8px no-repeat;padding-left:15px;font-size:15px;font-weight:bold;}
+.galleryWrap_book_view .cont dl dt{font-family: '맑은 고딕','돋움',Malgun Gothic,Dotum,AppleGothic,sans-serif;float:left;width:15%;color: #0070AF;background: url(/public/mokilsin/images/_ART/common/bulDepth04.gif) 0 8px no-repeat;padding-left:15px;font-size:15px;font-weight:bold;}
 .galleryWrap_book_view .cont dl dd{float:left;width:71%;}
 .galleryWrap_book_view .cont .cont_de_text { clear:both; padding:10px; border:1px dashed #ccc;min-height:280px;}
 
@@ -151,14 +151,14 @@ dl.prevNext dd{text-indent:15px;padding:10px 0;}
 .formTable_in01 {width:100%;table-layout:fixed;border-spacing:0;empty-cells:show;border-collapse: collapse;padding-bottom:20px; clear:both }
 .formTable_in01 th,
 .formTable_in01 td{padding:8px;border:0;vertical-align:top}
-.formTable_in01 tbody th{border-bottom:1px dotted #dedede;background:url(/images/board/tdLine.gif) no-repeat right 11px;text-align:left; font-weight:bold; color:#333}
+.formTable_in01 tbody th{border-bottom:1px dotted #dedede;background:url(/public/mokilsin/images/board/tdLine.gif) no-repeat right 11px;text-align:left; font-weight:bold; color:#333}
 .formTable_in01 tfoot th{border-bottom:1px dotted #dedede;}
 .formTable_in01 tbody td{border-bottom:1px dotted #dedede;}
 .formTable_in01 tfoot td{border-bottom:1px dotted #dedede;font-weight:bold;color:#333}
 .formTable_in01 .item{position:relative;margin:-4px 0;}
 .formTable_in01 .item .i_help{position:absolute;top:4px;right:0}
 .formTable_in01 .item .i_label{ top:6px; left:10px}
-.formTable_in01 .item .i_dsc{margin:2px 0; font-size:11px; background:url(/images/_ART/common/iconPoint.gif) no-repeat left 0; text-indent:20px; line-height:14px;}
+.formTable_in01 .item .i_dsc{margin:2px 0; font-size:11px; background:url(/public/mokilsin/images/_ART/common/iconPoint.gif) no-repeat left 0; text-indent:20px; line-height:14px;}
 .formTable_in01 .item .i_check,
 .formTable_in01 .item .i_radio{width:13px;height:13px;margin:2px 5px 2px 0;padding:0;vertical-align:middle}
 .formTable_in01 .item .i_text{position:relative;margin:2px;padding:3px 4px;border:1px solid #b7b7b7;border-right-color:#e1e1e1;border-bottom-color:#e1e1e1;background:transparent}
@@ -170,7 +170,7 @@ dl.prevNext dd{text-indent:15px;padding:10px 0;}
 .formTable_in02 {width:100%;border-top:solid 2px #555;border:2px solid #3a97ca;table-layout:fixed;border-spacing:0;empty-cells:show;border-collapse: collapse;padding-bottom:20px; clear:both }
 .formTable_in02 th,
 .formTable_in02 td{padding:8px;border:0;vertical-align:top}
-.formTable_in02 tbody th{border-bottom:1px dotted #d5e4ee;background:url(/images/board/tdLine.gif) no-repeat right 11px;text-align:left; font-weight:bold; color:#3a97ca}
+.formTable_in02 tbody th{border-bottom:1px dotted #d5e4ee;background:url(/public/mokilsin/images/board/tdLine.gif) no-repeat right 11px;text-align:left; font-weight:bold; color:#3a97ca}
 .formTable_in02 tfoot th{border-bottom:1px dotted #d5e4ee}
 .formTable_in02 tbody td{border-bottom:1px dotted #d5e4ee;}
 .formTable_in02 tfoot td{border-bottom:1px dotted #d5e4ee;font-weight:bold;color:#333}

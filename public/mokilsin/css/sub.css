@@ -36,13 +36,13 @@
 .main_text dt a {color:#333; font-weight:bold;font-family: '맑은 고딕','돋움',Malgun Gothic,Dotum,AppleGothic,sans-serif;}
 .main_text dt a:hover {color:#36a693;}
 .main_text dd a:hover {text-decoration:underline;}
-.main_text dd {font-family: '맑은 고딕','돋움',Malgun Gothic,Dotum,AppleGothic,sans-serif;float:none; padding-left:15px; font-size:14px; line-height:17px; margin:0 0 10px 17px; background:url('/images/_ART/content/sitemap_bullet_s.gif') 0 3px no-repeat}
+.main_text dd {font-family: '맑은 고딕','돋움',Malgun Gothic,Dotum,AppleGothic,sans-serif;float:none; padding-left:15px; font-size:14px; line-height:17px; margin:0 0 10px 17px; background:url('/public/mokilsin/images/_ART/content/sitemap_bullet_s.gif') 0 3px no-repeat}
 .mg {padding-top:15px !important; padding-bottom:20px;border-top:1px solid #999; margin-top:13px; margin-bottom:20px; }
 
 
 /*로그인*/
 /*=========================================로그인=============================================================================================================*/
-.login_wrap {position:relative;margin-left:32px;background:url(/images/_SIHODO/login/login_wrap.gif) no-repeat;width:728px;height:173px;}
+.login_wrap {position:relative;margin-left:32px;background:url(/public/mokilsin/images/_SIHODO/login/login_wrap.gif) no-repeat;width:728px;height:173px;}
 .login_wrap p {line-height:18px;}
 .login_wrap .itemWrap {width:433px;margin:50px 0 0 138px;}
 .login_wrap .itemWrap label{font-weight:bold;width:66px;display:block;float:left;}
@@ -59,8 +59,8 @@
 
 .movie_title {width:833px;text-align:right;}
 .movie_title01 {width:833px;padding-left: 50px;}
-.movie_img {background:url(/images/_ART/content/Mogilsin_movie02.gif) no-repeat right bottom;min-height:489px;padding-left:70px;}
-.movie_img02 {background:url(/images/_ART/content/Mogilsin_movie02.gif) no-repeat right bottom;min-height:1000px;padding-left:70px;}
+.movie_img {background:url(/public/mokilsin/images/_ART/content/Mogilsin_movie02.gif) no-repeat right bottom;min-height:489px;padding-left:70px;}
+.movie_img02 {background:url(/public/mokilsin/images/_ART/content/Mogilsin_movie02.gif) no-repeat right bottom;min-height:1000px;padding-left:70px;}
 .movie_img02 p {margin:30px 0 30px 0;width:760px;}
 
 /*===================이미지 슬라이스==============================================================================================================================*/
