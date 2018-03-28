@@ -284,6 +284,78 @@ class Base extends \Base_Controller {
         $data["content_view"] = "base/winner_poem_three";
         $this->template->render($data);
     }
+    
+    public function winner_poem_three_photoone()
+    {
+        $data["content_view"] = "base/winner_poem_three_photoone";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_phototwo()
+    {
+        $data["content_view"] = "base/winner_poem_three_phototwo";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_photothree()
+    {
+        $data["content_view"] = "base/winner_poem_three_photothree";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_photofour()
+    {
+        $data["content_view"] = "base/winner_poem_three_photofour";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_photofive()
+    {
+        $data["content_view"] = "base/winner_poem_three_photofive";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_photosix()
+    {
+        $data["content_view"] = "base/winner_poem_three_photosix";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_photoseven()
+    {
+        $data["content_view"] = "base/winner_poem_three_photoseven";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_photoeight()
+    {
+        $data["content_view"] = "base/winner_poem_three_photoeight";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_photonine()
+    {
+        $data["content_view"] = "base/winner_poem_three_photonine";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_phototen()
+    {
+        $data["content_view"] = "base/winner_poem_three_phototen";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_photoeleven()
+    {
+        $data["content_view"] = "base/winner_poem_three_photoeleven";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_three_phototwelve()
+    {
+        $data["content_view"] = "base/winner_poem_three_phototwelve";
+        $this->template->render($data);
+    }
 
 
 
