@@ -43,11 +43,11 @@
 
             <div class="section-title">
                 <h2><span>
-            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">2014년 제5회 수상작</a></span></h2>
+            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">2012년 제3회 수상작</a></span></h2>
 
                 <div>
                     <p style="text-align:right;"><a href="birth.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">동요작가 목일신</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="introduce_music" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동요제</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="winner_music_eight" style="color: #292b2c; font-weight: 400; font-size: 12px;">역대수상작</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">2014년 제5회 수상작</a></p>
+                        <a href="introduce_music" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동요제</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="winner_music_eight" style="color: #292b2c; font-weight: 400; font-size: 12px;">역대수상작</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">2012년 제3회 수상작</a></p>
                 </div>
 
             </div>
@@ -65,9 +65,9 @@
                     <li><a href="winner_music_eight">2017년 제8회 수상작</a></li>
                     <li><a href="winner_music_seven">2016년 제7회 수상작</a></li>
                     <li><a href="winner_music_six">2015년 제6회 수상작</a></li>
-                    <li class="on"><a href="winner_music_five">2014년 제5회 수상작</a></li>
+                    <li><a href="winner_music_five">2014년 제5회 수상작</a></li>
                     <li><a href="winner_music_four">2013년 제4회 수상작</a></li>
-                    <li><a href="winner_music_three">2012년 제3회 수상작</a></li>
+                    <li class="on"><a href="winner_music_three">2012년 제3회 수상작</a></li>
                     <li><a href="winner_music_two">2011년 제2회 수상작</a></li>
                 </ul>
             </div>
@@ -107,74 +107,130 @@
                 <table class="tableStyle01" summary="수상자 명단">
                     <caption>수상자 명단</caption>
                     <colgroup>
-                        <col width="5%">
+                        <col width="10%">
                         <col width="30%">
+                        <col width="30%">
+                        <col width="10%">
                         <col width="20%">
-                        <col width="30%" />
-                        <col />
                     </colgroup>
                     <thead>
                         <tr>
-                            <th scope="col">상 훈</th>
-                            <th scope="col">성 명(팀명)</th>
-                            <th scope="col">학교명</th>
-                            <th scope="col">곡 명</th>
-                            <th class="liNone" scope="col">비 고</th>
+                            <th rowspan="2">상 별</th>
+                            <th rowspan="2">훈 격</th>
+                            <th colspan="3" class="liNone">수 상 자</th>
+                        </tr>
+                        <tr>
+                            <th>학 교</th>
+                            <th>학 년</th>
+                            <th class="liNone">성 명</th>
                         </tr>
                     </thead>
                     <tbody>
+
                         <tr>
                             <td>대 상</td>
-                            <td class="td_prize_left">소리천사 중창단</td>
-                            <td class="td_prize_left">전주인봉초 6</td>
-                            <td class="td_prize_left">우리들의 마법학교</td>
-                            <td class="liNone">전북</td>
+                            <td class="td_prize_left">전라남도지사상</td>
+                            <td class="td_prize_left">서울 백석초등학교</td>
+                            <td>5</td>
+                            <td class="td_prize_left liNone">정 수 현</td>
                         </tr>
                         <tr>
                             <td>금 상</td>
-                            <td class="td_prize_left">해맑은 아이들</td>
-                            <td class="td_prize_left">송원초 3,4,6</td>
-                            <td class="td_prize_left">오즈의 느낌표</td>
-                            <td class="liNone">경기</td>
+                            <td class="td_prize_left">전라남도교육감상</td>
+                            <td class="td_prize_left">광주 진만초등학교</td>
+                            <td>5</td>
+                            <td class="td_prize_left liNone">강 유 진</td>
                         </tr>
                         <tr>
-                            <td rowspan="2">은 상<br />(2)</td>
-                            <td class="td_prize_left">차현령</td>
-                            <td class="td_prize_left">효성초 3</td>
-                            <td class="td_prize_left">배고픈 호랑이</td>
-                            <td class="liNone">대구</td>
+                            <td>은 상</td>
+                            <td class="td_prize_left">고 흥 군 수 상</td>
+                            <td class="td_prize_left">순천 봉화초등학교</td>
+                            <td>6</td>
+                            <td class="td_prize_left liNone">엔젤스 중창단</td>
                         </tr>
                         <tr>
-                            <td class="td_prize_left">성채원</td>
-                            <td class="td_prize_left">포항양덕초 3,4,6</td>
-                            <td class="td_prize_left">푸른땅 우리독도</td>
-                            <td class="liNone">경북</td>
+                            <td>은 상</td>
+                            <td class="td_prize_left">고 흥 군 수 상</td>
+                            <td class="td_prize_left">여수 양지초등학교</td>
+                            <td>6</td>
+                            <td class="td_prize_left liNone">장 성 훈</td>
                         </tr>
                         <tr>
-                            <td rowspan="4">동 상<br /> (4)
-                            </td>
-                            <td class="td_prize_left">조수양</td>
-                            <td class="td_prize_left">조봉초 3</td>
-                            <td class="td_prize_left">함 들어오는 날</td>
-                            <td class="liNone">광주</td>
+                            <td>동 상</td>
+                            <td class="td_prize_left">고흥군의회의장상</td>
+                            <td class="td_prize_left">울산 옥성초등학교</td>
+                            <td>3</td>
+                            <td class="td_prize_left liNone">홍 지 희</td>
                         </tr>
                         <tr>
-                            <td class="td_prize_left">전주우전소리요정 중창단</td>
-                            <td class="td_prize_left">전주우전초 1,3,5</td>
-                            <td class="td_prize_left">무지개 빛 하모니</td>
-                            <td class="liNone">전북</td>
+                            <td>동 상</td>
+                            <td class="td_prize_left">고흥군의회의장상</td>
+                            <td class="td_prize_left">전주 한들초등학교</td>
+                            <td>3~6</td>
+                            <td class="td_prize_left liNone">한들드림 중창단</td>
                         </tr>
                         <tr>
-                            <td class="td_prize_left">꿈이 자라는 새싹들</td>
-                            <td class="td_prize_left">도화지역아동센터 6</td>
-                            <td class="td_prize_left">높임말 친구</td>
-                            <td class="liNone">고흥</td>
+                            <td>동 상</td>
+                            <td class="td_prize_left">고흥군의회의장상</td>
+                            <td class="td_prize_left">고흥 고흥동초등학교</td>
+                            <td>3~6</td>
+                            <td class="td_prize_left liNone">하모니 중창단</td>
                         </tr>
                         <tr>
-                            <td class="td_prize_left">하혜빈</td>
-                            <td class="td_prize_left">영선초 3</td>
-                            <td class="td_prize_left">섬</td>
-                            <td class="liNone">대구</td>
+                            <td>동 상</td>
+                            <td class="td_prize_left">고흥군의회의장상</td>
+                            <td class="td_prize_left">여수 양지초등학교</td>
+                            <td>5</td>
+                            <td class="td_prize_left liNone">박 혜 빈</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td class="td_prize_left">고흥교육지원청 교 육 장 상</td>
+                            <td class="td_prize_left">광양 제철남초등학교</td>
+                            <td>5~6</td>
+                            <td class="td_prize_left liNone">초록 중창단</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td class="td_prize_left">고흥교육지원청 교 육 장 상</td>
+                            <td class="td_prize_left">목포 목포동초등학교</td>
+                            <td>4</td>
+                            <td class="td_prize_left liNone">이 예 빈</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td class="td_prize_left">고흥교육지원청 교 육 장 상</td>
+                            <td class="td_prize_left">고흥 고흥동초등학교</td>
+                            <td>5</td>
+                            <td class="td_prize_left liNone">이 승 찬</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td class="td_prize_left">고흥교육지원청 교 육 장 상</td>
+                            <td class="td_prize_left">거창 샛별초등학교</td>
+                            <td>5</td>
+                            <td class="td_prize_left liNone">황 유 현</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td class="td_prize_left">고흥교육지원청 교 육 장 상</td>
+                            <td class="td_prize_left">목포 항도초등학교</td>
+                            <td>6</td>
+                            <td class="td_prize_left liNone">장 익 성</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td class="td_prize_left">고흥교육지원청 교 육 장 상</td>
+                            <td class="td_prize_left">목포 한빛초등학교</td>
+                            <td>5</td>
+                            <td class="td_prize_left liNone">임 예 지</td>
+                        </tr>
+                        <tr>
+                            <td>특별상</td>
+                            <td class="td_prize_left">고 흥 군 수 상</td>
+                            <td class="td_prize_left">광주 영광원</td>
+                            <td>4</td>
+                            <td class="td_prize_left liNone">송 나 라</td>
                         </tr>
                     </tbody>
                 </table>
@@ -202,60 +258,60 @@
                         <!-- 파일SIZE : 0(원본) / 64 / 128 / 375 / 768 -->
                         <li>
 
-                            <a href="winner_music_five_photoone">
-	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/01/9e06d5541b59cd00bbea9731fc5bb32f_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
+                            <a href="winner_music_three_photoone">
+	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/03/1f8ac4a305f85a4b617655db27206fe1_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
 	            </a>
-                            <a href="winner_music_five_photoone">
-					<strong>2014년 제5회 목일신 동요제   </strong>
+                            <a href="winner_music_three_photoone">
+					<strong>2012년 제3회 목일신 동요제   </strong>
 				</a>
 
 
-                            <p>문화관광과 | 2015-06-30</p>
+                            <p>문화관광과 | 2015-07-03</p>
                         </li>
 
 
                         <!-- 파일SIZE : 0(원본) / 64 / 128 / 375 / 768 -->
                         <li>
 
-                            <a href="winner_music_five_phototwo">
-	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/01/fe2b7532c7f383b2426a7eb3bb714143_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
+                            <a href="winner_music_three_phototwo">
+	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/03/68bccf167bd2bf274a20bfeb84ac291d_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
 	            </a>
-                            <a href="winner_music_five_phototwo">
-					<strong>2014년 제5회 목일신 동요제   </strong>
+                            <a href="winner_music_three_phototwo">
+					<strong>2012년 제3회 목일신 동요제   </strong>
 				</a>
 
 
-                            <p>문화관광과 | 2015-06-30</p>
+                            <p>문화관광과 | 2015-07-03</p>
                         </li>
 
 
                         <!-- 파일SIZE : 0(원본) / 64 / 128 / 375 / 768 -->
                         <li>
 
-                            <a href="winner_music_five_photothree">
-	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/01/6d0b4790eb2517cd83b6474cd6852366_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
+                            <a href="winner_music_three_photothree">
+	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/03/a7cf70f49a9e6275b25f953e1d423949_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
 	            </a>
-                            <a href="winner_music_five_photothree">
-					<strong>2014년 제5회 목일신 동요제   </strong>
+                            <a href="winner_music_three_photothree">
+					<strong>2012년 제3회 목일신 동요제   </strong>
 				</a>
 
 
-                            <p>문화관광과 | 2015-06-30</p>
+                            <p>문화관광과 | 2015-07-03</p>
                         </li>
 
 
                         <!-- 파일SIZE : 0(원본) / 64 / 128 / 375 / 768 -->
                         <li>
 
-                            <a href="winner_music_five_photofour">
-	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/01/2d70b2b23d298dba60c33e304cfcdbd5_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
+                            <a href="winner_music_three_photofour">
+	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/03/c2a32713b886996f78ce2d6e2539cd4f_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
 	            </a>
-                            <a href="winner_music_five_photofour">
-					<strong>2014년 제5회 목일신 동요제   </strong>
+                            <a href="winner_music_three_photofour">
+					<strong>2012년 제3회 목일신 동요제   </strong>
 				</a>
 
 
-                            <p>문화관광과 | 2015-06-30</p>
+                            <p>문화관광과 | 2015-07-03</p>
                         </li>
 
                     </ul>
@@ -263,7 +319,6 @@
 
                 <div class="pagingType">
                     <div class="floatR">
-
 
 
 
