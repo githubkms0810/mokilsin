@@ -144,14 +144,15 @@ class Board_M extends Pagination_Model
 			//공지사항
 			$this->set("key","notice");
 			$this->set("name","공지사항");
-			$this->set("kind","style1");
+			$this->set("kind","mokilsin");
 			$this->set("content_w_auth_kind","admin");
+			$this->set("reply_w_auth","0");
 			$this->p_add();
 
 			//faq
 			$this->set("key","faq");
 			$this->set("name","FAQ");
-			$this->set("kind","style1");
+			$this->set("kind","mokilsin");
 			$this->set("content_w_auth_kind","admin");
 			$this->set("reply_w_auth_kind","admin");
 			$this->p_add();
@@ -159,7 +160,7 @@ class Board_M extends Pagination_Model
 			//1:1
 			$this->set("key","contact");
 			$this->set("name","1:1문의");
-			$this->set("kind","style1");
+			$this->set("kind","mokilsin");
 			$this->set("content_w_auth_kind","all"); //모두다
 			$this->set("content_w_auth","0"); //손님도 글쓸수있게
 			$this->set("reply_w_auth_kind","all"); //모두다
@@ -170,9 +171,17 @@ class Board_M extends Pagination_Model
 			//자유
 			$this->set("key","free");
 			$this->set("name","자유게시판");
-			$this->set("kind","style1");
+			$this->set("kind","mokilsin");
 			$this->set("content_w_auth","0");
 			$this->set("reply_w_auth","0");
+			$this->p_add();
+
+			//공지사항
+			$this->set("key","data");
+			$this->set("name","자료실");
+			$this->set("kind","mokilsin");
+			$this->set("reply_w_auth","0");
+			$this->set("content_w_auth_kind","admin");
 			$this->p_add();
 
 		};

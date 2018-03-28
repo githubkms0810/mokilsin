@@ -1,13 +1,17 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/public/css/common.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/public/libraries/animate.css">
+<link rel="stylesheet" href="/public/libraries/summernote/summernote.css">
+		
 
+<div class="container">
 <div class="row">
-<div class="col-sm-3">
-123
-</div>
-<div class="col-sm-3">
-
-<form <?=$this->ajax_helper->multipart("/{$moduleName}/$mode")?>>
+	<div class="col-sm-12">
+	<form <?=$this->ajax_helper->multipart("/{$moduleName}/$mode")?>>
 	<div class="form-group">
-		<label>제목</label>
+		<label></label>
 		<input type="text" class="form-control" name="title" value="<?=my_set_value($row,"title")?>" autofocus>
 	</div>
 
@@ -155,5 +159,6 @@
 
 </script>
 
+	</div>
 </div>
 </div>

@@ -21,14 +21,11 @@ class Admin_Controller extends Public_Controller
     //Functions : Creating menuData that will be used on template
 	private function _createMainMenus()
 	{
-        $this->menudata_creator->addMainMenu("메인","main","translation_order_setting",site_url("admin/translation_order/setting"));
-        $this->menudata_creator->addMainMenu("유저","user","user_log",site_url("admin/user_log/list"));
+        // $this->menudata_creator->addMainMenu("메인","main","translation_order_setting",site_url("admin/translation_order/setting"));
+        // $this->menudata_creator->addMainMenu("유저","user","user_log",site_url("admin/user_log/list"));
         
         $this->menudata_creator->addMainMenu("게시판","board","contents",site_url("admin/content/list"));
-        $this->menudata_creator->addMainMenu("프리랜서","freelancer","freelancer_list",site_url("admin/freelancer/list"));
-        $this->menudata_creator->addMainMenu("번역/통역","translation_order","translation_order_list",site_url("admin/translation_order/list"));
-        $this->menudata_creator->addMainMenu("제휴문의","contact","contact_list",site_url("admin/contact/list"));
-        $this->menudata_creator->addMainMenu("이메일","email","","http://mail.".$_SERVER["HTTP_HOST"],false,"_blank");
+        $this->menudata_creator->addMainMenu("신청서","applicationn","applicationn_list",site_url("admin/applicationn/list"));
         
 
 		return $this->menudata_creator->getMainMenus();

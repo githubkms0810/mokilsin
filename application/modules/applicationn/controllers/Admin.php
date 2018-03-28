@@ -1,18 +1,15 @@
 <?php 
-namespace main;
+namespace applicationn;
+//의존성 :: product, user
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Base extends \Base_Controller {
+class Admin extends \Admin_Controller {
 
     public function __construct()
     {
         parent::__construct();
     }
-	public function index()
-	{
-		$data["content_view"] = "base/index";
-		$this->template->render($data);
-	}
+ 
 
 }
 

@@ -332,7 +332,7 @@ class Ajax_helper
         function madalMessage(config)
         {
             let alertSource = '  <div id="ci-alert" data-toggle="modal" data-target="#myModal"></div>\
-            <div class="modal fade" id="myModal" role="dialog" >\
+            <div  style="top:200px !important;"  class="modal fade" id="myModal" role="dialog" >\
             <div class="modal-dialog">\
                 <div class="modal-content">\
                 <div class="modal-header">\

@@ -103,3 +103,5 @@ $route['([A-z]+)'] = '$1/base/index';
 $route['([A-z]+)/(:num)'] = '$1/base/get/$2';
 $route['([A-z]+)/([A-z]+)'] = '$1/base/$2';
 $route['([A-z]+)/([A-z]+)/(:num)'] = '$1/base/$2/$3';
+//목일신
+$route['application/(:any)'] = 'application/base/$1';

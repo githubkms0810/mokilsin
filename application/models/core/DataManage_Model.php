@@ -439,7 +439,6 @@ abstract class DataManage_Model extends MY_Model
     public function _set_allPost_inTableField($excepts =array())
     {
         $fields=$this->db->list_fields($this->table);
-
         foreach($_POST as $key => $value)
         {       
             if(in_array($key,$fields) === true && in_array($key,$excepts) === false)

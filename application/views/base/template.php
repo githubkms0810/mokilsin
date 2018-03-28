@@ -15,13 +15,20 @@
         <script src="/public/mokilsin/js/jquery.bxslider.min.js" type="text/javascript"></script>
         <script src="/public/mokilsin/js/swiper.min.js" type="text/javascript"></script>
         <script src="/public/mokilsin/js/front-ui.js" type="text/javascript"></script>
+
+        
+
     </head>
     <body>
         <div class="wrap">
             <!-- header -->
             <header class="header fixed">
 			<div>
-				<h1><a href="/main/index"><img src="/public/mokilsin/images/logo.png" alt="잡댄스"></a></h1>
+				<h1>
+                    <a href="/main/index" style="position:fixed; top:20px !important;">
+                        <img src="/public/mokilsin/images/logo.png" alt="잡댄스">
+                    </a>
+                </h1>
 				<div class="gnb">
                 <ul>
 					<li>
@@ -39,7 +46,7 @@
                             <ul>
                                 <li>
                                     <a style="font-size:12px; font-weight:400;" href="/mokilsin/introduce_music">동요제 소개</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">참가 신청</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/applicationn/add?kind=동요">참가 신청</a>
                                     <a style="font-size:12px; font-weight:400;" href="/mokilsin/winner_music_eight">역대 수상자</a>
                                 </li>
                             </ul>
@@ -49,7 +56,7 @@
                             <ul>
                                 <li>
                                     <a style="font-size:12px; font-weight:400;" href="/mokilsin/introduce_poem">동시대회 소개</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">참가 신청</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/applicationn/add?kind=동시">참가 신청</a>
                                     <a style="font-size:12px; font-weight:400;" href="/mokilsin/winner_poem_seven">역대 수상자</a>
                                 </li>
                             </ul>
@@ -58,9 +65,9 @@
                         <a href="#">커뮤니티</a>
                             <ul>
                                 <li>
-                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/community_list">공지사항</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/community_list">자료실</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">자유 게시판</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/content/list?board_key=notice">공지사항</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/content/list?board_key=data">자료실</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/content/list?board_key=free">자유 게시판</a>
                                 </li>
                             </ul>
                     </li>
@@ -82,5 +89,15 @@
             </div>
             <!-- /footer -->
         </div>
+
+        <script src="/public/libraries/summernote/summernote.js"></script><!-- 서머노트 위지위그 에디터 -->
+        <script src="/public/libraries/bootstrapNotify/bootstrap-notify.js" type="text/javascript"></script>
+        <?= !AJAX_DEBUG ? $this->ajax_helper->createScript() : ""; ?>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/public/js/common.js" type="text/javascript"></script>
+        <script src="/public/js/jy/common.js" type="text/javascript"></script>
+        <script>
+            var Jy ={ "Common" : new Jy.Common()};
+        </script>
     </body>
 </html>

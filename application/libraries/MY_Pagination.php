@@ -46,13 +46,12 @@ class MY_Pagination extends CI_Pagination {
             $config['suffix'] = $queryStr."&limit=$limit";
             $config['first_url'] .=  $queryStr;
         } 
-        
 
         return $config;
     }
     function style_default($config){
-        $config [ 'full_tag_open'] = '<ul class="pagination">';
-        $config [ 'full_tag_close'] = '</ul>';
+        $config [ 'full_tag_open'] = '<nav><ul class="pagination">';
+        $config [ 'full_tag_close'] = '</ul></nav>';
         
         $config['first_link'] = "처음";
         $config [ 'first_tag_open'] = '<li>';
@@ -66,13 +65,15 @@ class MY_Pagination extends CI_Pagination {
         $config [ 'prev_link'] = false;
         $config [ 'next_link'] = false;
 
-        $config [ 'cur_tag_open'] = '<li class="active"><a>';
+        $config [ 'cur_tag_open'] = '<li class="page-item active"><a class="page-link">';
         $config [ 'cur_tag_close'] = '</a></li>';
-        $config [ 'num_tag_open'] = '<li>';
+        $config [ 'num_tag_open'] = '<li class="page-item">';
         $config [ 'num_tag_close'] = '</li>'; 
+
+        $config['attributes'] = array('class' => 'page-link');
         return $config;
     }
-
+    
 
     //style_pgi
     //per_page

@@ -33,8 +33,8 @@ class Init extends Developer_Controller {
             }    
         }
 		
-		// $this->load->model('product/product_m');
-		// $this->product_m->createTable();
+		$this->load->model('applicationn/applicationn_m');
+		$this->applicationn_m->createTable();
 		
 		$this->load->model('file/file_m');
 		$this->file_m->createTable();
