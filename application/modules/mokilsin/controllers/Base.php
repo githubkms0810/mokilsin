@@ -225,6 +225,30 @@ class Base extends \Base_Controller {
         $this->template->render($data);
     }
     
+    public function winner_music_three_photoone()
+    {
+        $data["content_view"] = "base/winner_music_three_photoone";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_three_phototwo()
+    {
+        $data["content_view"] = "base/winner_music_three_phototwo";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_three_photothree()
+    {
+        $data["content_view"] = "base/winner_music_three_photothree";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_three_photofour()
+    {
+        $data["content_view"] = "base/winner_music_three_photofour";
+        $this->template->render($data);
+    }
+    
     public function winner_music_two()
     {
         $data["content_view"] = "base/winner_music_two";
