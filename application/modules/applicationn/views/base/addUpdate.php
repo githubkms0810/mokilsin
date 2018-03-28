@@ -7,17 +7,19 @@
 <script>
 
 $(document).ready(function(){
+    //init
     $personal_radio=$('input[value=개인]');
     $personal_radio.attr("checked",true);
     Jy.Common.HideAndShow('.jy-group-wapper','.jy-personal-wapper');
 
+    //개인 라디오 인풋 눌렀을떄 event
     $personal_radio.click(function(){
         $('.jy-group-item').val('');
          Jy.Common.HideAndShow('.jy-group-wapper','.jy-personal-wapper');
          $('.group_file').attr('name','');
         $('.personal_file').attr('name','files[]');
     });
-
+    //단체 라디오 인풋 눌렀을떄 event
     $group_radio=$('input[value=단체]');
     $group_radio.click(function(){
         $('.jy-personal-item').val(''); 
@@ -139,7 +141,7 @@ $(document).ready(function(){
 
 
 
-
+<!-- 다음주소시작 -->
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 <script>
   //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
@@ -168,3 +170,4 @@ $(document).ready(function(){
 	  }).open();
   }
 </script>
+<!-- 다음주소끝 -->
