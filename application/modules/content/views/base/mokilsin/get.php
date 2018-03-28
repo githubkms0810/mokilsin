@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="/public/mokilsin/css/board.css" />
 <link rel="stylesheet" href="/public/mokilsin/css/beautiful.css">
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <section class="home-hero-cs">
     <div class="animated fadeInUp">
@@ -91,7 +92,7 @@
 <!-- Begin Tags -->
             <div class="after-post-tags" style="margin-bottom:150px;">
 				<ul class="tags">
-					<li><a href="<?=my_site_url("/content/list")?>">목록으로</a></li>
+					<li><a class="btn btn-default" href="<?=my_site_url("/content/list")?>">목록으로</a></li>
 					<li><button  class="btn btn-default clickable" data-href="<?=my_site_url("/{$moduleName}/update/$row->id")?>">수정</button></li>
 					<li><button class="btn btn-default" <?=$this->ajax_helper->anchor("/{$moduleName}/noDisplay/{$row->id}","정말 삭제하시겠습니까?")?> >삭제</button></li>
 				</ul>
