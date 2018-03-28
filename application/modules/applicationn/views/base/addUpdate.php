@@ -27,7 +27,6 @@ $(document).ready(function(){
         $('.personal_file').attr('name','');
         $('.group_file').attr('name','files[]');
     });
-    //개인으로 체크 끝
 });
 </script>
 <div class="container" style="margin-top:100px; margin-bottom:100px;">
