@@ -43,11 +43,11 @@
 
             <div class="section-title">
                 <h2><span>
-            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">2017년 제8회 수상작</a></span></h2>
+            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">2016년 제7회 수상작</a></span></h2>
 
                 <div>
                     <p style="text-align:right;"><a href="birth.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">동요작가 목일신</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="introduce_music" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동요제</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="winner_music_eight" style="color: #292b2c; font-weight: 400; font-size: 12px;">역대수상작</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">2017년 제8회 수상작</a></p>
+                        <a href="introduce_music" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동요제</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="winner_music_eight" style="color: #292b2c; font-weight: 400; font-size: 12px;">역대수상작</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">2016년 제7회 수상작</a></p>
                 </div>
 
             </div>
@@ -59,16 +59,19 @@
 
 
             <!-- s:메뉴구조 사용 -->
-
             <div class="tabMenu mt20">
                 <ul>
-                    <li class="on"><a href="winner_music_eight">2017년 제8회 수상작</a></li>
-                    <li><a href="winner_music_seven">2016년 제7회 수상작</a></li>
+                    <li><a href="winner_music_eight">2017년 제8회 수상작</a></li>
+                    <li class="on"><a href="winner_music_seven">2016년 제7회 수상작</a></li>
                     <li><a href="winner_music_six">2015년 제6회 수상작</a></li>
                     <li><a href="winner_music_five">2014년 제5회 수상작</a></li>
                     <li><a href="winner_music_four">2013년 제4회 수상작</a></li>
                     <li><a href="winner_music_three">2012년 제3회 수상작</a></li>
                     <li><a href="winner_music_two">2011년 제2회 수상작</a></li>
+
+
+
+
 
                 </ul>
             </div>
@@ -122,103 +125,103 @@
                     <tbody>
                         <tr>
                             <td>대 상</td>
-                            <td class="td_prize_left">푸른소리중창단</td>
-                            <td class="td_prize_left liNone">전주교대 군산부설초</td>
+                            <td class="td_prize_left">꿈여울중창단</td>
+                            <td class="td_prize_left liNone">전주여울초등학교</td>
                         </tr>
                         <tr>
                             <td>금 상</td>
-                            <td class="td_prize_left">별빛더하기마루</td>
-                            <td class="td_prize_left liNone">대전버드내초</td>
-                        </tr>
-                        <tr>
-                            <td>금 상</td>
-                            <td class="td_prize_left">김 태 윤</td>
-                            <td class="td_prize_left liNone">대구계성초</td>
-                        </tr>
-                        <tr>
-                            <td>은 상</td>
-                            <td class="td_prize_left">곽 세 원</td>
-                            <td class="td_prize_left liNone">순천ㄴ용당초</td>
-                        </tr>
-                        <tr>
-                            <td>은 상</td>
                             <td class="td_prize_left">동요나라중창단</td>
-                            <td class="td_prize_left liNone">대구동성초</td>
+                            <td class="td_prize_left liNone">대구계성초 등 6개교</td>
+                        </tr>
+                        <tr>
+                            <td>금 상</td>
+                            <td class="td_prize_left">김 정 민</td>
+                            <td class="td_prize_left liNone">강원 남원주초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>금 상</td>
+                            <td class="td_prize_left">유 혜 인</td>
+                            <td class="td_prize_left liNone">대구 관문초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>은 상</td>
+                            <td class="td_prize_left">소리천사</td>
+                            <td class="td_prize_left liNone">전주만수초 등 6개교</td>
+                        </tr>
+                        <tr>
+                            <td>은 상</td>
+                            <td class="td_prize_left">이 지 현</td>
+                            <td class="td_prize_left liNone">대구 대청초등학교</td>
                         </tr>
                         <tr>
                             <td>동 상</td>
-                            <td class="td_prize_left">소리열매중창단</td>
-                            <td class="td_prize_left liNone">서울상수초</td>
+                            <td class="td_prize_left">김 도 연</td>
+                            <td class="td_prize_left liNone">경남 관동초등학교</td>
                         </tr>
                         <tr>
                             <td>동 상</td>
-                            <td class="td_prize_left">해피멜로디</td>
-                            <td class="td_prize_left liNone">대구관문초</td>
+                            <td class="td_prize_left">도 준 영</td>
+                            <td class="td_prize_left liNone">전주여울초등학교</td>
                         </tr>
                         <tr>
                             <td>동 상</td>
-                            <td class="td_prize_left">임 은 아</td>
-                            <td class="td_prize_left liNone">울산강남초</td>
+                            <td class="td_prize_left">푸른소리중창단</td>
+                            <td class="td_prize_left liNone">전주교육대학 군산부설초</td>
                         </tr>
                         <tr>
                             <td>동 상</td>
-                            <td class="td_prize_left">노래숲요정중창단</td>
-                            <td class="td_prize_left liNone">전주여울초</td>
+                            <td class="td_prize_left">이 은 지</td>
+                            <td class="td_prize_left liNone">울산 명촌초등학교</td>
                         </tr>
                         <tr>
-                            <td>동 상</td>
-                            <td class="td_prize_left">라온소리 중창단</td>
-                            <td class="td_prize_left liNone">김제검산초</td>
+                            <td>장려상</td>
+                            <td class="td_prize_left">김 태 유</td>
+                            <td class="td_prize_left liNone">진주신안초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td class="td_prize_left">박 지 우</td>
+                            <td class="td_prize_left liNone">광주 하남초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td class="td_prize_left">라온소리중창단</td>
+                            <td class="td_prize_left liNone">김제검산초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td class="td_prize_left">팽성초 솔빛아이들</td>
+                            <td class="td_prize_left liNone">경기 팽성초등학교</td>
                         </tr>
                         <tr>
                             <td>장려상</td>
                             <td class="td_prize_left">최 인 영</td>
-                            <td class="td_prize_left liNone">대구관문초</td>
+                            <td class="td_prize_left liNone">대구관문초등학교</td>
                         </tr>
                         <tr>
                             <td>장려상</td>
-                            <td class="td_prize_left">김 예 린</td>
-                            <td class="td_prize_left liNone">대전수정초</td>
+                            <td class="td_prize_left">성 승 현</td>
+                            <td class="td_prize_left liNone">김제용동초 병설유치원</td>
                         </tr>
                         <tr>
                             <td>장려상</td>
-                            <td class="td_prize_left">최 주 선</td>
-                            <td class="td_prize_left liNone">대구동성초</td>
+                            <td class="td_prize_left">양 승 우</td>
+                            <td class="td_prize_left liNone">경기 태봉초등학교</td>
                         </tr>
                         <tr>
                             <td>장려상</td>
-                            <td class="td_prize_left">이 동 건</td>
-                            <td class="td_prize_left liNone">대구효명초</td>
+                            <td class="td_prize_left">노래숲요정</td>
+                            <td class="td_prize_left liNone">전주여울초등학교</td>
                         </tr>
                         <tr>
                             <td>장려상</td>
-                            <td class="td_prize_left">이 우 주 </td>
-                            <td class="td_prize_left liNone">대구욱수초</td>
+                            <td class="td_prize_left">한 서 윤</td>
+                            <td class="td_prize_left liNone">대구 보성은하유치원</td>
                         </tr>
                         <tr>
                             <td>장려상</td>
-                            <td class="td_prize_left">소리물결중창단</td>
-                            <td class="td_prize_left liNone">전주서곡초</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td class="td_prize_left">김 윤 하</td>
-                            <td class="td_prize_left liNone">순천꿈초롱유치원</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td class="td_prize_left">꿈이 자라는 중창단</td>
-                            <td class="td_prize_left liNone">전주여울초</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td class="td_prize_left">민 수 연</td>
-                            <td class="td_prize_left liNone">서울초당초</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td class="td_prize_left">허 예 윤</td>
-                            <td class="td_prize_left liNone">대구솔리유치원</td>
+                            <td class="td_prize_left">최 주 원</td>
+                            <td class="td_prize_left liNone">대구 중동어린이집</td>
                         </tr>
                     </tbody>
                 </table>

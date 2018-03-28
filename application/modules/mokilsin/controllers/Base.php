@@ -87,15 +87,135 @@ class Base extends \Base_Controller {
         $this->template->render($data);
     }
     
+    public function winner_music_six_photoone()
+    {
+        $data["content_view"] = "base/winner_music_six_photoone";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_six_phototwo()
+    {
+        $data["content_view"] = "base/winner_music_six_phototwo";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_six_photothree()
+    {
+        $data["content_view"] = "base/winner_music_six_photothree";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_six_photofour()
+    {
+        $data["content_view"] = "base/winner_music_six_photofour";
+        $this->template->render($data);
+    }
+    
     public function winner_music_five()
     {
         $data["content_view"] = "base/winner_music_five";
         $this->template->render($data);
     }
     
+    public function winner_music_five_photoone()
+    {
+        $data["content_view"] = "base/winner_music_five_photoone";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_five_phototwo()
+    {
+        $data["content_view"] = "base/winner_music_five_phototwo";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_five_photothree()
+    {
+        $data["content_view"] = "base/winner_music_five_photothree";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_five_photofour()
+    {
+        $data["content_view"] = "base/winner_music_five_photofour";
+        $this->template->render($data);
+    }
+    
     public function winner_music_four()
     {
         $data["content_view"] = "base/winner_music_four";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_photoone()
+    {
+        $data["content_view"] = "base/winner_music_four_photoone";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_phototwo()
+    {
+        $data["content_view"] = "base/winner_music_four_phototwo";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_photothree()
+    {
+        $data["content_view"] = "base/winner_music_four_photothree";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_photofour()
+    {
+        $data["content_view"] = "base/winner_music_four_photofour";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_photofive()
+    {
+        $data["content_view"] = "base/winner_music_four_photofive";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_photosix()
+    {
+        $data["content_view"] = "base/winner_music_four_photosix";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_photoseven()
+    {
+        $data["content_view"] = "base/winner_music_four_photoseven";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_photoeight()
+    {
+        $data["content_view"] = "base/winner_music_four_photoeight";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_photonine()
+    {
+        $data["content_view"] = "base/winner_music_four_photonine";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_phototen()
+    {
+        $data["content_view"] = "base/winner_music_four_phototen";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_photoeleven()
+    {
+        $data["content_view"] = "base/winner_music_four_photoeleven";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_four_phototwelve()
+    {
+        $data["content_view"] = "base/winner_music_four_phototwelve";
         $this->template->render($data);
     }
     
