@@ -261,10 +261,10 @@
                         <!-- 파일SIZE : 0(원본) / 64 / 128 / 375 / 768 -->
                         <li>
 
-                            <a href="winner_music_four_phototree">
+                            <a href="winner_music_four_photothree">
 	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/03/2541acaf0167d57c277af36e690d31be_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
 	            </a>
-                            <a href="winner_music_four_phototree">
+                            <a href="winner_music_four_photothree">
 					<strong>2013년 제4회 목일신 동요제   </strong>
 				</a>
 
