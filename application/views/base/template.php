@@ -58,8 +58,8 @@
                         <a href="#">커뮤니티</a>
                             <ul>
                                 <li>
-                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">공지사항</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">자료실</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/community_list">공지사항</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/community_list">자료실</a>
                                     <a style="font-size:12px; font-weight:400;" href="/mokilsin/#">자유 게시판</a>
                                 </li>
                             </ul>
