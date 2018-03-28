@@ -11,7 +11,7 @@
     <div class="animated fadeInUp">
         <h2 class="home-hero-title-cs" style="font-weight:bold;">역대수상작</h2>
         <p class="home-hero-des-cs">
-            동요역대수상작페이지<br class="br_portfolio">
+            동시역대수상작페이지<br class="br_portfolio">
         </p>
     </div>
 </section>
@@ -43,11 +43,11 @@
 
             <div class="section-title">
                 <h2><span>
-            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시대회 2017년 수상작</a></span></h2>
+            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시대회 2014년 수상작</a></span></h2>
 
                 <div>
                     <p style="text-align:right;"><a href="birth.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">동요작가 목일신</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="introduce_poem" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="winner_music_eight" style="color: #292b2c; font-weight: 400; font-size: 12px;">역대수상작</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시대회 2017년 수상작</a></p>
+                        <a href="introduce_poem" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="winner_poem_seven" style="color: #292b2c; font-weight: 400; font-size: 12px;">역대수상작</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시대회 2014년 수상작</a></p>
                 </div>
 
             </div>
@@ -62,10 +62,10 @@
 
             <div class="tabMenu mt20">
                 <ul>
-                    <li class="on"><a href="winner_poem_seven">동시대회 2017년 수상작</a></li>
+                    <li><a href="winner_poem_seven">동시대회 2017년 수상작</a></li>
                     <li><a href="winner_poem_six">동시대회 2016년 수상작</a></li>
                     <li><a href="winner_poem_five">동시대회 2015년 수상작</a></li>
-                    <li><a href="winner_poem_four">동시대회 2014년 수상작</a></li>
+                    <li class="on"><a href="winner_poem_four">동시대회 2014년 수상작</a></li>
                     <li><a href="winner_poem_three">동시대회 2013년 수상작</a></li>
                 </ul>
             </div>
@@ -105,117 +105,126 @@
                 <table class="tableStyle01" summary="수상자 명단">
                     <caption>수상자 명단</caption>
                     <colgroup>
-                        <col width="10%">
-                        <col width="40%">
-                        <col width="40%">
+                        <col />
+                        <col />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="40%" />
                     </colgroup>
                     <thead>
                         <tr>
-                            <th scope="col">상 훈</th>
+                            <th colspan="2" scope="col">상 훈</th>
                             <th scope="col">성 명</th>
-                            <th class="liNone" scope="col">학 교</th>
+                            <th scope="col">학교명</th>
+                            <th class="liNone" scope="col">제 목</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>대 상</td>
-                            <td>송 채 영</td>
-                            <td class="liNone">점암초등학교</td>
+                            <td colspan="2">대 상</td>
+                            <td>양민재</td>
+                            <td>도화초 6</td>
+                            <td class="liNone">딱 맞는 신발</td>
                         </tr>
                         <tr>
-                            <td>금 상</td>
-                            <td>김 체 량</td>
-                            <td class="liNone">점암초등학교</td>
+                            <td rowspan="3">대 상<br />(3)</td>
+                            <td>초등부</td>
+                            <td>김미정</td>
+                            <td>녹동초 1</td>
+                            <td class="liNone">나란히 나란히 팔랑팔랑</td>
                         </tr>
                         <tr>
-                            <td>금 상</td>
-                            <td>김 소 율</td>
-                            <td class="liNone">점암초등학교</td>
+                            <td>중고등부</td>
+                            <td>양다은</td>
+                            <td>금산중 1</td>
+                            <td class="liNone">길 끝</td>
                         </tr>
                         <tr>
-                            <td>은 상</td>
-                            <td>최 윤 채</td>
-                            <td class="liNone">풍남초등학교</td>
+                            <td>일반부</td>
+                            <td>이윤화</td>
+                            <td>고흥읍</td>
+                            <td class="liNone">다섯 신발</td>
                         </tr>
                         <tr>
-                            <td>은 상</td>
-                            <td>김 민 준</td>
-                            <td class="liNone">광양마동초등학교</td>
+                            <td rowspan="3">은 상<br />(3)</td>
+                            <td>초등부</td>
+                            <td>최다은</td>
+                            <td>포도초 6</td>
+                            <td class="liNone">우리엄마 눈은</td>
                         </tr>
                         <tr>
-                            <td>동 상</td>
-                            <td>김 경 남</td>
-                            <td class="liNone">녹동초등학교</td>
+                            <td>중고등부</td>
+                            <td>정창경</td>
+                            <td>고흥중 3</td>
+                            <td class="liNone">새 신발</td>
                         </tr>
                         <tr>
-                            <td>동 상</td>
-                            <td>이 태 련</td>
-                            <td class="liNone">고흥동초등학교</td>
+                            <td>일반부</td>
+                            <td>김지원</td>
+                            <td>여수시</td>
+                            <td class="liNone">다 아나봐</td>
                         </tr>
                         <tr>
-                            <td>동 상</td>
-                            <td>김 진 하</td>
-                            <td class="liNone">풍남초등학교</td>
+                            <td rowspan="3">동 상<br />(3)</td>
+                            <td>초등부</td>
+                            <td>이채은</td>
+                            <td>금산초 1</td>
+                            <td class="liNone">운동회</td>
                         </tr>
                         <tr>
-                            <td>동 상</td>
-                            <td>김 승 민</td>
-                            <td class="liNone">풍남초등학교</td>
+                            <td>중고등부</td>
+                            <td>공의명</td>
+                            <td>고흥고 6</td>
+                            <td class="liNone">신발</td>
                         </tr>
                         <tr>
-                            <td>장려상</td>
-                            <td>남 규 리</td>
-                            <td class="liNone">녹동초등학교</td>
+                            <td>일반부</td>
+                            <td>최국환</td>
+                            <td>남양면</td>
+                            <td class="liNone">꿈결에서</td>
                         </tr>
                         <tr>
-                            <td>장려상</td>
-                            <td>유 승 아</td>
-                            <td class="liNone">고흥동초등학교</td>
+                            <td rowspan="7">장 려<br />(7)</td>
+                            <td>초등부</td>
+                            <td>이태석</td>
+                            <td>풍양초 6</td>
+                            <td class="liNone">낙엽길</td>
                         </tr>
                         <tr>
-                            <td>장려상</td>
-                            <td>김 지 호</td>
-                            <td class="liNone">과역초등학교</td>
+                            <td>초등부</td>
+                            <td>이태련</td>
+                            <td>백양초 1</td>
+                            <td class="liNone">길 따라 바람따라</td>
                         </tr>
                         <tr>
-                            <td>장려상</td>
-                            <td>박 서 정</td>
-                            <td class="liNone">고흥동초등학교</td>
+                            <td>초등부</td>
+                            <td>김정빈</td>
+                            <td>회천초 1</td>
+                            <td class="liNone">신이 꾸는 꿈</td>
                         </tr>
                         <tr>
-                            <td>장려상</td>
-                            <td>이 채 은</td>
-                            <td class="liNone">금산초등학교</td>
+                            <td>중고등부</td>
+                            <td>홍진영</td>
+                            <td>금산중 3</td>
+                            <td class="liNone">그녀는 꽃이다</td>
                         </tr>
                         <tr>
-                            <td>장려상</td>
-                            <td>이 소 민</td>
-                            <td class="liNone">고흥동초등학교</td>
+                            <td>중고등부</td>
+                            <td>한성민</td>
+                            <td>도화중 3</td>
+                            <td class="liNone">샛길</td>
                         </tr>
                         <tr>
-                            <td>장려상</td>
-                            <td>김 민 정</td>
-                            <td class="liNone">녹동초등학교</td>
+                            <td>중고등부</td>
+                            <td>김소정</td>
+                            <td>고흥여중 2</td>
+                            <td class="liNone">우리집 가족소개</td>
                         </tr>
                         <tr>
-                            <td>장려상</td>
-                            <td>송 시 형</td>
-                            <td class="liNone">점암동초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td>송 하 민</td>
-                            <td class="liNone">점암초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td>최 효 정</td>
-                            <td class="liNone">대구 대남초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>단체참가상</td>
-                            <td></td>
-                            <td class="liNone">풍남초등학교</td>
+                            <td>일반부</td>
+                            <td>박종덕</td>
+                            <td>순천시</td>
+                            <td class="liNone">별꽃</td>
                         </tr>
                     </tbody>
                 </table>
@@ -231,13 +240,73 @@
 
                 <dl class="totalNum">
                     <dt>전체 :</dt>
-                    <dd><strong>0</strong>건</dd>
+                    <dd><strong>4</strong>건</dd>
                     <dt>현재 :</dt>
                     <dd><strong>1</strong>/1페이지</dd>
                 </dl>
 
                 <div class="galleryWrap">
                     <ul>
+
+
+                        <!-- 파일SIZE : 0(원본) / 64 / 128 / 375 / 768 -->
+                        <li>
+
+                            <a href="winner_poem_four_photoone">
+	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/24/f0a707c4eb8e71bd2a3ddf321a446c6c_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
+	            </a>
+                            <a href="winner_poem_four_photoone">
+					<strong>2014년 제5회 동시대회      </strong>
+				</a>
+
+
+                            <p>고흥문화예술팀 | 2015-07-24</p>
+                        </li>
+
+
+                        <!-- 파일SIZE : 0(원본) / 64 / 128 / 375 / 768 -->
+                        <li>
+
+                            <a href="winner_poem_four_phototwo">
+	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/24/e6b0018ef89f07ea4ea9d38399a028cf_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
+	            </a>
+                            <a href="winner_poem_four_phototwo">
+					<strong>2014년 제5회 동시대회      </strong>
+				</a>
+
+
+                            <p>고흥문화예술팀 | 2015-07-24</p>
+                        </li>
+
+
+                        <!-- 파일SIZE : 0(원본) / 64 / 128 / 375 / 768 -->
+                        <li>
+
+                            <a href="winner_poem_four_photothree">
+	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/24/dbdc5baffe7c8615d4f6611ac32dffaa_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
+	            </a>
+                            <a href="winner_poem_four_photothree">
+					<strong>2014년 제5회 동시대회      </strong>
+				</a>
+
+
+                            <p>고흥문화예술팀 | 2015-07-24</p>
+                        </li>
+
+
+                        <!-- 파일SIZE : 0(원본) / 64 / 128 / 375 / 768 -->
+                        <li>
+
+                            <a href="winner_poem_four_photofour">
+	            	<span class="thumb"><img src="/public/mokilsin/uploadfiles/thumbnail/comm_attach/2015/07/24/fee10dab84c6ca531754f633ad24b431_200.jpg" width="120" alt="이미지썸네일" title="사진 더보기"/></span>
+	            </a>
+                            <a href="winner_poem_four_photofour">
+					<strong>2014년 제5회 동시대회      </strong>
+				</a>
+
+
+                            <p>고흥문화예술팀 | 2015-07-24</p>
+                        </li>
 
                     </ul>
                 </div>
@@ -249,9 +318,11 @@
 
 
 
+
                     </div>
                     <div class="paging">
-
+                        <div class="paging"><strong>1</strong>
+                        </div>
                     </div>
                 </div>
 

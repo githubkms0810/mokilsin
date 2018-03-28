@@ -11,7 +11,7 @@
     <div class="animated fadeInUp">
         <h2 class="home-hero-title-cs" style="font-weight:bold;">역대수상작</h2>
         <p class="home-hero-des-cs">
-            동요역대수상작페이지<br class="br_portfolio">
+            동시역대수상작페이지<br class="br_portfolio">
         </p>
     </div>
 </section>
@@ -43,11 +43,11 @@
 
             <div class="section-title">
                 <h2><span>
-            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시대회 2017년 수상작</a></span></h2>
+            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시대회 2016년 수상작</a></span></h2>
 
                 <div>
                     <p style="text-align:right;"><a href="birth.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">동요작가 목일신</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="introduce_poem" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="winner_music_eight" style="color: #292b2c; font-weight: 400; font-size: 12px;">역대수상작</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시대회 2017년 수상작</a></p>
+                        <a href="introduce_poem" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="winner_poem_seven" style="color: #292b2c; font-weight: 400; font-size: 12px;">역대수상작</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시대회 2016년 수상작</a></p>
                 </div>
 
             </div>
@@ -62,8 +62,8 @@
 
             <div class="tabMenu mt20">
                 <ul>
-                    <li class="on"><a href="winner_poem_seven">동시대회 2017년 수상작</a></li>
-                    <li><a href="winner_poem_six">동시대회 2016년 수상작</a></li>
+                    <li><a href="winner_poem_seven">동시대회 2017년 수상작</a></li>
+                    <li class="on"><a href="winner_poem_six">동시대회 2016년 수상작</a></li>
                     <li><a href="winner_poem_five">동시대회 2015년 수상작</a></li>
                     <li><a href="winner_poem_four">동시대회 2014년 수상작</a></li>
                     <li><a href="winner_poem_three">동시대회 2013년 수상작</a></li>
@@ -119,103 +119,78 @@
                     <tbody>
                         <tr>
                             <td>대 상</td>
-                            <td>송 채 영</td>
-                            <td class="liNone">점암초등학교</td>
+                            <td>박 근 원</td>
+                            <td class="liNone">남양초등학교</td>
                         </tr>
                         <tr>
                             <td>금 상</td>
-                            <td>김 체 량</td>
-                            <td class="liNone">점암초등학교</td>
+                            <td>김 상 헌</td>
+                            <td class="liNone">사천동성초등학교</td>
                         </tr>
                         <tr>
                             <td>금 상</td>
-                            <td>김 소 율</td>
-                            <td class="liNone">점암초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>은 상</td>
-                            <td>최 윤 채</td>
-                            <td class="liNone">풍남초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>은 상</td>
-                            <td>김 민 준</td>
-                            <td class="liNone">광양마동초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>동 상</td>
-                            <td>김 경 남</td>
-                            <td class="liNone">녹동초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>동 상</td>
-                            <td>이 태 련</td>
-                            <td class="liNone">고흥동초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>동 상</td>
-                            <td>김 진 하</td>
-                            <td class="liNone">풍남초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>동 상</td>
-                            <td>김 승 민</td>
-                            <td class="liNone">풍남초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td>남 규 리</td>
-                            <td class="liNone">녹동초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td>유 승 아</td>
-                            <td class="liNone">고흥동초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td>김 지 호</td>
-                            <td class="liNone">과역초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td>박 서 정</td>
-                            <td class="liNone">고흥동초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
                             <td>이 채 은</td>
                             <td class="liNone">금산초등학교</td>
                         </tr>
                         <tr>
+                            <td>은 상</td>
+                            <td>이 채 원</td>
+                            <td class="liNone">포두초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>은 상</td>
+                            <td>신 다 래</td>
+                            <td class="liNone">녹동초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>동 상</td>
+                            <td>한 지 우</td>
+                            <td class="liNone">고흥동초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>동 상</td>
+                            <td>곽 선 호</td>
+                            <td class="liNone">영남초등학교</td>
+                        </tr>
+                        <tr>
                             <td>장려상</td>
-                            <td>이 소 민</td>
+                            <td>김 서 진</td>
                             <td class="liNone">고흥동초등학교</td>
                         </tr>
                         <tr>
                             <td>장려상</td>
-                            <td>김 민 정</td>
+                            <td>송 유 정</td>
+                            <td class="liNone">동강초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td>신 은 서</td>
+                            <td class="liNone">대서초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td>김 민 우</td>
+                            <td class="liNone">고흥동초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td>김 경 인</td>
+                            <td class="liNone">봉래초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td>박 미 가</td>
+                            <td class="liNone">남양초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td>이 채 원</td>
+                            <td class="liNone">고흥동초등학교</td>
+                        </tr>
+                        <tr>
+                            <td>장려상</td>
+                            <td>정 동 윤</td>
                             <td class="liNone">녹동초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td>송 시 형</td>
-                            <td class="liNone">점암동초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td>송 하 민</td>
-                            <td class="liNone">점암초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>장려상</td>
-                            <td>최 효 정</td>
-                            <td class="liNone">대구 대남초등학교</td>
-                        </tr>
-                        <tr>
-                            <td>단체참가상</td>
-                            <td></td>
-                            <td class="liNone">풍남초등학교</td>
                         </tr>
                     </tbody>
                 </table>
@@ -244,6 +219,7 @@
 
                 <div class="pagingType">
                     <div class="floatR">
+
 
 
 

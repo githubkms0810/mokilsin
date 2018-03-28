@@ -255,6 +255,18 @@ class Base extends \Base_Controller {
         $this->template->render($data);
     }
     
+    public function winner_music_two_photoone()
+    {
+        $data["content_view"] = "base/winner_music_two_photoone";
+        $this->template->render($data);
+    }
+    
+    public function winner_music_two_phototwo()
+    {
+        $data["content_view"] = "base/winner_music_two_phototwo";
+        $this->template->render($data);
+    }
+    
     public function winner_poem_seven()
     {
         $data["content_view"] = "base/winner_poem_seven";
@@ -273,9 +285,51 @@ class Base extends \Base_Controller {
         $this->template->render($data);
     }
     
+    public function winner_poem_five_photoone()
+    {
+        $data["content_view"] = "base/winner_poem_five_photoone";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_five_phototwo()
+    {
+        $data["content_view"] = "base/winner_poem_five_phototwo";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_five_photothree()
+    {
+        $data["content_view"] = "base/winner_poem_five_photothree";
+        $this->template->render($data);
+    }
+        
     public function winner_poem_four()
     {
         $data["content_view"] = "base/winner_poem_four";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_four_photoone()
+    {
+        $data["content_view"] = "base/winner_poem_four_photoone";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_four_phototwo()
+    {
+        $data["content_view"] = "base/winner_poem_four_phototwo";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_four_photothree()
+    {
+        $data["content_view"] = "base/winner_poem_four_photothree";
+        $this->template->render($data);
+    }
+    
+    public function winner_poem_four_photofour()
+    {
+        $data["content_view"] = "base/winner_poem_four_photofour";
         $this->template->render($data);
     }
     
@@ -356,6 +410,21 @@ class Base extends \Base_Controller {
         $data["content_view"] = "base/winner_poem_three_phototwelve";
         $this->template->render($data);
     }
+    
+    public function community_get()
+    {
+        $data["content_view"] = "base/community_get";
+        $this->template->render($data);
+    }
+    
+    
+    public function community_list()
+    {
+        $data["content_view"] = "base/community_list";
+        $this->template->render($data);
+    }
+    
+
 
 
 
