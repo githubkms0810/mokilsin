@@ -322,12 +322,14 @@ html {
     box-sizing: border-box
 }
 
+/*
 *,
 ::after,
 ::before {
     -webkit-box-sizing: inherit;
     box-sizing: inherit
 }
+*/
 
 @-ms-viewport {
     width: device-width
