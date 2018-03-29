@@ -8,12 +8,9 @@
 <link rel="stylesheet" href="/public/mokilsin/css/beautiful.css">
 
 
-<section class="home-hero-cs">
+<section class="home-hero-cs" style="margin-bottom:0;">
 	<div class="animated fadeInUp">
-    <h2 class="home-hero-title-cs" style="font-weight:bold;">생애/업적</h2>
-    <p class="home-hero-des-cs">
-        생애/업적 페이지 <br class="br_portfolio">
-    </p>
+        <h2 class="home-hero-title-cs" style="font-weight:bold;">생애/업적</h2>
     </div>
 </section>
 <!-- Begin Article

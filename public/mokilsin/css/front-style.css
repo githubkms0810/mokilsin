@@ -86,8 +86,6 @@ z-index:200;
 background-color: #fff;
 width: 150px;
 text-align: left;
-border-radius: 20px;
-box-shadow: 0 4px 20px rgba(149,186,219,1);
 }
 
 .gnb li:hover ul{
