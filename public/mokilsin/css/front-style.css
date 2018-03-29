@@ -138,7 +138,7 @@ clear:left;
 .util .login{background:#3891ac; border:1px solid #3891ac; color:#fff}
 .util .join{background:#fff; border:1px solid #3891ac; color:#3891ac; margin-left:15px}
 
-.footer{width:100%; padding:40px 0; position:relative; background:#1c1c1c; text-align:center}
+.footer{width:100%; padding:40px 0; position:relative; background:#f4f7fc; text-align:center}
 .foot-menu{position:relative;}
 .foot-menu li{display:inline-block; margin-right:45px}
 .foot-menu li:nth-last-child(1){margin-right:0}
@@ -146,8 +146,7 @@ clear:left;
 .footer .social{position:relative; margin:30px 0 0 0}
 .footer .social li{display:inline-block; margin-right:35px}
 .footer .social li:nth-last-child(1){margin-right:0}
-.footer .copy{font-size:12px; color:#797778; padding:0}
-.footer .copy p{margin:10px 0 0 0}
+.footer .copy{font-size:12px; color:#bcc3cc; padding:0; font-weight: bold;}
 
 /* con */
 .visual{position:relative;  height:100vh; margin-top: -80px;}

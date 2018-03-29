@@ -84,6 +84,7 @@
             <div class="footer">
                 <div class="copy">
                     <p>우 59542 전남 고흥군 고흥읍 고흥군청로 1 / 대표전화 061-830-5898 / 팩스 061-830-5577</p>
+                    <br>
                     <p>&copy; 2018 Goheung Country. ALL RIGHTS RESERVED.</p>
                 </div>
             </div>
