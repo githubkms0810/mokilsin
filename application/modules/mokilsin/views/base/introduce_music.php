@@ -60,6 +60,7 @@
 <div>
 <p class="txt_center"><img src="/public/mokilsin/images/_ART/content/MokIlsin2017_in01.jpg" alt=""></p>
 <p class="txt_center"><img src="/public/mokilsin/images/_ART/content/MokIlsin2017_in02.jpg" alt=""> </p>
+<br><br><br><br><br><br><br>
 </div>
 			<!-- End Post Content -->
 <!-- Begin Tags -->

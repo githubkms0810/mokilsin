@@ -43,11 +43,11 @@
 
             <div class="section-title">
                 <h2><span>
-            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시대회 2015년 수상작</a></span></h2>
+            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시 대회 2015년 수상작</a></span></h2>
 
                 <div>
                     <p style="text-align:right;"><a href="birth.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">동요작가 목일신</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="introduce_poem" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="winner_poem_seven" style="color: #292b2c; font-weight: 400; font-size: 12px;">역대수상작</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시대회 2015년 수상작</a></p>
+                        <a href="introduce_poem" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시 대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="winner_poem_seven" style="color: #292b2c; font-weight: 400; font-size: 12px;">역대수상작</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시 대회 2015년 수상작</a></p>
                 </div>
 
             </div>
@@ -62,11 +62,11 @@
 
             <div class="tabMenu mt20">
                 <ul>
-                    <li><a href="winner_poem_seven">동시대회 2017년 수상작</a></li>
-                    <li><a href="winner_poem_six">동시대회 2016년 수상작</a></li>
-                    <li class="on"><a href="winner_poem_five">동시대회 2015년 수상작</a></li>
-                    <li><a href="winner_poem_four">동시대회 2014년 수상작</a></li>
-                    <li><a href="winner_poem_three">동시대회 2013년 수상작</a></li>
+                    <li><a href="winner_poem_seven">동시 대회 2017년 수상작</a></li>
+                    <li><a href="winner_poem_six">동시 대회 2016년 수상작</a></li>
+                    <li class="on"><a href="winner_poem_five">동시 대회 2015년 수상작</a></li>
+                    <li><a href="winner_poem_four">동시 대회 2014년 수상작</a></li>
+                    <li><a href="winner_poem_three">동시 대회 2013년 수상작</a></li>
                 </ul>
             </div>
 
@@ -101,7 +101,7 @@
                 <!--폼-->
                 <div class="detailView">
                     <div class="viewHead">
-                        <h4>2015년 제6회 동시대회</h4>
+                        <h4>2015년 제6회 동시 대회</h4>
                         <dl class="date">
                             <dt class="hidden">작성일</dt>
                             <dd>2015-07-04</dd>

@@ -39,7 +39,7 @@
                     </li>
 					<li><a href="movie.php">동영상</a></li>
 					<li><a href="introduce_music.php">목일신 동요제</a></li>
-					<li><a href="introduce_poem.php">목일신 동시대회</a></li>
+					<li><a href="introduce_poem.php">목일신 동시 대회</a></li>
 					<li class="m-menu login"><a href="#">등록하기</a></li>
 					<li class="m-menu"><a href="#">마이페이지</a></li>
 					<li class="m-menu"><a href="#">로그아웃</a></li>
@@ -67,9 +67,9 @@
 
 <section class="home-hero-cs">
 	<div class="animated fadeInUp">
-    <h2 class="home-hero-title-cs" style="font-weight:bold;">동시대회 소개</h2>
+    <h2 class="home-hero-title-cs" style="font-weight:bold;">동시 대회 소개</h2>
     <p class="home-hero-des-cs">
-        동시대회 소개 페이지 <br class="br_portfolio">
+        동시 대회 소개 페이지 <br class="br_portfolio">
     </p>
     </div>
 </section>
@@ -102,11 +102,11 @@
 
 				<div class="section-title">
 		<h2><span>
-            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시대회 소개</a></span></h2>
+            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시 대회 소개</a></span></h2>
                     
                     <div>
         <p style="text-align:right;"><a href="birth.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">동요작가 목일신</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="introduce.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시대회 소개</a></p>
+            <a href="introduce.php" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시 대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시 대회 소개</a></p>
         </div>
 		
 	</div>

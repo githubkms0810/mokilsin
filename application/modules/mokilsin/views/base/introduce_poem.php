@@ -10,7 +10,7 @@
 
 <section class="home-hero-cs">
 	<div class="animated fadeInUp">
-    <h2 class="home-hero-title-cs" style="font-weight:bold;">동시대회 소개</h2>
+    <h2 class="home-hero-title-cs" style="font-weight:bold;">동시 대회 소개</h2>
     </div>
 </section>
 <!-- Begin Article
@@ -42,11 +42,11 @@
 
 				<div class="section-title">
 		<h2><span>
-            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시대회 소개</a></span></h2>
+            <a href="#" style="color: #292b2c; font-weight: 400; font-size: 22px;">동시 대회 소개</a></span></h2>
                     
                     <div>
         <p style="text-align:right;"><a href="birth" style="color: #292b2c; font-weight: 400; font-size: 12px;">동요작가 목일신</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="introduce" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시대회 소개</a></p>
+            <a href="introduce" style="color: #292b2c; font-weight: 400; font-size: 12px;">목일신 동시 대회</a>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: #292b2c; font-weight: 400; font-size: 12px;">동시 대회 소개</a></p>
         </div>
 		
 	</div>
@@ -60,6 +60,7 @@
 <div>
 <p class="txt_center"><img src="/public/mokilsin/images/_ART/content/songfestival2017_01.jpg" alt=""></p>
 <p class="txt_center"><img src="/public/mokilsin/images/_ART/content/songfestival2017_02.jpg" alt=""> </p>
+<br><br><br>
 </div>
 			<!-- End Post Content -->
 <!-- Begin Tags -->

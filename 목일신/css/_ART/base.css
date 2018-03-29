@@ -490,7 +490,7 @@ hr { display:none}
 #head_menu li div.submenu li a {text-decoration:none;line-height:25px;color:#000;font-size:15px;font-weight:bold;display:block;padding-right:40px;}
 #head_menu li div.submenu li a:hover{color:#393;font-weight:bold;display:block}
 #head_menu li.menu4 div.submenu  { left:100px; z-index:64; } /* 목일신동요제 */
-#head_menu li.menu5 div.submenu  { left:360px; z-index:65; } /* 목일신동시대회 */
+#head_menu li.menu5 div.submenu  { left:360px; z-index:65; } /* 목일신동시 대회 */
 #head_menu li.menu24 div.submenu { left:550px; z-index:65; } /* 동초판소리대회 */
 #head_menu li.menu34 div.submenu { left:415px; z-index:65; } /* 고흥군송수권시문학상 */
 #head_menu li.menu35 div.submenu { left:550px; z-index:65; } /* 고흥군송수권시문학상 */

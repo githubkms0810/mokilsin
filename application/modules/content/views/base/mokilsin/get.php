@@ -10,9 +10,6 @@
 <section class="home-hero-cs">
     <div class="animated fadeInUp">
         <h2 class="home-hero-title-cs" style="font-weight:bold;">커뮤니티</h2>
-        <p class="home-hero-des-cs">
-            커뮤니티페이지 내용  <br class="br_portfolio">
-        </p>
     </div>
 </section>
 <!-- Begin Article
