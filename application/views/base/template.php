@@ -25,7 +25,7 @@
             <header class="header fixed">
 			<div>
 				<h1>
-                    <a href="/main/index" style="position:fixed; top:20px !important;">
+                    <a href="/main/index" style="position:fixed; top:22px !important;">
                         <img src="/public/mokilsin/images/logo.png" alt="잡댄스">
                     </a>
                 </h1>
