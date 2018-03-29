@@ -10,10 +10,7 @@
 
 <section class="home-hero-cs">
 	<div class="animated fadeInUp">
-    <h2 class="home-hero-title-cs" style="font-weight:bold;">목일신 동요곡집</h2>
-    <p class="home-hero-des-cs">
-        work1<br class="br_portfolio">
-    </p>
+    <h2 class="home-hero-title-cs" style="font-weight:bold;">작품집</h2>
 </div>
 </section>
 <!-- Begin Article

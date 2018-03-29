@@ -11,9 +11,6 @@
 <section class="home-hero-cs">
 	<div class="animated fadeInUp">
     <h2 class="home-hero-title-cs" style="font-weight:bold;">동요제 소개</h2>
-    <p class="home-hero-des-cs">
-        동요제 소개 페이지 <br class="br_portfolio">
-    </p>
     </div>
 </section>
 <!-- Begin Article

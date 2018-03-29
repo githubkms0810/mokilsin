@@ -8,9 +8,6 @@
 <section class="home-hero-cs">
     <div class="animated fadeInUp">
         <h2 class="home-hero-title-cs" style="font-weight:bold;">작품집</h2>
-        <p class="home-hero-des-cs">
-            목일신 작품집 페이지 <br class="br_portfolio">
-        </p>
     </div>
 </section>
 

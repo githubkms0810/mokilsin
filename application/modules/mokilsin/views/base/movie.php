@@ -10,10 +10,7 @@
 
 <section class="home-hero-cs">
 	<div class="animated fadeInUp">
-    <h2 class="home-hero-title-cs" style="font-weight:bold;">동영상</h2>
-    <p class="home-hero-des-cs">
-        동영상 페이지 <br class="br_portfolio">
-    </p>
+    <h2 class="home-hero-title-cs" style="font-weight:bold;">홍보 영상</h2>
     </div>
 </section>
 <!-- Begin Article
