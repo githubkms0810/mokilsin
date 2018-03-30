@@ -10,7 +10,7 @@ class Applicationn_M extends Pagination_Model
 	public function __construct()
 	{
 		$this->table = "applicationn";
-		$this->as = "application";
+		$this->as = "applicationn";
 		parent::__construct();
 	}
 	
@@ -131,6 +131,17 @@ class Applicationn_M extends Pagination_Model
 		$this->db->insert($this->table);
 		return $this->db->insert_id();
 	}
+	public function listForExcel(string $kind,string $personalOrGroup)
+	{
+		$this->db->select("{$this->as}.*, group_concat(applicant.성명) as 성명, group_concat(applicant.학교) as 학교, group_concat(applicant.학년) as 학년,group_concat(applicant.연락처) as 연락처,");
+		$this->db->where("동요동시",$kind);
+		$this->db->where("개인단체",$personalOrGroup);
+		$this->db->from("{$this->table} as {$this->as}");
+		$this->db->join("applicant as applicant","{$this->as}.id = applicant.application_id","INNER");
+		$this->db->group_by("{$this->as}.id");
+		$this->db->order_by("id","asc");
+		return $this->db->get()->result();
+	}
 	//------ @query @list@Get 정의
 
 	protected function _select()
@@ -167,6 +178,7 @@ class Applicationn_M extends Pagination_Model
 	}
 	protected function _list_admin()
 	{
+		$this->db->order_by("id","asc");
 	}
 	protected function _list_base()
 	{
@@ -176,14 +188,14 @@ class Applicationn_M extends Pagination_Model
 
 	//@listGet 필드네임 정의
 	//admin
-	// public function listData_admin()
-	// {
-	// 	return array(
-	// 		array("displayName"=>"ID","fieldName"=>"id"),
-	// 		array("displayName"=>"이름","fieldName"=>"name"),
-	// 		array("displayName"=>"보이기","fieldName"=>"is_display"),
-	// 	);
-	// }
+	public function listData_admin()
+	{
+		return array(
+			array("displayName"=>"ID","fieldName"=>"id"),
+			array("displayName"=>"동요/동시","fieldName"=>"동요동시"),
+			array("displayName"=>"개인단체","fieldName"=>"개인단체"),
+		);
+	}
 	// public function getData_admin()
 	// {
 	// 	return array(
@@ -216,16 +228,13 @@ class Applicationn_M extends Pagination_Model
 	//------@search 검색을 허용할 필드들을 정의합니다 
 
 
-	// protected function _searchData()
-    // {
-    //     return array(
-	// 		"title"=>array("displayName"=>"제목","fieldName"=>"b_c.title","kind"=>"or"),
-	// 		"desc"=>array("displayName"=>"내용","fieldName"=>"desc","kind"=>"textfull-or"),
-	// 		"titleDesc"=>array("displayName"=>"제목+내용","fieldName"=>["b_c.title","desc"],"kind"=>["or","textfull-or"]),
-	// 		"displayName"=>array("displayName"=>"글쓴이","fieldName"=>"u.displayName","kind"=>"or"),
-	// 	);
-		
-	// }
+	protected function _searchData()
+    {
+        return array(
+			"title"=>array("displayName"=>"동요/동시","fieldName"=>"{$this->table}.동요동시"),
+			"desc"=>array("displayName"=>"개인/단체","fieldName"=>"{$this->table}.개인단체"),
+		);
+	}
 	// protected function _searchData_admin()
 	// {
 	// 	return array(

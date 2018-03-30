@@ -12,8 +12,6 @@
 <!--jQuery UI 라이브러리 js파일-->
 <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
 
-
-
 <section class="home-hero-project">
     <div class="animated fadeInUp">
         <h2 class="home-hero-title-project">참가신청</h2>
@@ -22,8 +20,6 @@
         </p>
     </div>
 </section>
-
-
 
 <script>
     $(document).ready(function() {
@@ -77,7 +73,7 @@
         <div>
             <ul class="project_form-list">
                 <li>
-                    <input type="radio" name="개인단체" value="<?=$kind === "동요" ? "중창" : "단체"?>" id="개인">
+                    <input type="radio" name="개인단체" value="<?=$kind === "동요" ? "독창" : "개인"?>" id="개인">
                     <label for="개인"><?=$kind === "동요" ? "독창" : "개인"?></label>
                 </li>
                 <li>

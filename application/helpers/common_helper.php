@@ -2,6 +2,13 @@
 <?php defined('BASEPATH') OR exit('no direct script access allrowed');
 
 
+if(!function_exists('splitWithComma')){
+    function splitWithComma(string $str)
+    {
+        return explode(",",$str);
+    }   
+}
+
 
 if(!function_exists('renderDescriptionToPreview')){
     function renderDescriptionToPreview(string $desc,int $numOfWords = 120)

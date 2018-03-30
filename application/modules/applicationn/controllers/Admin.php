@@ -24,8 +24,24 @@ class Admin extends \Admin_Controller {
     {
         parent::list();
     }
-    public function excel($id)
+    public function excel()
     {
+        header( "Content-type: application/vnd.ms-excel" ); 
+        header( "Content-type: application/vnd.ms-excel; charset=utf-8");
+        header( "Content-Disposition: attachment; filename = invoice.xls" ); 
+        header( "Content-Description: PHP4 Generated Data" );
+        $kind =get("kind");
+        $personalOrGroup =get("personalOrGroup");
+        $data['rows']=$this->applicationn_m->listForExcel($kind,$personalOrGroup);
+        if($kind === "동요" && $personalOrGroup === "독창")
+            $this->load->view("admin/listOfPersonalAgitationExcel",$data);
+        elseif($kind === "동요" && $personalOrGroup === "중창")
+            $this->load->view("admin/listOfGroupAgitationExcel",$data);
+        elseif($kind === "동시" && $personalOrGroup === "개인")
+            $this->load->view("admin/listOfPersonalPeomExcel",$data);
+        elseif($kind === "동시" && $personalOrGroup === "단체")
+            $this->load->view("admin/listOfGroupPeomExcel",$data);
+        return;
         header( "Content-type: application/vnd.ms-excel" ); 
         header( "Content-type: application/vnd.ms-excel; charset=utf-8");
         header( "Content-Disposition: attachment; filename = invoice.xls" ); 
