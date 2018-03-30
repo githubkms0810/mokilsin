@@ -39,6 +39,7 @@ class Base extends \Base_Controller {
             $this->db->trans_start();
             $this->load->model('file/file_m');
             $group_id=$this->file_m->add();
+            $this->file_m->add("user",$group_id,[],"sheetMusic");
             $this->db->set("file_group_id",$group_id);
             $insert_id=$this->applicationn_m->addByPostData();
             

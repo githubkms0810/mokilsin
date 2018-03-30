@@ -31,7 +31,7 @@
         $personal_radio = $('input[value=개인]');
         $personal_radio.attr("checked", true);
         Jy.Common.HideAndShow('.jy-group-wapper', '.jy-personal-wapper');
-
+        $('.group_file').attr('name', '');
         //개인 라디오 인풋 눌렀을떄 event
         $personal_radio.click(function() {
             $('.jy-group-item').val('');
@@ -80,7 +80,7 @@
 
         <?php if ( $kind === "동요" ): ?>
         <!-- 동요 공통 시작 -->
-
+        <input class="personal_file" type="file" name="sheetMusic[]">
         <fieldset>
 
             <legend>공통</legend>

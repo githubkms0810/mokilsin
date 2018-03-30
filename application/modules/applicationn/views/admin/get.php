@@ -1,7 +1,9 @@
 
-<table border='1'>
-    <tr>
-        <td>접수번호</td>
+
+<table >
+
+    <tr >
+        <td style="border: 1px solid #444444; background-color: red">접수번호</td>
         <td><?=$row->접수번호?></td>
     </tr>
     <tr>

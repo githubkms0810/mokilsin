@@ -162,8 +162,9 @@ class File_M extends Pagination_Model
 	//----@custom
 
 	//@param $kind :: is user or admin folder
-	public function add($kind="user",$next_group_id =true,$config =array()) 
+	public function add($kind="user",$next_group_id =true,$config =array(),$inputName= "files") 
 	{
+		$this->upload->inputName = $inputName;
 		$data =$this->upload->multiUpload("file",$kind);
 		if($data["result"] !== "success")  // fail or non
 		{
