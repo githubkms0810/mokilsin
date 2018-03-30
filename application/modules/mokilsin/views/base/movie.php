@@ -52,9 +52,10 @@
 			<!-- Begin Post Content -->
 			<h4 class="movie_title"><img src="/public/mokilsin/images/_ART/content/Mogilsin_movie.gif" alt="" /></h4>
 <div class="movie_img">
-<embed src="/public/mokilsin/uploadfiles/movie/movie1.mp4" width="760" height="400" allowfullscreen="true" wmode="transparent" flashvars="file=/uploadfiles/movie/mog_2017_movie.flv&image=/uploadfiles/movie/mog_2017_movie.jpg&skin=/uploadfiles/movie/jvplayerskin.swf&controlbar=over&repeat=always&autostart=false&stretching=fill">
+<iframe width="763" height="429" src="https://www.youtube-nocookie.com/embed/_DzaTOlCL40?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <p class="mt10 db"></p>
-<embed src="/public/mokilsin/uploadfiles/movie/movie2.mp4" wmode="transparent" width="760" height="400" allowscriptaccess="always" name="ENJPlayer8842631" id="ENJPlayer8842631" allowfullscreen="true" type="application/x-shockwave-flash" flashvars="">
+<iframe width="763" height="429" src="https://www.youtube-nocookie.com/embed/X12hIBH0Qzk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br><br><br><br><br><br><br><br><br><br>
 </div>
 			<!-- End Post Content -->
 <!-- Begin Tags -->
