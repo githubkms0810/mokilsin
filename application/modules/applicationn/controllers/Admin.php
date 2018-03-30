@@ -16,7 +16,13 @@ class Admin extends \Admin_Controller {
         $this->load->model('file/file_m');
         $data["files"]  = $this->file_m->list_ByGroupId($row->file_group_id);
         $this->load->model("applicant/applicant_m");
+        $this->db->order_by("id","asc");
+        $this->db->where("application_id",$row->id);
         $data["applicant"] = $this->applicant_m->list();
+            if($row->동요동시 ==="동요")
+        $data["content_view"] = "admin/getAgitation";
+            else
+        $data["content_view"] = "admin/getPeom";
         $this->data += $data;
         parent::get($id);
     }
