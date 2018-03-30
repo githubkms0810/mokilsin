@@ -28,59 +28,69 @@
 <script>
     $(document).ready(function() {
         //init
-        $personal_radio = $('input[value=개인]');
-        $personal_radio.attr("checked", true);
+        $personalItem = $('.jy-personal-item');
+        $GroupItem = $('.jy-group-item');
+        $personalRadio = $('#개인');
+        $groupRadio = $('#단체');
+        $personalRadio.attr("checked", true);
         Jy.Common.HideAndShow('.jy-group-wapper', '.jy-personal-wapper');
         $('.group_file').attr('name', '');
+        $GroupItem.prop('required',false)
+        $personalItem.prop('required',true)
+        $(".jy-group-item1").prop('required',false);
+        $(".jy-group-item2").prop('required',false);
+            
         //개인 라디오 인풋 눌렀을떄 event
-        $personal_radio.click(function() {
-            $('.jy-group-item').val('');
+        $personalRadio.click(function() {
+            $GroupItem.val('');
             Jy.Common.HideAndShow('.jy-group-wapper', '.jy-personal-wapper');
             $('.group_file').attr('name', '');
             $('.personal_file').attr('name', 'files[]');
+            $GroupItem.prop('required',false)
+            $personalItem.prop('required',true)
+            $(".jy-group-item1").prop('required',false);
+            $(".jy-group-item2").prop('required',false);
         });
         //단체 라디오 인풋 눌렀을떄 event
-        $group_radio = $('input[value=단체]');
-        $group_radio.click(function() {
-            $('.jy-personal-item').val('');
+        $groupRadio.click(function() {
+            $personalItem.val('');
             Jy.Common.HideAndShow('.jy-personal-wapper', '.jy-group-wapper');
             $('.personal_file').attr('name', '');
             $('.group_file').attr('name', 'files[]');
+            $GroupItem.prop('required',true)
+            $personalItem.prop('required',false)
+            $(".jy-group-item1").prop('required',true)
+            $(".jy-group-item2").prop('required',true)
         });
     });
-
 </script>
 <div class="container" style="margin-top:100px; margin-bottom:100px;">
-    <form action="/applicationn/add" method="post" enctype="multipart/form-data" class="project_form floating-labels" style="margin-top:100px; margin-bottom:150px;">
+    <form id="mokilsin-form" action="/applicationn/add" method="post" enctype="multipart/form-data" class="project_form floating-labels" style="margin-top:100px; margin-bottom:150px;">
         <input type="hidden" name="동요동시" value="<?=$kind?>">
         <!-- 접수번호 필요없을듯 시작-->
-        <div>
+        <!-- <div>
             <label class="project_label">접수번호</label>
             <input type="text" name="접수번호">
-        </div>
+        </div> -->
         <!-- 접수번호 필요없을듯 끝-->
 
         <div>
             <ul class="project_form-list">
                 <li>
-                    <input type="radio" name="개인단체" value="개인" id="개인">
-                    <label for="개인">개인</label>
+                    <input type="radio" name="개인단체" value="<?=$kind === "동요" ? "중창" : "단체"?>" id="개인">
+                    <label for="개인"><?=$kind === "동요" ? "독창" : "개인"?></label>
                 </li>
                 <li>
-                    <input type="radio" name="개인단체" value="단체" id="단체">
-                    <label for="단체">단체</label>
+                    <input type="radio" name="개인단체" value="<?=$kind === "동요" ? "중창" : "단체"?>" id="단체">
+                    <label for="단체"><?=$kind === "동요" ? "중창" : "단체"?></label>
                 </li>
             </ul>
         </div>
-
-
-
-
         <!-- 동요시작 -->
 
         <?php if ( $kind === "동요" ): ?>
         <!-- 동요 공통 시작 -->
-        <input class="personal_file" type="file" name="sheetMusic[]">
+       
         <fieldset>
 
             <legend>공통</legend>
@@ -100,6 +110,20 @@
                 <label class="project_label">작사</label>
                 <input type="text" name="작사" value="<?=DEBUG === false ? " ":"작사 테스트 "?>">
             </div>
+
+            <div>
+                    <label class="project_label">가창지도자 연락처</label>
+                    <input required type="text" name="가창지도자연락처" value="<?=DEBUG === false ? " ":"가창지도자연락처 테스트 "?>">
+                </div>
+                <div>
+                    <label class="project_label">가창지도자 이메일</label>
+                    <input required type="text" name="가창지도자이메일" value="<?=DEBUG === false ? " ":"가창지도자이메일 테스트 "?>">
+                </div>
+                <div>
+                    <label class="project_label">가창지도자 주소</label>
+                    <input required type="text" name="가창지도자주소" value="<?=DEBUG === false ? " ":"가창지도자주소 테스트 "?>">
+                </div>
+
         </fieldset>
         <!-- 동요 공통 끝 -->
         <fieldset>
@@ -110,7 +134,7 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input class="jy-personal-item" type="text" name="성명[]" value="<?=DEBUG === false ? " ":"동요개인성명 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="성명[]" value="<?=DEBUG === false ? " ":"동요개인성명 테스트 "?>">
                 </div>
 
                 <div>
@@ -128,54 +152,48 @@
 
                 <div>
                     <label class="project_label">학교</label>
-                    <input class="jy-personal-item" type="text" name="학교[]" value="<?=DEBUG === false ? " ":"동요개인학교 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="학교[]" value="<?=DEBUG === false ? " ":"동요개인학교 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">학년</label>
-                    <input class="jy-personal-item" type="text" name="학년[]" value="<?=DEBUG === false ? " ":"동요개인학년 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="학년[]" value="<?=DEBUG === false ? " ":"동요개인학년 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">지역</label>
-                    <input type="text" name="지역" value="<?=DEBUG === false ? " ":"동요개인지역 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="지역" value="<?=DEBUG === false ? " ":"동요개인지역 테스트 "?>">
                 </div>
 
                 <div>
 
                     <h4>주소</h4>
 
-                    <input id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? " ":"동요개인신주소 테스트 "?>">
+                    <input required class="jy-personal-item" id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? " ":"동요개인신주소 테스트 "?>">
                     <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? " " : "동요개인 지번 테스트 " ?>">
                     <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? " ": "동요개인 구주소 테스트 " ?>">
 
                 </div>
                 <div style="margin-top:20px;">
                     <label class="project_label">상세 주소</label>
-                    <input type="text" name="상세주소" value="<?=DEBUG === false ? " " : "동요개인 상세주소테스트 " ?>">
+                    <input required class="jy-personal-item" type="text" name="상세주소" value="<?=DEBUG === false ? " " : "동요개인 상세주소테스트 " ?>">
                     <span id="guide" style="color:#999"></span>
                 </div>
 
                 <div>
                     <label class="project_label">학부모 연락처</label>
-                    <input type="text" name="학부모연락처" value="<?=DEBUG === false ? " ":"학부모연락처 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="학부모연락처" value="<?=DEBUG === false ? " ":"학부모연락처 테스트 "?>">
                 </div>
 
+             
                 <div>
-                    <label class="project_label">가창지도자 연락처</label>
-                    <input type="text" name="가창지도자연락처" value="<?=DEBUG === false ? " ":"가창지도자연락처 테스트 "?>">
+                <h4>사진</h4>
+                    <input class="group_file" type="file" name="files[]">
                 </div>
+            
                 <div>
-                    <label class="project_label">가창지도자 이메일</label>
-                    <input type="text" name="가창지도자이메일" value="<?=DEBUG === false ? " ":"가창지도자이메일 테스트 "?>">
-                </div>
-                <div>
-                    <label class="project_label">가창지도자 주소</label>
-                    <input type="text" name="가창지도자주소" value="<?=DEBUG === false ? " ":"가창지도자주소 테스트 "?>">
-                </div>
-                <div>
-                    <h4>자료</h4>
-                    <input class="personal_file" type="file" name="files[]">
+                    <h4>악보</h4>
+                    <input class="group_file" type="file" name="sheetMusic[]">
                 </div>
             </div>
             <!-- 동요 개인 끝 -->
@@ -192,10 +210,15 @@
                     <label class="project_label">총인원</label>
                     <input type="text" name="총인원" value="<?=DEBUG === false ? " ":"총인원 테스트 "?>">
                 </div>
+               
+                <div>
+                    <h4>사진</h4>
+                    <input class="group_file" type="file" name="files[]">
+                </div>
 
                 <div>
-                    <h4>자료</h4>
-                    <input class="group_file" type="file" name="files[]">
+                    <h4>악보</h4>
+                    <input class="group_file" type="file" name="sheetMusic[]">
                 </div>
 
                 <legend>
@@ -221,162 +244,28 @@
                         </tr>
                     </thead>
                     <tbody>
-
+                    <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
                         <tr>
+                            <td style="text-align:center;"><?=$i+1?></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" /></td>
+                            <td>
+                                <select class="j jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
+                                <option value="">선택</option>
+                                <option value="남">남</option>
+                                <option value="여">여</option>
+                            </select>
+                            </td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" /></td>
+                        </tr>
+                    <?php endfor; ?>
 
-                            <tr>
-                                <td style="text-align:center;">1</td>
-                                <td><input type="text" name="pboardlist[1].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[1].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[1].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[1].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[1].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">2</td>
-                                <td><input type="text" name="pboardlist[2].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[2].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[2].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[2].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[2].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">3</td>
-                                <td><input type="text" name="pboardlist[3].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[3].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[3].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[3].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[3].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">4</td>
-                                <td><input type="text" name="pboardlist[4].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[4].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[4].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[4].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[4].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">5</td>
-                                <td><input type="text" name="pboardlist[5].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[5].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[5].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[5].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[5].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">6</td>
-                                <td><input type="text" name="pboardlist[6].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[6].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[6].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[6].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[6].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">7</td>
-                                <td><input type="text" name="pboardlist[7].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[7].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[7].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[7].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[7].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">8</td>
-                                <td><input type="text" name="pboardlist[8].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[8].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[8].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[8].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[8].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">9</td>
-                                <td><input type="text" name="pboardlist[9].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[9].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[9].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[9].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[9].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">10</td>
-                                <td><input type="text" name="pboardlist[10].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[10].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[10].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[10].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[10].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
+                          
 
                     </tbody>
                 </table>
-
+             
             </div>
         </fieldset>
 
@@ -386,7 +275,6 @@
             <input type="text" name="신청인" value="<?=DEBUG === false ? " ":"신청인 테스트 "?>">
         </div>
         <div>
-            <button type="submit">신청</button>
         </div>
         <?php endif; ?>
         <!-- 동요끝 -->
@@ -403,12 +291,12 @@
 
                 <div>
                     <label class="project_label">지도교사 및 보호자 연락처</label>
-                    <input type="text" name="지도교사및보호자연락처" value="<?=DEBUG === false ? " ":"지도교사및보호자연락처 테스트 "?>">
+                    <input required type="text" name="지도교사및보호자연락처" value="<?=DEBUG === false ? " ":"지도교사및보호자연락처 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">지도교사 및 보호자 성명</label>
-                    <input type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? " ":"지도교사및보호자성명 테스트 "?>">
+                    <input required type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? " ":"지도교사및보호자성명 테스트 "?>">
                 </div>
                 
             </div>
@@ -418,13 +306,13 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input class="jy-personal-item" type="text" name="성명[]" value="<?=DEBUG === false ? " ":"동시개인성명 테스트 "?>">
+                    <input  required class="jy-personal-item" type="text" name="성명[]" value="<?=DEBUG === false ? " ":"동시개인성명 테스트 "?>">
                 </div>
 
                 <div>
                     <ul class="project_form-list">
                         <li>
-                            <input type="radio" name="성별[]" value="<?=DEBUG === false ? " ":"동시개인성별 테스트 "?>" id="sex-1" checked>
+                            <input class="jy-personal-item" required type="radio" name="성별[]" value="<?=DEBUG === false ? " ":"동시개인성별 테스트 "?>" id="sex-1" checked>
                             <label for="sex-1">남자</label>
                         </li>
                         <li>
@@ -436,35 +324,35 @@
 
                 <div>
                     <label class="project_label">학교</label>
-                    <input class="jy-personal-item" type="text" name="학교[]" value="<?=DEBUG === false ? " ":"동시개인학교 테스트 "?>">
+                    <input  class="jy-personal-item" required type="text" name="학교[]" value="<?=DEBUG === false ? " ":"동시개인학교 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">학년</label>
-                    <input class="jy-personal-item" type="text" name="학년[]" value="<?=DEBUG === false ? " ":"동시개인학년 테스트 "?>">
+                    <input class="jy-personal-item" required type="text" name="학년[]" value="<?=DEBUG === false ? " ":"동시개인학년 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">반</label>
-                    <input class="jy-personal-item" type="text" name="반[]" value="<?=DEBUG === false ? " ":"동시개인반 테스트 "?>">
+                    <input class="jy-personal-item" required type="text" name="반[]" value="<?=DEBUG === false ? " ":"동시개인반 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">지역</label>
-                    <input type="text" name="지역" value="<?=DEBUG === false ? " ":"동시개인지역 테스트 "?>">
+                    <input class="jy-personal-item" required type="text" name="지역" value="<?=DEBUG === false ? " ":"동시개인지역 테스트 "?>">
                 </div>
 
                 <div>
 
                     <h4>주소</h4>
 
-                    <input id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? " ":"동시개인신주소 테스트 "?>">
+                    <input class="jy-personal-item" required id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? " ":"동시개인신주소 테스트 "?>">
                     <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? " " : "동시개인 지번 테스트 " ?>">
                     <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? " ": "동시개인 구주소 테스트 " ?>">
 
                 </div>
                 <div style="margin-top:20px;">
-                    <label class="project_label">상세 주소</label>
+                    <label class="jy-personal-item" required class="project_label">상세 주소</label>
                     <input type="text" name="상세주소" value="<?=DEBUG === false ? " " : "동시개인 상세주소테스트 " ?>">
                     <span id="guide" style="color:#999"></span>
                 </div>
@@ -506,158 +394,24 @@
                         </tr>
                     </thead>
                     <tbody>
-
-                        <tr>
-
+                        <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
                             <tr>
-                                <td style="text-align:center;">1</td>
-                                <td><input type="text" name="pboardlist[1].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[1].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[1].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
+                                <td style="text-align:center;"><?=$i+1?></td>
+                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
+                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
+                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
                                 <td>
-                                    <select name="pboardlist[1].string4" title="성별선택">
+                                    <select class="jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
                                     <option value="">선택</option>
                                     <option value="남">남</option>
                                     <option value="여">여</option>
                                 </select>
                                 </td>
-                                <td><input type="text" name="pboardlist[1].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
+                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
                             </tr>
+                            
+                        <?php endfor; ?>
 
-                            <tr>
-                                <td style="text-align:center;">2</td>
-                                <td><input type="text" name="pboardlist[2].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[2].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[2].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[2].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[2].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">3</td>
-                                <td><input type="text" name="pboardlist[3].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[3].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[3].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[3].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[3].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">4</td>
-                                <td><input type="text" name="pboardlist[4].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[4].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[4].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[4].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[4].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">5</td>
-                                <td><input type="text" name="pboardlist[5].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[5].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[5].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[5].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[5].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">6</td>
-                                <td><input type="text" name="pboardlist[6].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[6].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[6].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[6].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[6].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">7</td>
-                                <td><input type="text" name="pboardlist[7].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[7].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[7].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[7].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[7].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">8</td>
-                                <td><input type="text" name="pboardlist[8].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[8].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[8].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[8].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[8].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">9</td>
-                                <td><input type="text" name="pboardlist[9].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[9].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[9].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[9].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[9].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-
-                            <tr>
-                                <td style="text-align:center;">10</td>
-                                <td><input type="text" name="pboardlist[10].string1" title="성명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[10].string2" title="학교명" maxlength="30" /></td>
-                                <td><input type="text" name="pboardlist[10].string3" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select name="pboardlist[10].string4" title="성별선택">
-                                    <option value="">선택</option>
-                                    <option value="남">남</option>
-                                    <option value="여">여</option>
-                                </select>
-                                </td>
-                                <td><input type="text" name="pboardlist[10].string5" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
 
                     </tbody>
                 </table>
@@ -669,13 +423,15 @@
             <input type="text" name="신청인" value="<?=DEBUG === false ? " ":"신청인 테스트 "?>">
         </div>
         <div>
-            <button type="submit">신청</button>
         </div>
         <?php endif; ?>
         <!-- 동시 끝 -->
+        
+        <?php include_once(APPPATH."modules\\applicationn\\views\\base\\termOfUse.php") ?>
+        <button type="submit" >신청</button>
     </form>
 </div>
-
+<!-- onclick="$('#mokilsin-form').submit();return false;" -->
 
 <script src="/public/mokilsin/js/form.js"></script>
 
@@ -722,3 +478,4 @@
 
 </script>
 <!-- 다음주소끝 -->
+

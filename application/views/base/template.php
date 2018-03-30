@@ -10,6 +10,8 @@
         <link rel="stylesheet" type="text/css" href="/public/mokilsin/css/front-base.css" media="all">
         <link rel="stylesheet" type="text/css" href="/public/mokilsin/css/front-style.css" media="all">
         <link rel="stylesheet" type="text/css" href="/public/mokilsin/css/front-media.css" media="all">
+        <link rel="stylesheet" type="text/css" href="/public/css/jy.css" media="all">
+
         <script src="/public/mokilsin/js/jquery-1.11.3.min.js" type="text/javascript"></script>
         <script src="/public/mokilsin/js/pace.js" type="text/javascript"></script>
         <script src="/public/mokilsin/js/jquery.bxslider.min.js" type="text/javascript"></script>
