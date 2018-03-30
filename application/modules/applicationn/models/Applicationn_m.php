@@ -133,11 +133,13 @@ class Applicationn_M extends Pagination_Model
 	}
 	public function listForExcel(string $kind,string $personalOrGroup)
 	{
-		$this->db->select("{$this->as}.*, group_concat(applicant.성명) as 성명, group_concat(applicant.학교) as 학교, group_concat(applicant.학년) as 학년,group_concat(applicant.연락처) as 연락처,");
+		$this->db->select("{$this->as}.*,applicant.성명,applicant.학교,applicant.학년,applicant.연락처");
+		// $this->db->select("{$this->as}.*, group_concat(applicant.성명) as 성명, group_concat(applicant.학교) as 학교, group_concat(applicant.학년) as 학년,group_concat(applicant.연락처) as 연락처,");
 		$this->db->where("동요동시",$kind);
 		$this->db->where("개인단체",$personalOrGroup);
 		$this->db->from("{$this->table} as {$this->as}");
-		$this->db->join("applicant as applicant","{$this->as}.id = applicant.application_id","INNER");
+		// $this->db->join("applicant as applicant","{$this->as}.id = applicant.application_id","INNER");
+		$this->db->join("(select application_id, group_concat(학교) as 학교, group_concat(성명) as 성명, group_concat(학년) as 학년, group_concat(연락처) as 연락처 from applicant GROUP BY application_id) applicant ","{$this->as}.id = applicant.application_id","LEFT");
 		$this->db->group_by("{$this->as}.id");
 		$this->db->order_by("id","asc");
 		return $this->db->get()->result();

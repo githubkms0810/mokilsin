@@ -106,19 +106,22 @@
                 <label class="project_label">작사</label>
                 <input type="text" name="작사" value="<?=DEBUG === false ? " ":"작사 테스트 "?>">
             </div>
-
             <div>
-                    <label class="project_label">가창지도자 연락처</label>
-                    <input required type="text" name="가창지도자연락처" value="<?=DEBUG === false ? " ":"가창지도자연락처 테스트 "?>">
-                </div>
-                <div>
-                    <label class="project_label">가창지도자 이메일</label>
-                    <input required type="text" name="가창지도자이메일" value="<?=DEBUG === false ? " ":"가창지도자이메일 테스트 "?>">
-                </div>
-                <div>
-                    <label class="project_label">가창지도자 주소</label>
-                    <input required type="text" name="가창지도자주소" value="<?=DEBUG === false ? " ":"가창지도자주소 테스트 "?>">
-                </div>
+                <label class="project_label">지도자명</label>
+                <input required type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? " ":"지도교사및보호자성명 테스트 "?>">
+            </div>
+             <div>
+                <label class="project_label">가창지도자 연락처</label>
+                <input required type="text" name="가창지도자연락처" value="<?=DEBUG === false ? " ":"가창지도자연락처 테스트 "?>">
+            </div>
+            <div>
+                <label class="project_label">가창지도자 이메일</label>
+                <input required type="text" name="가창지도자이메일" value="<?=DEBUG === false ? " ":"가창지도자이메일 테스트 "?>">
+            </div>
+            <div>
+                <label class="project_label">가창지도자 주소</label>
+                <input required type="text" name="가창지도자주소" value="<?=DEBUG === false ? " ":"가창지도자주소 테스트 "?>">
+            </div>
 
         </fieldset>
         <!-- 동요 공통 끝 -->
