@@ -426,7 +426,7 @@
         <?php endif; ?>
         <!-- 동시 끝 -->
         
-        <?php include_once(APPPATH."modules\\applicationn\\views\\base\\termOfUse.php") ?>
+        <?php include_once(APPPATH."modules/applicationn/views/base/termOfUse.php") ?>
         <button type="submit" >신청</button>
     </form>
 </div>
