@@ -91,6 +91,12 @@
             <div>
                 <label class="project_label">자유곡</label>
                 <input class="company" type="text" name="자유곡" value="<?=DEBUG === false ? "":"자유곡 테스트 "?>">
+                <br>
+                <h4>작곡/작사</h4>
+                <input type="text" name="작곡" value="<?=DEBUG === false ? "":"작곡 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="작곡">
+
+                <input type="text" name="작사" value="<?=DEBUG === false ? "":"작사 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="작사">
+
             </div>
             <div>
                 <legend>
@@ -139,28 +145,6 @@
 
                     <input type="text" name="지역" value="<?=DEBUG === false ? "":"동요개인지역 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지역">
                 </div>
-
-                <div>
-
-                    <h4>주소</h4>
-
-                    <input required class="jy-personal-item" id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? "":"동요개인신주소 테스트 "?>">
-                    <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? "" : "동요개인 지번 테스트 " ?>">
-                    <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? "": "동요개인 구주소 테스트 " ?>">
-
-                </div>
-                <div style="margin-top:20px;">
-                    <label class="project_label">상세 주소</label>
-                    <input required class="jy-personal-item" type="text" name="상세주소" value="<?=DEBUG === false ? "" : "동요개인 상세주소테스트 " ?>">
-                    <span id="guide" style="color:#999"></span>
-                </div>
-
-                <div>
-                    <label class="project_label">학부모 연락처</label>
-                    <input required class="jy-personal-item" type="text" name="학부모연락처" value="<?=DEBUG === false ? "":"학부모연락처 테스트 "?>">
-                </div>
-
-
                 <div>
                     <h4>사진</h4>
                     <input class="personal_file" type="file" name="files[]">
@@ -210,7 +194,6 @@
                             <th style="text-align:center;" scope="col"><label for="pboardlist5">학교명</label></th>
                             <th style="text-align:center;" scope="col"><label for="pboardlist6">학년</label></th>
                             <th style="text-align:center;" scope="col"><label for="pboardlist7">성별</label></th>
-                            <th style="text-align:center;" scope="col"><label for="pboardlist8">연락처</label></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -227,7 +210,6 @@
                                 <option value="여">여</option>
                             </select>
                             </td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" /></td>
                         </tr>
                     <?php endfor; ?>
 
@@ -346,7 +328,6 @@
                             <th style="text-align:center;" scope="col"><label for="pboardlist5">학교명</label></th>
                             <th style="text-align:center;" scope="col"><label for="pboardlist6">학년</label></th>
                             <th style="text-align:center;" scope="col"><label for="pboardlist7">성별</label></th>
-                            <th style="text-align:center;" scope="col"><label for="pboardlist8">연락처</label></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -363,7 +344,6 @@
                                     <option value="여">여</option>
                                 </select>
                                 </td>
-                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
                             </tr>
                             
                         <?php endfor; ?>
