@@ -19,7 +19,8 @@
 	<section class="featured-posts" style="margin:100px 0 150px 0;">
 	<div class="section-title">
 		<h2><span><a href="/content/list?board_key=notice" style="color: #292b2c; font-weight: 400; font-size: 22px;">공지사항</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="/content/list?board_key=data" style="color: #292b2c; font-weight: 400; font-size: 22px;">자료실</a></span></h2>
+            <a href="/content/list?board_key=data" style="color: #292b2c; font-weight: 400; font-size: 22px;">자료실</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/content/list?board_key=free" style="color: #292b2c; font-weight: 400; font-size: 22px;">자유 게시판</a></span></h2>
 		
 	</div>
 	<div class="card-columns listfeaturedtag">
@@ -63,7 +64,9 @@
 	</section>
 	<!-- End Featured
 	================================================== -->
-	<a class="btn btn-default" href="/content/add?board_key=<?=$board->key?>">글쓰기</a>
+	<div style="margin-bottom:150px;">
+	    <a class="btn btn-default" href="/content/add?board_key=<?=$board->key?>" style="color:#000;">글쓰기</a>
+	</div>
 	<div style=" width: 100px;margin:0 auto"> <?=$this->pagination->create_links();?></div>
 </div>
 <!-- /.container -->
