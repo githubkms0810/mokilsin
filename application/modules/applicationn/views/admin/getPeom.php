@@ -52,11 +52,11 @@
   <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
   <tr>
     <td class="tg-eh2d"><?=$i+1?></td>
-    <td class="tg-eh2d"><?=$row->개인단체 === "단체" ? $applicant[0]->성명 : ""?></td>
-    <td class="tg-eh2d" colspan="2"><?=$row->개인단체 === "단체" ? $applicant[0]->학교 : ""?></td>
-    <td class="tg-eh2d"><?=$row->개인단체 === "단체" ? $applicant[0]->학년 : ""?> 학년 / <?=$row->개인단체 === "단체" ? $applicant[0]->반 : ""?>반</td>
-    <td class="tg-eh2d"><?=$row->개인단체 === "단체" ? $applicant[0]->성별 : ""?></td>
-    <td class="tg-eh2d"><?=$row->개인단체 === "단체" ? $applicant[0]->연락처 : ""?></td>
+    <td class="tg-eh2d"><?=$row->개인단체 === "단체" && isset($applicant[$i]) ? $applicant[$i]->성명 : ""?></td>
+    <td class="tg-eh2d" colspan="2"><?=$row->개인단체 === "단체" && isset($applicant[$i])? $applicant[$i]->학교 : ""?></td>
+    <td class="tg-eh2d"><?=$row->개인단체 === "단체" && isset($applicant[$i]) ? $applicant[$i]->학년 : ""?> 학년 / <?=$row->개인단체 === "단체" && isset($applicant[$i]) ? $applicant[$i]->반 : ""?>반</td>
+    <td class="tg-eh2d"><?=$row->개인단체 === "단체" && isset($applicant[$i]) ? $applicant[$i]->성별 : ""?></td>
+    <td class="tg-eh2d"><?=$row->개인단체 === "단체" && isset($applicant[$i]) ? $applicant[$i]->연락처 : ""?></td>
 </tr>
   <?php endfor; ?>
  

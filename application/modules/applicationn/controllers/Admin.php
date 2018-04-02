@@ -24,6 +24,7 @@ class Admin extends \Admin_Controller {
             else
         $data["content_view"] = "admin/getPeom";
         $this->data += $data;
+        // \var_dump($data["applicant"]);
         parent::get($id);
     }
     public function list()

@@ -130,31 +130,45 @@ class Applicant_M extends Pagination_Model
 		{$this->as}.*,
 		");
 	}
+
 	public function addByArrayPostDataWithApplicationId($application_id)
 	{
-		$성명 = post("성명");
-		$학교 = post("학교");
-		$학년 = post("학년");
-		$반 = post("반");
-		$성별 = post("성별");
-		$연락처 = post("연락처");
-		for ($i=0; $i < count($성명); $i++) { 
-			if($성명[$i] === "" || $성명[$i] === null)
-				continue;
+		if(post("개인단체") === "개인" || post("개인단체") === "독창"){
 			$this->set('application_id',$application_id);
-			if(isset($성명[$i]))
-				$this->set('성명',$성명[$i]);
-			if(isset($학교[$i]))
-				$this->set('학교',$학교[$i]);
-			if(isset($학년[$i]))
-				$this->set('학년',$학년[$i]);
-			if(isset($반[$i]))
-				$this->set('반',$반[$i]);
-			if(isset($성별[$i]))
-				$this->set('성별',$성별[$i]);
-			if(isset($연락처[$i]))
-				$this->set('연락처',$연락처[$i]);
+			$this->set('성명',post("개인성명"));
+			$this->set('성별',post("개인성별"));
+			$this->set('학교',post("개인학교"));
+			$this->set('학년',post("개인학년"));
+			$this->set('반',post("개인반"));
+			$this->set('연락처',post("개인연락처"));
 			$this->db->insert($this->table);
+		}
+		else{
+			$성명 = post("성명");
+			$학교 = post("학교");
+			$학년 = post("학년");
+			$반 = post("반");
+			$성별 = post("성별");
+			$연락처 = post("연락처");
+
+			for ($i=0; $i < count($성명); $i++) { 
+				if($성명[$i] === "" || $성명[$i] === null)
+					continue;
+				$this->set('application_id',$application_id);
+				if(isset($성명[$i]))
+					$this->set('성명',$성명[$i]);
+				if(isset($학교[$i]))
+					$this->set('학교',$학교[$i]);
+				if(isset($학년[$i]))
+					$this->set('학년',$학년[$i]);
+				if(isset($반[$i]))
+					$this->set('반',$반[$i]);
+				if(isset($성별[$i]))
+					$this->set('성별',$성별[$i]);
+				if(isset($연락처[$i]))
+					$this->set('연락처',$연락처[$i]);
+				$this->db->insert($this->table);
+			}
 		}
 	}
 	// protected function _select_admin()

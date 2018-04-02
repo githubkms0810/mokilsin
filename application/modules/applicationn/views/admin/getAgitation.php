@@ -14,7 +14,7 @@
     <th class="tg-yj5y" colspan="2">예선(자유곡)</th>
     <th class="tg-3xi5"><?=$row->자유곡?></th>
     <th class="tg-yj5y" colspan="2">작사/작곡</th>
-    <th class="tg-3xi5" colspan="2"><?=$row->작사?>/<<?=$row->작곡?></th>
+    <th class="tg-3xi5" colspan="2"><?=$row->작사?>/<?=$row->작곡?></th>
   </tr>
   <tr>
     <td class="tg-yj5y" colspan="2">본선(지정곡)</td>

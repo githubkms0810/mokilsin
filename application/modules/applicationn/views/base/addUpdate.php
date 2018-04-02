@@ -12,9 +12,12 @@
 <!--jQuery UI 라이브러리 js파일-->
 <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
 
-<section class="home-hero-cs">
-	<div class="animated fadeInUp">
-        <h2 class="home-hero-title-cs" style="font-weight:bold;">참가 신청</h2>
+<section class="home-hero-project">
+    <div class="animated fadeInUp">
+        <h2 class="home-hero-title-project">참가신청</h2>
+        <p class="home-hero-des-project">
+            참가신청페이지
+        </p>
     </div>
 </section>
 
@@ -130,17 +133,17 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input required class="jy-personal-item" type="text" name="성명[]" value="<?=DEBUG === false ? "":"동요개인성명 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동요개인성명 테스트 "?>">
                 </div>
 
                 <div>
                     <ul class="project_form-list">
                         <li>
-                            <input type="radio" name="성별[]" value="<?=DEBUG === false ? "":"동요개인성별 테스트 "?>" id="sex-1" checked>
+                            <input type="radio" name="개인성별" value="남자" id="sex-1" checked>
                             <label for="sex-1">남자</label>
                         </li>
                         <li>
-                            <input type="radio" name="성별[]" value="<?=DEBUG === false ? "":"동요개인성별 테스트 "?>" id="sex-2">
+                            <input type="radio" name="개인성별" value="여자" id="sex-2">
                             <label for="sex-2">여자</label>
                         </li>
                     </ul>
@@ -148,12 +151,12 @@
 
                 <div>
                     <label class="project_label">학교</label>
-                    <input required class="jy-personal-item" type="text" name="학교[]" value="<?=DEBUG === false ? "":"동요개인학교 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="개인학교" value="<?=DEBUG === false ? "":"동요개인학교 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">학년</label>
-                    <input required class="jy-personal-item" type="text" name="학년[]" value="<?=DEBUG === false ? "":"동요개인학년 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="개인학년" value="<?=DEBUG === false ? "":"동요개인학년 테스트 "?>">
                 </div>
 
                 <div>
@@ -302,17 +305,17 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input  required class="jy-personal-item" type="text" name="성명[]" value="<?=DEBUG === false ? "":"동시개인성명 테스트 "?>">
+                    <input  required class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동시개인성명 테스트 "?>">
                 </div>
 
                 <div>
                     <ul class="project_form-list">
                         <li>
-                            <input class="jy-personal-item" required type="radio" name="성별[]" value="<?=DEBUG === false ? "":"동시개인성별 테스트 "?>" id="sex-1" checked>
+                            <input class="jy-personal-item" required type="radio" name="개인성별" value="남자" id="sex-1" checked>
                             <label for="sex-1">남자</label>
                         </li>
                         <li>
-                            <input type="radio" name="성별[]" value="<?=DEBUG === false ? "":"동시개인성별 테스트 "?>" id="sex-2">
+                            <input type="radio" name="개인성별" value="여자" id="sex-2">
                             <label for="sex-2">여자</label>
                         </li>
                     </ul>
@@ -320,17 +323,17 @@
 
                 <div>
                     <label class="project_label">학교</label>
-                    <input  class="jy-personal-item" required type="text" name="학교[]" value="<?=DEBUG === false ? "":"동시개인학교 테스트 "?>">
+                    <input  class="jy-personal-item" required type="text" name="개인학교" value="<?=DEBUG === false ? "":"동시개인학교 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">학년</label>
-                    <input class="jy-personal-item" required type="text" name="학년[]" value="<?=DEBUG === false ? "":"동시개인학년 테스트 "?>">
+                    <input class="jy-personal-item" required type="text" name="개인학년" value="<?=DEBUG === false ? "":"동시개인학년 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">반</label>
-                    <input class="jy-personal-item" required type="text" name="반[]" value="<?=DEBUG === false ? "":"동시개인반 테스트 "?>">
+                    <input class="jy-personal-item" required type="text" name="개인반" value="<?=DEBUG === false ? "":"동시개인반 테스트 "?>">
                 </div>
 
                 <div>
@@ -424,7 +427,7 @@
         <!-- 동시 끝 -->
         
         <?php include_once(APPPATH."modules/applicationn/views/base/termOfUse.php") ?>
-        <button type="submit" style="background-color:#f7312e;">신청</button>
+        <button type="submit" >신청</button>
     </form>
 </div>
 <!-- onclick="$('#mokilsin-form').submit();return false;" -->
