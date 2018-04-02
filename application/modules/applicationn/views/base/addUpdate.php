@@ -92,35 +92,35 @@
             <legend>공통</legend>
             <div>
                 <label class="project_label">자유곡</label>
-                <input class="company" type="text" name="자유곡" value="<?=DEBUG === false ? " ":"자유곡 테스트 "?>">
+                <input class="company" type="text" name="자유곡" value="<?=DEBUG === false ? "":"자유곡 테스트 "?>">
             </div>
             <div>
                 <label class="project_label">지정곡</label>
-                <input type="text" name="지정곡" value="<?=DEBUG === false ? " ":"지정곡 테스트 "?>">
+                <input type="text" name="지정곡" value="<?=DEBUG === false ? "":"지정곡 테스트 "?>">
             </div>
             <div>
                 <label class="project_label">작곡</label>
-                <input type="text" name="작곡" value="<?=DEBUG === false ? " ":"작곡 테스트 "?>">
+                <input type="text" name="작곡" value="<?=DEBUG === false ? "":"작곡 테스트 "?>">
             </div>
             <div>
                 <label class="project_label">작사</label>
-                <input type="text" name="작사" value="<?=DEBUG === false ? " ":"작사 테스트 "?>">
+                <input type="text" name="작사" value="<?=DEBUG === false ? "":"작사 테스트 "?>">
             </div>
             <div>
                 <label class="project_label">지도자명</label>
-                <input required type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? " ":"지도교사및보호자성명 테스트 "?>">
+                <input required type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>">
             </div>
              <div>
                 <label class="project_label">가창지도자 연락처</label>
-                <input required type="text" name="가창지도자연락처" value="<?=DEBUG === false ? " ":"가창지도자연락처 테스트 "?>">
+                <input required type="text" name="가창지도자연락처" value="<?=DEBUG === false ? "":"가창지도자연락처 테스트 "?>">
             </div>
             <div>
                 <label class="project_label">가창지도자 이메일</label>
-                <input required type="text" name="가창지도자이메일" value="<?=DEBUG === false ? " ":"가창지도자이메일 테스트 "?>">
+                <input required type="text" name="가창지도자이메일" value="<?=DEBUG === false ? "":"가창지도자이메일 테스트 "?>">
             </div>
             <div>
                 <label class="project_label">가창지도자 주소</label>
-                <input required type="text" name="가창지도자주소" value="<?=DEBUG === false ? " ":"가창지도자주소 테스트 "?>">
+                <input required type="text" name="가창지도자주소" value="<?=DEBUG === false ? "":"가창지도자주소 테스트 "?>">
             </div>
 
         </fieldset>
@@ -133,17 +133,17 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input required class="jy-personal-item" type="text" name="성명[]" value="<?=DEBUG === false ? " ":"동요개인성명 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="성명[]" value="<?=DEBUG === false ? "":"동요개인성명 테스트 "?>">
                 </div>
 
                 <div>
                     <ul class="project_form-list">
                         <li>
-                            <input type="radio" name="성별[]" value="<?=DEBUG === false ? " ":"동요개인성별 테스트 "?>" id="sex-1" checked>
+                            <input type="radio" name="성별[]" value="<?=DEBUG === false ? "":"동요개인성별 테스트 "?>" id="sex-1" checked>
                             <label for="sex-1">남자</label>
                         </li>
                         <li>
-                            <input type="radio" name="성별[]" value="<?=DEBUG === false ? " ":"동요개인성별 테스트 "?>" id="sex-2">
+                            <input type="radio" name="성별[]" value="<?=DEBUG === false ? "":"동요개인성별 테스트 "?>" id="sex-2">
                             <label for="sex-2">여자</label>
                         </li>
                     </ul>
@@ -151,37 +151,37 @@
 
                 <div>
                     <label class="project_label">학교</label>
-                    <input required class="jy-personal-item" type="text" name="학교[]" value="<?=DEBUG === false ? " ":"동요개인학교 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="학교[]" value="<?=DEBUG === false ? "":"동요개인학교 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">학년</label>
-                    <input required class="jy-personal-item" type="text" name="학년[]" value="<?=DEBUG === false ? " ":"동요개인학년 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="학년[]" value="<?=DEBUG === false ? "":"동요개인학년 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">지역</label>
-                    <input required class="jy-personal-item" type="text" name="지역" value="<?=DEBUG === false ? " ":"동요개인지역 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="지역" value="<?=DEBUG === false ? "":"동요개인지역 테스트 "?>">
                 </div>
 
                 <div>
 
                     <h4>주소</h4>
 
-                    <input required class="jy-personal-item" id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? " ":"동요개인신주소 테스트 "?>">
-                    <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? " " : "동요개인 지번 테스트 " ?>">
-                    <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? " ": "동요개인 구주소 테스트 " ?>">
+                    <input required class="jy-personal-item" id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? "":"동요개인신주소 테스트 "?>">
+                    <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? "" : "동요개인 지번 테스트 " ?>">
+                    <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? "": "동요개인 구주소 테스트 " ?>">
 
                 </div>
                 <div style="margin-top:20px;">
                     <label class="project_label">상세 주소</label>
-                    <input required class="jy-personal-item" type="text" name="상세주소" value="<?=DEBUG === false ? " " : "동요개인 상세주소테스트 " ?>">
+                    <input required class="jy-personal-item" type="text" name="상세주소" value="<?=DEBUG === false ? "" : "동요개인 상세주소테스트 " ?>">
                     <span id="guide" style="color:#999"></span>
                 </div>
 
                 <div>
                     <label class="project_label">학부모 연락처</label>
-                    <input required class="jy-personal-item" type="text" name="학부모연락처" value="<?=DEBUG === false ? " ":"학부모연락처 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="학부모연락처" value="<?=DEBUG === false ? "":"학부모연락처 테스트 "?>">
                 </div>
 
              
@@ -202,12 +202,12 @@
                 <legend>단체</legend>
                 <div>
                     <label class="project_label">중창단명</label>
-                    <input type="text" name="중창단명" value="<?=DEBUG === false ? " ":"중창단명 테스트 "?>">
+                    <input type="text" name="중창단명" value="<?=DEBUG === false ? "":"중창단명 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">총인원</label>
-                    <input type="text" name="총인원" value="<?=DEBUG === false ? " ":"총인원 테스트 "?>">
+                    <input type="text" name="총인원" value="<?=DEBUG === false ? "":"총인원 테스트 "?>">
                 </div>
                
                 <div>
@@ -271,7 +271,7 @@
         <!-- 동요 단체 끝 -->
         <div>
             <label class="project_label">신청인</label>
-            <input type="text" name="신청인" value="<?=DEBUG === false ? " ":"신청인 테스트 "?>">
+            <input type="text" name="신청인" value="<?=DEBUG === false ? "":"신청인 테스트 "?>">
         </div>
         <div>
         </div>
@@ -290,12 +290,12 @@
 
                 <div>
                     <label class="project_label">지도교사 및 보호자 연락처</label>
-                    <input required type="text" name="지도교사및보호자연락처" value="<?=DEBUG === false ? " ":"지도교사및보호자연락처 테스트 "?>">
+                    <input required type="text" name="지도교사및보호자연락처" value="<?=DEBUG === false ? "":"지도교사및보호자연락처 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">지도교사 및 보호자 성명</label>
-                    <input required type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? " ":"지도교사및보호자성명 테스트 "?>">
+                    <input required type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>">
                 </div>
                 
             </div>
@@ -305,17 +305,17 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input  required class="jy-personal-item" type="text" name="성명[]" value="<?=DEBUG === false ? " ":"동시개인성명 테스트 "?>">
+                    <input  required class="jy-personal-item" type="text" name="성명[]" value="<?=DEBUG === false ? "":"동시개인성명 테스트 "?>">
                 </div>
 
                 <div>
                     <ul class="project_form-list">
                         <li>
-                            <input class="jy-personal-item" required type="radio" name="성별[]" value="<?=DEBUG === false ? " ":"동시개인성별 테스트 "?>" id="sex-1" checked>
+                            <input class="jy-personal-item" required type="radio" name="성별[]" value="<?=DEBUG === false ? "":"동시개인성별 테스트 "?>" id="sex-1" checked>
                             <label for="sex-1">남자</label>
                         </li>
                         <li>
-                            <input type="radio" name="성별[]" value="<?=DEBUG === false ? " ":"동시개인성별 테스트 "?>" id="sex-2">
+                            <input type="radio" name="성별[]" value="<?=DEBUG === false ? "":"동시개인성별 테스트 "?>" id="sex-2">
                             <label for="sex-2">여자</label>
                         </li>
                     </ul>
@@ -323,36 +323,36 @@
 
                 <div>
                     <label class="project_label">학교</label>
-                    <input  class="jy-personal-item" required type="text" name="학교[]" value="<?=DEBUG === false ? " ":"동시개인학교 테스트 "?>">
+                    <input  class="jy-personal-item" required type="text" name="학교[]" value="<?=DEBUG === false ? "":"동시개인학교 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">학년</label>
-                    <input class="jy-personal-item" required type="text" name="학년[]" value="<?=DEBUG === false ? " ":"동시개인학년 테스트 "?>">
+                    <input class="jy-personal-item" required type="text" name="학년[]" value="<?=DEBUG === false ? "":"동시개인학년 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">반</label>
-                    <input class="jy-personal-item" required type="text" name="반[]" value="<?=DEBUG === false ? " ":"동시개인반 테스트 "?>">
+                    <input class="jy-personal-item" required type="text" name="반[]" value="<?=DEBUG === false ? "":"동시개인반 테스트 "?>">
                 </div>
 
                 <div>
                     <label class="project_label">지역</label>
-                    <input class="jy-personal-item" required type="text" name="지역" value="<?=DEBUG === false ? " ":"동시개인지역 테스트 "?>">
+                    <input class="jy-personal-item" required type="text" name="지역" value="<?=DEBUG === false ? "":"동시개인지역 테스트 "?>">
                 </div>
 
                 <div>
 
                     <h4>주소</h4>
 
-                    <input class="jy-personal-item" required id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? " ":"동시개인신주소 테스트 "?>">
-                    <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? " " : "동시개인 지번 테스트 " ?>">
-                    <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? " ": "동시개인 구주소 테스트 " ?>">
+                    <input class="jy-personal-item" required id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? "":"동시개인신주소 테스트 "?>">
+                    <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? "" : "동시개인 지번 테스트 " ?>">
+                    <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? "": "동시개인 구주소 테스트 " ?>">
 
                 </div>
                 <div style="margin-top:20px;">
                     <label class="jy-personal-item" required class="project_label">상세 주소</label>
-                    <input type="text" name="상세주소" value="<?=DEBUG === false ? " " : "동시개인 상세주소테스트 " ?>">
+                    <input type="text" name="상세주소" value="<?=DEBUG === false ? "" : "동시개인 상세주소테스트 " ?>">
                     <span id="guide" style="color:#999"></span>
                 </div>
 
@@ -419,7 +419,7 @@
         <!-- 동시 단체 끝 -->
         <div>
             <label class="project_label">신청인</label>
-            <input type="text" name="신청인" value="<?=DEBUG === false ? " ":"신청인 테스트 "?>">
+            <input type="text" name="신청인" value="<?=DEBUG === false ? "":"신청인 테스트 "?>">
         </div>
         <div>
         </div>
