@@ -12,12 +12,9 @@
 <!--jQuery UI 라이브러리 js파일-->
 <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
 
-<section class="home-hero-project">
-    <div class="animated fadeInUp">
-        <h2 class="home-hero-title-project">참가신청</h2>
-        <p class="home-hero-des-project">
-            참가신청페이지
-        </p>
+<section class="home-hero-cs">
+	<div class="animated fadeInUp">
+        <h2 class="home-hero-title-cs" style="font-weight:bold;">참가 신청</h2>
     </div>
 </section>
 
@@ -427,7 +424,7 @@
         <!-- 동시 끝 -->
         
         <?php include_once(APPPATH."modules/applicationn/views/base/termOfUse.php") ?>
-        <button type="submit" >신청</button>
+        <button type="submit" style="background-color:#f7312e;">신청</button>
     </form>
 </div>
 <!-- onclick="$('#mokilsin-form').submit();return false;" -->
