@@ -62,6 +62,11 @@
 <p class="txt_center"><img src="/public/mokilsin/images/_ART/content/songfestival2017_02.jpg" alt=""> </p>
 <br><br><br>
 </div>
+<div style="width:150px; height:40px; background-color:#ee5550; border-radius:5px; margin: 0 auto; margin-bottom:150px;">
+   <a href="/applicationn/add?kind=동시" style="color:#fff; width:100%; height:100%; display:table; text-align:center;">
+        <div style="display:table-cell; vertical-align:middle;">신청하기</div>
+    </a>
+</div>
 			<!-- End Post Content -->
 <!-- Begin Tags -->
 
