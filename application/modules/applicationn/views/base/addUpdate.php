@@ -93,12 +93,6 @@
                 <input class="company" type="text" name="자유곡" value="<?=DEBUG === false ? "":"자유곡 테스트 "?>">
             </div>
             <div>
-                <h4>작곡/작사</h4>
-                <input type="text" name="작곡" value="<?=DEBUG === false ? "":"작곡 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="작곡">
-
-                <input type="text" name="작사" value="<?=DEBUG === false ? "":"작사 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="작사">
-            </div>
-            <div>
                 <legend>
                     <h4>지도자 및 학부모</h4>
                 </legend>
