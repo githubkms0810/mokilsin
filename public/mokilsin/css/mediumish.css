@@ -312,8 +312,6 @@ blockquote {
 }
 ul.tags {
 	list-style:none;
-	padding-left:45%;
-    padding-top: 25px;
 	margin:0 0 3rem 0;
 }
 ul.tags li {

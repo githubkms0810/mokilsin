@@ -65,7 +65,7 @@
 	<!-- End Featured
 	================================================== -->
 	<div style="margin-bottom:150px;">
-	    <a class="btn btn-default" href="/content/add?board_key=<?=$board->key?>">글쓰기</a>
+	    <a class="btn btn-default" href="/content/add?board_key=<?=$board->key?>" style="color:#000;">글쓰기</a>
 	</div>
 	<div style=" width: 100px;margin:0 auto"> <?=$this->pagination->create_links();?></div>
 </div>

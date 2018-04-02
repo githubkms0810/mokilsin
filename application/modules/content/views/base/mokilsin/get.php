@@ -151,7 +151,7 @@
 <?php endforeach; ?>
   
 <hr/>
-<form <?=$this->ajax_helper->form("/reply/add?return_url=".urlencode(my_current_url()))?>>
+<form <?=$this->ajax_helper->form("/reply/add?return_url=".urlencode(my_current_url()))?> style="margin-bottom:150px;">
     <div class="form-group">
         <label for="comment">내용:</label>
         <textarea class="form-control" rows="5" name="desc"></textarea>
