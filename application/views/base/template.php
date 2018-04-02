@@ -74,7 +74,11 @@
                             </ul>
                     </li>
 				</ul>
-                </div>				
+                </div>
+        <div class="util">
+            <a href="/applicationn/add?kind=동요" class="login">동요제 신청</a>
+            <a href="/applicationn/add?kind=동시" class="join">동시 대회 신청</a>
+        </div>
 				<a href="javascript:mMenuOn();" class="m-menu-btn">모바일 메뉴 열기</a>
 				<a href="javascript:mMenuOff();" class="m-menu-btn_close">모바일 메뉴 닫기</a>
 				<a href="javascript:mMenuOff();" class="m-menu-btn_close_x">모바일 메뉴 닫기</a>
