@@ -71,11 +71,11 @@
         <div>
             <ul class="project_form-list">
                 <li>
-                    <input type="radio" name="개인단체" value="<?=$kind === " 동요 " ? "독창 " : "개인 "?>" id="개인">
+                    <input type="radio" name="개인단체" value="<?=$kind === "동요" ? "독창" : "개인"?>" id="개인">
                     <label for="개인"><?=$kind === "동요" ? "독창" : "개인"?></label>
                 </li>
                 <li>
-                    <input type="radio" name="개인단체" value="<?=$kind === " 동요 " ? "중창 " : "단체 "?>" id="단체">
+                    <input type="radio" name="개인단체" value="<?=$kind === "동요" ? "중창" : "단체"?>" id="단체">
                     <label for="단체"><?=$kind === "동요" ? "중창" : "단체"?></label>
                 </li>
             </ul>
