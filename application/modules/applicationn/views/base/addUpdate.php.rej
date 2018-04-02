@@ -1,0 +1,24 @@
+diff a/application/modules/applicationn/views/base/addUpdate.php b/application/modules/applicationn/views/base/addUpdate.php	(rejected hunks)
+@@ -220,12 +220,17 @@
+                         </tr>
+                     </thead>
+                     <tbody>
+-                    <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
++                        <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
+                         <tr>
+-                            <td style="text-align:center;"><?=$i+1?></td>
+-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
+-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
+-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" /></td>
++                            <td style="text-align:center;">
++                                <?=$i+1?>
++                            </td>
++                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
++                                <?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
++                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
++                                <?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
++                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
++                                <?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" /></td>
+                             <td>
+                                 <select class="j jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
+                                 <option value="">선택</option>

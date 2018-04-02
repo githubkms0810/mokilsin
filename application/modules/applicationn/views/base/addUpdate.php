@@ -214,17 +214,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
+                    <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
                         <tr>
-                            <td style="text-align:center;">
-                                <?=$i+1?>
-                            </td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
-                                <?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
-                                <?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
-                                <?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" /></td>
+                            <td style="text-align:center;"><?=$i+1?></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" /></td>
                             <td>
                                 <select class="j jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
                                 <option value="">선택</option>
@@ -232,16 +227,15 @@
                                 <option value="여">여</option>
                             </select>
                             </td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
-                                <?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" /></td>
                         </tr>
-                        <?php endfor; ?>
+                    <?php endfor; ?>
 
-
+                          
 
                     </tbody>
                 </table>
-
+             
             </div>
         </fieldset>
 
@@ -357,27 +351,21 @@
                     </thead>
                     <tbody>
                         <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
-                        <tr>
-                            <td style="text-align:center;">
-                                <?=$i+1?>
-                            </td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
-                                <?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
-                                <?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
-                                <?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                            <td>
-                                <select class="jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
+                            <tr>
+                                <td style="text-align:center;"><?=$i+1?></td>
+                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
+                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
+                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
+                                <td>
+                                    <select class="jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
                                     <option value="">선택</option>
                                     <option value="남">남</option>
                                     <option value="여">여</option>
                                 </select>
-                            </td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
-                                <?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                        </tr>
-
+                                </td>
+                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
+                            </tr>
+                            
                         <?php endfor; ?>
 
 
