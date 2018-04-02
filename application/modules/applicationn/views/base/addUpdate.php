@@ -13,8 +13,8 @@
 <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
 
 <section class="home-hero-cs">
-	<div class="animated fadeInUp">
-    <h2 class="home-hero-title-cs" style="font-weight:bold;">참가 신청</h2>
+    <div class="animated fadeInUp">
+        <h2 class="home-hero-title-cs" style="font-weight:bold;">참가 신청</h2>
     </div>
 </section>
 
@@ -28,21 +28,21 @@
         $personalRadio.attr("checked", true);
         Jy.Common.HideAndShow('.jy-group-wapper', '.jy-personal-wapper');
         $('.group_file').attr('name', '');
-        $GroupItem.prop('required',false)
-        $personalItem.prop('required',true)
-        $(".jy-group-item1").prop('required',false);
-        $(".jy-group-item2").prop('required',false);
-            
+        $GroupItem.prop('required', false)
+        $personalItem.prop('required', true)
+        $(".jy-group-item1").prop('required', false);
+        $(".jy-group-item2").prop('required', false);
+
         //개인 라디오 인풋 눌렀을떄 event
         $personalRadio.click(function() {
             $GroupItem.val('');
             Jy.Common.HideAndShow('.jy-group-wapper', '.jy-personal-wapper');
             $('.group_file').attr('name', '');
             $('.personal_file').attr('name', 'files[]');
-            $GroupItem.prop('required',false)
-            $personalItem.prop('required',true)
-            $(".jy-group-item1").prop('required',false);
-            $(".jy-group-item2").prop('required',false);
+            $GroupItem.prop('required', false)
+            $personalItem.prop('required', true)
+            $(".jy-group-item1").prop('required', false);
+            $(".jy-group-item2").prop('required', false);
         });
         //단체 라디오 인풋 눌렀을떄 event
         $groupRadio.click(function() {
@@ -50,12 +50,13 @@
             Jy.Common.HideAndShow('.jy-personal-wapper', '.jy-group-wapper');
             $('.personal_file').attr('name', '');
             $('.group_file').attr('name', 'files[]');
-            $GroupItem.prop('required',true)
-            $personalItem.prop('required',false)
-            $(".jy-group-item1").prop('required',true)
-            $(".jy-group-item2").prop('required',true)
+            $GroupItem.prop('required', true)
+            $personalItem.prop('required', false)
+            $(".jy-group-item1").prop('required', true)
+            $(".jy-group-item2").prop('required', true)
         });
     });
+
 </script>
 <div class="container" style="margin-top:100px; margin-bottom:100px;">
     <form id="mokilsin-form" action="/applicationn/add" method="post" enctype="multipart/form-data" class="project_form floating-labels" style="margin-top:100px; margin-bottom:150px;">
@@ -70,11 +71,11 @@
         <div>
             <ul class="project_form-list">
                 <li>
-                    <input type="radio" name="개인단체" value="<?=$kind === "동요" ? "독창" : "개인"?>" id="개인">
+                    <input type="radio" name="개인단체" value="<?=$kind === " 동요 " ? "독창 " : "개인 "?>" id="개인">
                     <label for="개인"><?=$kind === "동요" ? "독창" : "개인"?></label>
                 </li>
                 <li>
-                    <input type="radio" name="개인단체" value="<?=$kind === "동요" ? "중창" : "단체"?>" id="단체">
+                    <input type="radio" name="개인단체" value="<?=$kind === " 동요 " ? "중창 " : "단체 "?>" id="단체">
                     <label for="단체"><?=$kind === "동요" ? "중창" : "단체"?></label>
                 </li>
             </ul>
@@ -83,7 +84,7 @@
 
         <?php if ( $kind === "동요" ): ?>
         <!-- 동요 공통 시작 -->
-       
+
         <fieldset>
 
             <legend>공통</legend>
@@ -92,32 +93,22 @@
                 <input class="company" type="text" name="자유곡" value="<?=DEBUG === false ? "":"자유곡 테스트 "?>">
             </div>
             <div>
-                <label class="project_label">지정곡</label>
-                <input type="text" name="지정곡" value="<?=DEBUG === false ? "":"지정곡 테스트 "?>">
+                <h4>작곡/작사</h4>
+                <input type="text" name="작곡" value="<?=DEBUG === false ? "":"작곡 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="작곡">
+
+                <input type="text" name="작사" value="<?=DEBUG === false ? "":"작사 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="작사">
             </div>
             <div>
-                <label class="project_label">작곡</label>
-                <input type="text" name="작곡" value="<?=DEBUG === false ? "":"작곡 테스트 "?>">
+                <legend>
+                    <h4>지도자 및 학부모</h4>
+                </legend>
+                <input required type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>" style="width:32%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
+                <input type="text" name="가창지도자연락처" value="<?=DEBUG === false ? "":"가창지도자연락처 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
+                <input type="text" name="가창지도자이메일" value="<?=DEBUG === false ? "":"가창지도자이메일 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 이메일">
             </div>
             <div>
-                <label class="project_label">작사</label>
-                <input type="text" name="작사" value="<?=DEBUG === false ? "":"작사 테스트 "?>">
-            </div>
-            <div>
-                <label class="project_label">지도자명</label>
-                <input required type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>">
-            </div>
-             <div>
-                <label class="project_label">가창지도자 연락처</label>
-                <input required type="text" name="가창지도자연락처" value="<?=DEBUG === false ? "":"가창지도자연락처 테스트 "?>">
-            </div>
-            <div>
-                <label class="project_label">가창지도자 이메일</label>
-                <input required type="text" name="가창지도자이메일" value="<?=DEBUG === false ? "":"가창지도자이메일 테스트 "?>">
-            </div>
-            <div>
-                <label class="project_label">가창지도자 주소</label>
-                <input required type="text" name="가창지도자주소" value="<?=DEBUG === false ? "":"가창지도자주소 테스트 "?>">
+                <label class="project_label">가창지도자 및 학부모 주소</label>
+                <input type="text" name="가창지도자주소" value="<?=DEBUG === false ? "":"가창지도자주소 테스트 "?>">
             </div>
 
         </fieldset>
@@ -147,18 +138,12 @@
                 </div>
 
                 <div>
-                    <label class="project_label">학교</label>
-                    <input required class="jy-personal-item" type="text" name="개인학교" value="<?=DEBUG === false ? "":"동요개인학교 테스트 "?>">
-                </div>
+                    <h4>학교/학년/지역</h4>
+                    <input class="jy-personal-item" type="text" name="학교[]" value="<?=DEBUG === false ? "":"동요개인학교 테스트 "?>" style="width:33%; display:inline-block;" placeholder="학교">
 
-                <div>
-                    <label class="project_label">학년</label>
-                    <input required class="jy-personal-item" type="text" name="개인학년" value="<?=DEBUG === false ? "":"동요개인학년 테스트 "?>">
-                </div>
+                    <input class="jy-personal-item" type="text" name="학년[]" value="<?=DEBUG === false ? "":"동요개인학년 테스트 "?>" style="width:32%; display:inline-block;" placeholder="학년">
 
-                <div>
-                    <label class="project_label">지역</label>
-                    <input required class="jy-personal-item" type="text" name="지역" value="<?=DEBUG === false ? "":"동요개인지역 테스트 "?>">
+                    <input type="text" name="지역" value="<?=DEBUG === false ? "":"동요개인지역 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지역">
                 </div>
 
                 <div>
@@ -181,12 +166,12 @@
                     <input required class="jy-personal-item" type="text" name="학부모연락처" value="<?=DEBUG === false ? "":"학부모연락처 테스트 "?>">
                 </div>
 
-             
+
                 <div>
-                <h4>사진</h4>
+                    <h4>사진</h4>
                     <input class="personal_file" type="file" name="files[]">
                 </div>
-            
+
                 <div>
                     <h4>악보</h4>
                     <input class="personal_file" type="file" name="sheetMusic[]">
@@ -198,15 +183,10 @@
             <div class="jy-group-wapper">
                 <legend>단체</legend>
                 <div>
-                    <label class="project_label">중창단명</label>
-                    <input type="text" name="중창단명" value="<?=DEBUG === false ? "":"중창단명 테스트 "?>">
+                    <input type="text" name="중창단명" value="<?=DEBUG === false ? "":"중창단명 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="중창단명">
+                    <input type="text" name="총인원" value="<?=DEBUG === false ? "":"총인원 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="총 인원">
                 </div>
 
-                <div>
-                    <label class="project_label">총인원</label>
-                    <input type="text" name="총인원" value="<?=DEBUG === false ? "":"총인원 테스트 "?>">
-                </div>
-               
                 <div>
                     <h4>사진</h4>
                     <input class="group_file" type="file" name="files[]">
@@ -240,12 +220,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
+                        <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
                         <tr>
-                            <td style="text-align:center;"><?=$i+1?></td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" /></td>
+                            <td style="text-align:center;">
+                                <?=$i+1?>
+                            </td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
+                                <?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
+                                <?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
+                                <?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" /></td>
                             <td>
                                 <select class="j jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
                                 <option value="">선택</option>
@@ -253,15 +238,16 @@
                                 <option value="여">여</option>
                             </select>
                             </td>
-                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
+                                <?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" /></td>
                         </tr>
-                    <?php endfor; ?>
+                        <?php endfor; ?>
 
-                          
+
 
                     </tbody>
                 </table>
-             
+
             </div>
         </fieldset>
 
@@ -286,15 +272,10 @@
                 <legend>공통</legend>
 
                 <div>
-                    <label class="project_label">지도교사 및 보호자 연락처</label>
-                    <input required type="text" name="지도교사및보호자연락처" value="<?=DEBUG === false ? "":"지도교사및보호자연락처 테스트 "?>">
+                    <input type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
+                    <input type="text" name="지도교사및보호자연락처" value="<?=DEBUG === false ? "":"지도교사및보호자연락처 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
                 </div>
 
-                <div>
-                    <label class="project_label">지도교사 및 보호자 성명</label>
-                    <input required type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>">
-                </div>
-                
             </div>
             <!-- 동시 공통끝 -->
             <!-- 동시 개인시작 -->
@@ -302,7 +283,7 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input  required class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동시개인성명 테스트 "?>">
+                    <input required class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동시개인성명 테스트 "?>">
                 </div>
 
                 <div>
@@ -319,23 +300,14 @@
                 </div>
 
                 <div>
-                    <label class="project_label">학교</label>
-                    <input  class="jy-personal-item" required type="text" name="개인학교" value="<?=DEBUG === false ? "":"동시개인학교 테스트 "?>">
-                </div>
+                    <h4>학교/학년/반/지역</h4>
+                    <input class="jy-personal-item" type="text" name="학교[]" value="<?=DEBUG === false ? "":"동시개인학교 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학교">
 
-                <div>
-                    <label class="project_label">학년</label>
-                    <input class="jy-personal-item" required type="text" name="개인학년" value="<?=DEBUG === false ? "":"동시개인학년 테스트 "?>">
-                </div>
+                    <input class="jy-personal-item" type="text" name="학년[]" value="<?=DEBUG === false ? "":"동시개인학년 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학년">
 
-                <div>
-                    <label class="project_label">반</label>
-                    <input class="jy-personal-item" required type="text" name="개인반" value="<?=DEBUG === false ? "":"동시개인반 테스트 "?>">
-                </div>
+                    <input class="jy-personal-item" type="text" name="반[]" value="<?=DEBUG === false ? "":"동시개인반 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="반">
 
-                <div>
-                    <label class="project_label">지역</label>
-                    <input class="jy-personal-item" required type="text" name="지역" value="<?=DEBUG === false ? "":"동시개인지역 테스트 "?>">
+                    <input type="text" name="지역" value="<?=DEBUG === false ? "":"동시개인지역 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="지역">
                 </div>
 
                 <div>
@@ -391,21 +363,27 @@
                     </thead>
                     <tbody>
                         <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
-                            <tr>
-                                <td style="text-align:center;"><?=$i+1?></td>
-                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
-                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
-                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
-                                <td>
-                                    <select class="jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
+                        <tr>
+                            <td style="text-align:center;">
+                                <?=$i+1?>
+                            </td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
+                                <?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
+                                <?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
+                                <?=$i+1?>" type="text" name="학년[]" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
+                            <td>
+                                <select class="jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
                                     <option value="">선택</option>
                                     <option value="남">남</option>
                                     <option value="여">여</option>
                                 </select>
-                                </td>
-                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
-                            </tr>
-                            
+                            </td>
+                            <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item
+                                <?=$i+1?>" type="text" name="연락처[]" title="연락처" class="" maxlength="13" onkeydown="autoHypen(this);" /></td>
+                        </tr>
+
                         <?php endfor; ?>
 
 
@@ -422,7 +400,7 @@
         </div>
         <?php endif; ?>
         <!-- 동시 끝 -->
-        
+
         <?php include_once(APPPATH."modules/applicationn/views/base/termOfUse.php") ?>
         <button type="submit" style="background-color:#f7312e;">신청</button>
     </form>
@@ -474,4 +452,3 @@
 
 </script>
 <!-- 다음주소끝 -->
-
