@@ -133,9 +133,9 @@
 
                 <div>
                     <h4>학교/학년/지역</h4>
-                    <input class="jy-personal-item" type="text" name="학교[]" value="<?=DEBUG === false ? "":"동요개인학교 테스트 "?>" style="width:33%; display:inline-block;" placeholder="학교">
+                    <input class="jy-personal-item" type="text" name="개인학교" value="<?=DEBUG === false ? "":"동요개인학교 테스트 "?>" style="width:33%; display:inline-block;" placeholder="학교">
 
-                    <input class="jy-personal-item" type="text" name="학년[]" value="<?=DEBUG === false ? "":"동요개인학년 테스트 "?>" style="width:32%; display:inline-block;" placeholder="학년">
+                    <input class="jy-personal-item" type="text" name="개인학년" value="<?=DEBUG === false ? "":"동요개인학년 테스트 "?>" style="width:32%; display:inline-block;" placeholder="학년">
 
                     <input type="text" name="지역" value="<?=DEBUG === false ? "":"동요개인지역 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지역">
                 </div>
@@ -289,11 +289,11 @@
 
                 <div>
                     <h4>학교/학년/반/지역</h4>
-                    <input class="jy-personal-item" type="text" name="학교[]" value="<?=DEBUG === false ? "":"동시개인학교 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학교">
+                    <input class="jy-personal-item" type="text" name="개인학교" value="<?=DEBUG === false ? "":"동시개인학교 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학교">
 
-                    <input class="jy-personal-item" type="text" name="학년[]" value="<?=DEBUG === false ? "":"동시개인학년 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학년">
+                    <input class="jy-personal-item" type="text" name="개인학년" value="<?=DEBUG === false ? "":"동시개인학년 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학년">
 
-                    <input class="jy-personal-item" type="text" name="반[]" value="<?=DEBUG === false ? "":"동시개인반 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="반">
+                    <input class="jy-personal-item" type="text" name="개인반" value="<?=DEBUG === false ? "":"동시개인반 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="반">
 
                     <input type="text" name="지역" value="<?=DEBUG === false ? "":"동시개인지역 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="지역">
                 </div>
