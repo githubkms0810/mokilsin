@@ -15,6 +15,7 @@ if(!function_exists('renderDescriptionToPreview')){
     {
 
         $desc =addslashes(preg_replace("/<img[^>]+\>/i", "", $desc));
+        $desc = preg_replace('/<iframe.*?\/iframe>/i','', $desc);
         $desc=str_replace("<br>","",$desc);
         $desc=str_replace("<p>","",$desc);
         $desc=str_replace("</p>","",$desc);
