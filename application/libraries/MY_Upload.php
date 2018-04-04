@@ -17,14 +17,14 @@ class MY_Upload extends CI_Upload {
         if($kind === "image")
         {
             $config['max_size'] = '10000000'; //10mg
-            $config['allowed_types'] = 'jpg|png|jpeg|bmp|tiff';
+            $config['allowed_types'] = '*';
             $config['max_width']  = '10240';
             $config['max_height']  = '7680';
         }
         else if($kind === "file")
         {
             $config['max_size'] = uploadLimitSize; //2mg
-            $config['allowed_types'] = 'gif|jpg|jpeg|png|txt|zip|xlsx|xls|hwp';
+            $config['allowed_types'] = '*';
         }
         else
         {
