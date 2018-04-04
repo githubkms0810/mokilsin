@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
     <head>
-        <title>동요 작가 목일신</title>
+        <title>목일신 기념사업회</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
@@ -89,7 +89,7 @@
             <!-- footer -->
             <div class="footer">
                 <div class="copy">
-                    <p>우 59542 전남 고흥군 고흥읍 고흥군청로 1 / 대표전화 061-830-5898 / 팩스 061-830-5577</p>
+                    <p>전남 고흥군 도양읍 천마로 29 (우)59555 / 대표전화 061-830-5898 / 팩스 061-830-5577</p>
                     <br>
                     <p>&copy; 2018 Goheung Country. ALL RIGHTS RESERVED.</p>
                 </div>
