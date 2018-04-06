@@ -102,7 +102,7 @@
                 <legend>
                     <h4>지도자 및 학부모</h4>
                 </legend>
-                <input required pattern="^[가-힣\s]+$" type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>" style="width:32%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
+                <input required pattern="/^[가-힣]+$/" type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>" style="width:32%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
                 <input type="number" name="가창지도자연락처" value="<?=DEBUG === false ? "":"가창지도자연락처 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
                 <input type="email" name="가창지도자이메일" value="<?=DEBUG === false ? "":"가창지도자이메일 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 이메일">
             </div>
@@ -121,7 +121,7 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input required  pattern="^[가-힣\s]+$" class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동요개인성명 테스트 "?>">
+                    <input required  pattern="/^[가-힣]+$/" class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동요개인성명 테스트 "?>">
                 </div>
 
                 <div>
@@ -139,11 +139,11 @@
 
                 <div>
                     <h4>학교/학년/지역</h4>
-                    <input class="jy-personal-item" type="text" pattern="^[가-힣\s]+$" name="개인학교" value="<?=DEBUG === false ? "":"동요개인학교 테스트 "?>" style="width:33%; display:inline-block;" placeholder="학교">
+                    <input class="jy-personal-item" type="text" pattern="/^[가-힣]+$/" name="개인학교" value="<?=DEBUG === false ? "":"동요개인학교 테스트 "?>" style="width:33%; display:inline-block;" placeholder="학교">
 
                     <input class="jy-personal-item" type="number" name="개인학년" value="<?=DEBUG === false ? "":"동요개인학년 테스트 "?>" style="width:32%; display:inline-block;" placeholder="학년">
 
-                    <input type="text" pattern="^[가-힣\s]+$" name="지역" value="<?=DEBUG === false ? "":"동요개인지역 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지역">
+                    <input type="text" pattern="/^[가-힣]+$/" name="지역" value="<?=DEBUG === false ? "":"동요개인지역 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지역">
                 </div>
                 <div>
                     <h4>사진</h4>
@@ -200,8 +200,8 @@
                     <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
                         <tr>
                             <td style="text-align:center;"><?=$i+1?></td>
-                            <td><input <?=$i <2 ? "required" : "" ?>  pattern="^[가-힣\s]+$" class="jy-group-item<?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
-                            <td><input <?=$i <2 ? "required" : "" ?> pattern="^[가-힣\s]+$" class="jy-group-item<?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?>  pattern="/^[가-힣]+$/" class="jy-group-item<?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>
+                            <td><input <?=$i <2 ? "required" : "" ?> pattern="/^[가-힣]+$/" class="jy-group-item<?=$i+1?>" type="text" name="학교[]" title="학교명" maxlength="30" /></td>
                             <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="number" name="학년[]" title="학년" maxlength="2" /></td>
                             <td>
                                 <select class="j jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
@@ -224,7 +224,7 @@
         <!-- 동요 단체 끝 -->
         <div>
             <label class="project_label">신청인</label>
-            <input type="text" pattern="^[가-힣\s]+$" name="신청인" value="<?=DEBUG === false ? "":"신청인 테스트 "?>">
+            <input type="text" pattern="/^[가-힣]+$/" name="신청인" value="<?=DEBUG === false ? "":"신청인 테스트 "?>">
         </div>
         <div>
         </div>
@@ -242,7 +242,7 @@
                 <legend>공통</legend>
 
                 <div>
-                    <input type="text"  pattern="^[가-힣\s]+$" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
+                    <input type="text"  pattern="/^[가-힣]+$/" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
                     <input type="number" name="지도교사및보호자연락처" value="<?=DEBUG === false ? "":"지도교사및보호자연락처 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
                 </div>
 
@@ -253,7 +253,7 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input required  pattern="^[가-힣\s]+$" class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동시개인성명 테스트 "?>">
+                    <input required  pattern="/^[가-힣]+$/" class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동시개인성명 테스트 "?>">
                 </div>
 
                 <div>
@@ -271,13 +271,13 @@
 
                 <div>
                     <h4>학교/학년/반/지역</h4>
-                    <input class="jy-personal-item" type="text" pattern="^[가-힣\s]+$" name="개인학교" value="<?=DEBUG === false ? "":"동시개인학교 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학교">
+                    <input class="jy-personal-item" type="text" pattern="/^[가-힣]+$/" name="개인학교" value="<?=DEBUG === false ? "":"동시개인학교 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학교">
 
                     <input class="jy-personal-item" type="number" name="개인학년" value="<?=DEBUG === false ? "":"동시개인학년 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학년">
 
                     <input class="jy-personal-item" type="number" name="개인반" value="<?=DEBUG === false ? "":"동시개인반 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="반">
 
-                    <input type="text" name="지역"  pattern="^[가-힣\s]+$" value="<?=DEBUG === false ? "":"동시개인지역 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="지역">
+                    <input type="text" name="지역"  pattern="/^[가-힣]+$/" value="<?=DEBUG === false ? "":"동시개인지역 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="지역">
                 </div>
 
                 <div>
@@ -334,8 +334,8 @@
                         <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
                             <tr>
                                 <td style="text-align:center;"><?=$i+1?></td>
-                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text"  pattern="^[가-힣\s]+$" name="성명[]" title="성명" maxlength="30" /></td>
-                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text"  pattern="^[가-힣\s]+$" name="학교[]" title="학교명" maxlength="30" /></td>
+                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text"  pattern="/^[가-힣]+$/" name="성명[]" title="성명" maxlength="30" /></td>
+                                <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="text"  pattern="/^[가-힣]+$/" name="학교[]" title="학교명" maxlength="30" /></td>
                                 <td><input <?=$i <2 ? "required" : "" ?> class="jy-group-item<?=$i+1?>" type="number" name="학년[]" title="학년" maxlength="2" onkeydown="onlyNumDecimalInput();" /></td>
                                 <td>
                                     <select class="jy-group-item<?=$i+1?>" name="성별[]" title="성별선택">
@@ -356,7 +356,7 @@
         <!-- 동시 단체 끝 -->
         <div>
             <label class="project_label">신청인</label>
-            <input  pattern="^[가-힣\s]+$" type="text" name="신청인" value="<?=DEBUG === false ? "":"신청인 테스트 "?>">
+            <input  pattern="/^[가-힣]+$/" type="text" name="신청인" value="<?=DEBUG === false ? "":"신청인 테스트 "?>">
         </div>
         <div>
         </div>
