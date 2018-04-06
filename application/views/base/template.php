@@ -89,7 +89,7 @@
             <!-- footer -->
             <div class="footer">
                 <div class="copy">
-                    <p>전남 고흥군 도양읍 천마로 29 (우)59555 / 대표전화 061-830-5898 / 팩스 061-830-5577</p>
+                    <p>우 59555 전남 고흥군 도양읍 천마로 29 / 대표전화 061-844-1700 / 행사문의전화 070-8667-4557 / 메일 mokilsin@hanmail.net</p>
                     <br>
                     <p>&copy; 2018 Goheung Country. ALL RIGHTS RESERVED.</p>
                 </div>
