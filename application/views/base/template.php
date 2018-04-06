@@ -34,7 +34,7 @@
 				<div class="gnb">
                 <ul>
 					<li>
-                        <a href="#">목일신</a>
+                        <a href="/mokilsin/birth">목일신</a>
                             <ul>
                                 <li>
                                     <a style="font-size:12px; font-weight:400;" href="/mokilsin/birth">생애/업적</a>
@@ -44,7 +44,7 @@
                             </ul>
                     </li>
 					<li>
-                        <a href="#">목일신 동요제</a>
+                        <a href="/mokilsin/introduce_music">목일신 동요제</a>
                             <ul>
                                 <li>
                                     <a style="font-size:12px; font-weight:400;" href="/mokilsin/introduce_music">동요제 소개</a>
@@ -54,7 +54,7 @@
                             </ul>
                     </li>
                     <li>
-                        <a href="#">목일신 동시 대회</a>
+                        <a href="/mokilsin/introduce_poem">목일신 동시 대회</a>
                             <ul>
                                 <li>
                                     <a style="font-size:12px; font-weight:400;" href="/mokilsin/introduce_poem">동시 대회 소개</a>
@@ -64,7 +64,7 @@
                             </ul>
                     </li>
                     <li>
-                        <a href="#">커뮤니티</a>
+                        <a href="/content/list?board_key=notice">커뮤니티</a>
                             <ul>
                                 <li>
                                     <a style="font-size:12px; font-weight:400;" href="/content/list?board_key=notice">공지사항</a>
