@@ -17,7 +17,7 @@
     <th class="tg-3xi5" colspan="2"><?=$row->작사?>/<?=$row->작곡?></th>
   </tr>
   <tr>
-    <td class="tg-yj5y" colspan="2">본선(지정곡)</td>
+    <td class="tg-yj5y" colspan="2">반주자</td>
     <td class="tg-3xi5"><?=$row->지정곡?></td>
     <td class="tg-yj5y" colspan="4">*본선 진출시 목일신동요곡 중 1곡 선택<br>*예선참가 신청시 기재하지 않으셔도 됩니다.</td>
   </tr>
