@@ -141,7 +141,9 @@ class Base extends \Base_Controller {
                 else
                 {
                     $data = file_get_contents ( $file );
-                    force_download ($fileInfo->original_name , $data );
+                    
+                    force_download (iconv('utf-8','euc-kr',$fileInfo->original_name) , $data );
+                    // force_download ($fileInfo->original_name , $data );
                 }
               
             }
