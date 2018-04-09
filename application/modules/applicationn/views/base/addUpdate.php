@@ -120,11 +120,11 @@
                 <h4>반주자</h4>
                 <ul class="project_form-list">
                     <li>
-                        <input type="radio" name="반주" value="유" id="accompaniment_yes">
+                        <input type="radio" name="지정곡" value="유" id="accompaniment_yes">
                         <label for="accompaniment_yes">유</label>
                     </li>
                     <li>
-                        <input type="radio" name="반주" value="무" id="accompaniment_no" checked>
+                        <input type="radio" name="지정곡" value="무" id="accompaniment_no" checked>
                         <label for="accompaniment_no">무</label>
                     </li>
                 </ul>
