@@ -127,7 +127,8 @@ class Applicationn_M extends Pagination_Model
 	}
 	public function addByPostData()
 	{
-		$this->_set_allPost_inTableField(["id","file_group_id","is_display","is_secret","sort","created"]);
+		$this->_set_allPost_inTableField(["가창지도자주소","id","file_group_id","is_display","is_secret","sort","created"]);
+		$this->db->set("가창지도자주소",post('가창지도자주소')." ".post('가창지도자상세주소'));
 		$this->db->insert($this->table);
 		return $this->db->insert_id();
 	}

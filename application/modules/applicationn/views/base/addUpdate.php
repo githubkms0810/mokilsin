@@ -107,10 +107,15 @@
                 <input type="email" name="가창지도자이메일" value="<?=DEBUG === false ? "":"가창지도자이메일 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 이메일">
             </div>
             <div>
-                <label class="project_label">가창지도자 및 학부모 주소</label>
-                <input type="text" name="가창지도자주소" value="<?=DEBUG === false ? "":"가창지도자주소 테스트 "?>">
+                <label class="project_label"></label>
+                <input required placeholder="가창지도자 및 학부모 주소" id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="가창지도자주소" value="<?=DEBUG === false ? "":"가창지도자주소 테스트 "?>">
+                <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? "" : "동시개인 지번 테스트 " ?>">
+                <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? "": "동시개인 구주소 테스트 " ?>">
+                <span id="guide" style="color:#999"></span>
             </div>
-
+            <div>
+                <input required placeholder="상세주소" type="text" name="가창지도자상세주소" value="<?=DEBUG === false ? "":"가창지도자상세주소 테스트 "?>">
+            </div>
         </fieldset>
         <!-- 동요 공통 끝 -->
         <fieldset>
