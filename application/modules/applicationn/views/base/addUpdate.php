@@ -116,6 +116,19 @@
             <div>
                 <input required placeholder="상세주소" type="text" name="가창지도자상세주소" value="<?=DEBUG === false ? "":"가창지도자상세주소 테스트 "?>">
             </div>
+            <div>
+                <h4>반주자</h4>
+                <ul class="project_form-list">
+                    <li>
+                        <input type="radio" name="반주" value="유" id="accompaniment_yes">
+                        <label for="accompaniment_yes">유</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="반주" value="무" id="accompaniment_no" checked>
+                        <label for="accompaniment_no">무</label>
+                    </li>
+                </ul>
+            </div>
         </fieldset>
         <!-- 동요 공통 끝 -->
         <fieldset>
