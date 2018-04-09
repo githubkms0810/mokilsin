@@ -148,7 +148,25 @@
 
                     <input class="jy-personal-item" type="number" name="개인학년" value="<?=DEBUG === false ? "":"동요개인학년 테스트 "?>" style="width:32%; display:inline-block;" placeholder="학년">
 
-                    <input type="text" pattern="^[가-힣]+$" name="지역" value="<?=DEBUG === false ? "":"동요개인지역 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지역">
+                    <select name="지역" class="budget" style="width:33%; display:inline-block;">
+                        <option selected="selected">서울특별시</option>
+                        <option selected="selected">인천광역시</option>
+                        <option selected="selected">대전광역시</option>
+                        <option selected="selected">광주광역시</option>
+                        <option selected="selected">대구광역시</option>
+                        <option selected="selected">울산광역시</option>
+                        <option selected="selected">부산광역시</option>
+                        <option selected="selected">세종특별자치시</option>
+                        <option selected="selected">경기도</option>
+                        <option selected="selected">충청남도</option>
+                        <option selected="selected">충청북도</option>
+                        <option selected="selected">전라남도</option>
+                        <option selected="selected">전라북도</option>
+                        <option selected="selected">경상남도</option>
+                        <option selected="selected">경상북도</option>
+                        <option selected="selected">강원도</option>
+                        <option selected="selected">제주특별자치도</option>
+                    </select>
                 </div>
                 <div>
                     <h4>사진</h4>
