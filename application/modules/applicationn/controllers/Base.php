@@ -28,6 +28,13 @@ class Base extends \Base_Controller {
         $this->applicationn_m->setRulesWhenAdd();
         $fileSizeValidation  = $this->upload->vlidationFileSize("files",uploadLimitSize);
         if($this->form_validation->run() === false || $fileSizeValidation === false){
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo validation_errors();
             $data["mode"] = "add";
             $data["row"] = (object)[];
             $data['kind'] = get("kind");

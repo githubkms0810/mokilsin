@@ -278,8 +278,8 @@
                 <legend>공통</legend>
 
                 <div>
-                    <input type="text"  pattern="^[가-힣]+$" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
-                    <input type="number" name="지도교사및보호자연락처" value="<?=DEBUG === false ? "":"지도교사및보호자연락처 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
+                    <input required type="text"  pattern="^[가-힣]+$" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
+                    <input required type="number" name="지도교사및보호자연락처" value="<?=DEBUG === false ? "":"지도교사및보호자연락처 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
                 </div>
 
             </div>
@@ -313,7 +313,7 @@
 
                     <input class="jy-personal-item" type="number" name="개인반" value="<?=DEBUG === false ? "":"동시개인반 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="반">
 
-                    <input type="text" name="지역"  pattern="^[가-힣]+$" value="<?=DEBUG === false ? "":"동시개인지역 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="지역">
+                    <input type="text" name="지역" required  pattern="^[가-힣]+$" value="<?=DEBUG === false ? "":"동시개인지역 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="지역">
                 </div>
 
                 <div>
@@ -327,7 +327,7 @@
                 </div>
                 <div style="margin-top:20px;">
                     <label class="jy-personal-item" required class="project_label">상세 주소</label>
-                    <input type="text" name="상세주소" value="<?=DEBUG === false ? "" : "동시개인 상세주소테스트 " ?>">
+                    <input required type="text" name="상세주소" value="<?=DEBUG === false ? "" : "동시개인 상세주소테스트 " ?>">
                     <span id="guide" style="color:#999"></span>
                 </div>
 

@@ -124,6 +124,52 @@ class Applicationn_M extends Pagination_Model
 	public function setRulesWhenAdd()
 	{
 		$this->form_validation->set_rules('동요동시', '동요동시', 'trim|required');
+		if(post('동요동시') === "동요"){
+			$this->form_validation->set_rules('지도교사및보호자성명', '지도교사및보호자성명', 'trim|required');
+			$this->form_validation->set_rules('가창지도자연락처', '가창지도자연락처', 'trim|required');
+			// $this->form_validation->set_rules('가창지도자이메일', '가창지도자이메일', 'trim|required');
+			$this->form_validation->set_rules('가창지도자주소', '가창지도자주소', 'trim|required');
+			$this->form_validation->set_rules('가창지도자상세주소', '가창지도자상세주소', 'trim|required');
+			if(post('개인단체') === "독창"){
+				$this->form_validation->set_rules('개인성명', '개인성명', 'trim|required');
+				$this->form_validation->set_rules('개인학교', '개인학교', 'trim|required');
+				$this->form_validation->set_rules('지역', '지역', 'trim|required');
+			}
+			elseif(post('개인단체') === "중창"){
+				$this->form_validation->set_rules('성명[0]', '단체성명', 'trim|required');
+				$this->form_validation->set_rules('학교[0]', '단체학교', 'trim|required');
+				$this->form_validation->set_rules('학년[0]', '단체학년', 'trim|required');
+				$this->form_validation->set_rules('성별[0]', '단체성별', 'trim|required');
+				$this->form_validation->set_rules('성명[1]', '단체성명', 'trim|required');
+				$this->form_validation->set_rules('학교[1]', '단체학교', 'trim|required');
+				$this->form_validation->set_rules('학년[1]', '단체학년', 'trim|required');
+				$this->form_validation->set_rules('성별[1]', '단체성별', 'trim|required');
+				
+			}
+			
+		}elseif(post('동요동시') === "동시"){
+			$this->form_validation->set_rules('지도교사및보호자성명', '지도교사및보호자성명', 'trim|required');
+			$this->form_validation->set_rules('지도교사및보호자연락처', '지도교사및보호자연락처', 'trim|required');
+			if(post('개인단체') === "개인"){
+				$this->form_validation->set_rules('개인성명', '개인성명', 'trim|required');
+				$this->form_validation->set_rules('개인학교', '개인학교', 'trim|required');
+				$this->form_validation->set_rules('개인반', '개인반', 'trim|required');
+				$this->form_validation->set_rules('지역', '지역', 'trim|required');
+				$this->form_validation->set_rules('신주소', '신주소', 'trim|required');
+				$this->form_validation->set_rules('상세주소', '상세주소', 'trim|required');
+				
+			}
+			elseif(post('개인단체') === "단체"){
+				$this->form_validation->set_rules('성명[0]', '단체성명', 'trim|required');
+				$this->form_validation->set_rules('학교[0]', '단체학교', 'trim|required');
+				$this->form_validation->set_rules('학년[0]', '단체학년', 'trim|required');
+				$this->form_validation->set_rules('성별[0]', '단체성별', 'trim|required');
+				$this->form_validation->set_rules('성명[1]', '단체성명', 'trim|required');
+				$this->form_validation->set_rules('학교[1]', '단체학교', 'trim|required');
+				$this->form_validation->set_rules('학년[1]', '단체학년', 'trim|required');
+				$this->form_validation->set_rules('성별[1]', '단체성별', 'trim|required');
+			}
+		}
 	}
 	public function addByPostData()
 	{
