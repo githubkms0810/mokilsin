@@ -33,12 +33,23 @@ class Admin extends \Admin_Controller {
     }
     public function excel()
     {
-        header( "Content-type: application/vnd.ms-excel; charset=euc-kr" ); 
-        header( "Content-Disposition: attachment; filename = invoice.xls" ); 
-        header( "Content-Description: PHP4 Generated Data" );
-        print("<meta http-equiv=\"Content-Type\" content=\"application/vnd.ms-excel; charset=euc-kr\">");
+        // header( "Content-type: application/vnd.ms-excel; charset=euc-kr" ); 
+        // header( "Content-Disposition: attachment; filename = invoice.xls" ); 
+        // header( "Content-Description: PHP4 Generated Data" );
+        // echo "<meta http-equiv='Content-Type' content='text/html; charset=euc-kr'> ";
+        // // print("<meta http-equiv=\"Content-Type\" content=\"application/vnd.ms-excel; charset=euc-kr\">");
         $kind =get("kind");
         $personalOrGroup =get("personalOrGroup");
+        header( "Content-type: application/vnd.ms-excel" );   
+
+        header( "Content-type: application/vnd.ms-excel; charset=utf-8");  
+    
+        header( "Content-Disposition: attachment; filename = {$kind}{$personalOrGroup}.xls" );   
+    
+        header( "Content-Description: PHP4 Generated Data" );  
+        print("<meta http-equiv=\"Content-Type\" content=\"application/vnd.ms-excel; charset=utf-8\">"); 
+    
+     
         $data['rows']=$this->applicationn_m->listForExcel($kind,$personalOrGroup);
         if($kind === "동요" && $personalOrGroup === "독창")
             $this->load->view("admin/listOfPersonalAgitationExcel",$data);
