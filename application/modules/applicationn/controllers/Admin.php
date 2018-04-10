@@ -44,7 +44,7 @@ class Admin extends \Admin_Controller {
 
         header( "Content-type: application/vnd.ms-excel; charset=utf-8");  
     
-        header( "Content-Disposition: attachment; filename = {$kind}{$personalOrGroup}.xls" );   
+        header( "Content-Disposition: attachment; filename = mokilsin.xls" );   
     
         header( "Content-Description: PHP4 Generated Data" );  
         print("<meta http-equiv=\"Content-Type\" content=\"application/vnd.ms-excel; charset=utf-8\">"); 
