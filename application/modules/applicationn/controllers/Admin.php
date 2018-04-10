@@ -33,10 +33,10 @@ class Admin extends \Admin_Controller {
     }
     public function excel()
     {
-        header( "Content-type: application/vnd.ms-excel" ); 
-        header( "Content-type: application/vnd.ms-excel; charset=utf-8");
+        header( "Content-type: application/vnd.ms-excel; charset=euc-kr" ); 
         header( "Content-Disposition: attachment; filename = invoice.xls" ); 
         header( "Content-Description: PHP4 Generated Data" );
+        print("<meta http-equiv=\"Content-Type\" content=\"application/vnd.ms-excel; charset=euc-kr\">");
         $kind =get("kind");
         $personalOrGroup =get("personalOrGroup");
         $data['rows']=$this->applicationn_m->listForExcel($kind,$personalOrGroup);
