@@ -375,10 +375,13 @@ class Applicationn_M extends Pagination_Model
 	// @field
 	public function alertTable()
 	{
-		// $fieldName = "test";
-		// $addFieldQuery = "ALTER TABLE `{$this->table}` ADD `{$fieldName}` INT UNSIGNED NOT NULL AFTER `created`, ADD INDEX `idx_{$fieldName}` (`{$fieldName}`);";
-		// $this->_addField($fieldName,$addFieldQuery);
-
+		$fieldName = "신청경로";
+		$addFieldQuery = "ALTER TABLE `{$this->table}` ADD `{$fieldName}` varchar(255) AFTER `created`, ADD INDEX `idx_{$fieldName}` (`{$fieldName}`);";
+		$this->_addField($fieldName,$addFieldQuery);
+		
+		$fieldName = "신청경로직접입력";
+		$addFieldQuery = "ALTER TABLE `{$this->table}` ADD `{$fieldName}` varchar(255) AFTER `created`, ADD INDEX `idx_{$fieldName}` (`{$fieldName}`);";
+		$this->_addField($fieldName,$addFieldQuery);
 		// $fieldName = "kind";
 		// $alterFiledQuery="ALTER TABLE `{$this->table}` CHANGE `{$fieldName}` `{$fieldName}` ENUM('developer','admin','general') DEFAULT 'general';";
 		// $this->_alterField($fieldName,$alterFiledQuery);

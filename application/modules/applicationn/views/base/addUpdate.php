@@ -90,31 +90,31 @@
             <legend>공통</legend>
             <div>
                 <label class="project_label">자유곡</label>
-                <input class="company" type="text" name="자유곡" value="<?=DEBUG === false ? "":"자유곡 테스트 "?>">
+                <input class="company" type="text" name="자유곡" value="<?=DEBUG === false ? "":"자유곡테스트"?>">
                 <br>
                 <h4>작곡/작사</h4>
-                <input type="text" name="작곡" value="<?=DEBUG === false ? "":"작곡 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="작곡">
+                <input type="text" name="작곡" value="<?=DEBUG === false ? "":"작곡테스트"?>" style="width:49.6%; display:inline-block;" placeholder="작곡">
 
-                <input type="text" name="작사" value="<?=DEBUG === false ? "":"작사 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="작사">
+                <input type="text" name="작사" value="<?=DEBUG === false ? "":"작사테스트"?>" style="width:49.6%; display:inline-block;" placeholder="작사">
 
             </div>
             <div>
                 <legend>
                     <h4>지도자 및 학부모</h4>
                 </legend>
-                <input required pattern="^[가-힣]+$" type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>" style="width:32%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
-                <input type="text" pattern="^([0-9]{3})-?([0-9]{3,4})-?([0-9]{4})$" name="가창지도자연락처" value="<?=DEBUG === false ? "":"가창지도자연락처 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
-                <input type="email" name="가창지도자이메일" value="<?=DEBUG === false ? "":"가창지도자이메일 테스트 "?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 이메일">
+                <input required pattern="^[가-힣]+$" type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명테스트"?>" style="width:32%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
+                <input type="text" pattern="^([0-9]{3})-?([0-9]{3,4})-?([0-9]{4})$" name="가창지도자연락처" value="<?=DEBUG === false ? "":"01055555555"?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
+                <input type="email" name="가창지도자이메일" value="<?=DEBUG === false ? "":"test@test.com"?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 이메일">
             </div>
             <div>
                 <label class="project_label"></label>
-                <input required placeholder="가창지도자 및 학부모 주소" id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="가창지도자주소" value="<?=DEBUG === false ? "":"가창지도자주소 테스트 "?>">
-                <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? "" : "동시개인 지번 테스트 " ?>">
-                <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? "": "동시개인 구주소 테스트 " ?>">
+                <input required placeholder="가창지도자 및 학부모 주소" id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="가창지도자주소" value="<?=DEBUG === false ? "":"가창지도자주소테스트"?>">
+                <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? "" : "동시개인 지번테스트" ?>">
+                <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? "": "동시개인 구주소테스트" ?>">
                 <span id="guide" style="color:#999"></span>
             </div>
             <div>
-                <input required placeholder="상세주소" type="text" name="가창지도자상세주소" value="<?=DEBUG === false ? "":"가창지도자상세주소 테스트 "?>">
+                <input required placeholder="상세주소" type="text" name="가창지도자상세주소" value="<?=DEBUG === false ? "":"가창지도자상세주소테스트"?>">
             </div>
             <div>
                 <h4>반주자</h4>
@@ -139,7 +139,7 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input required  pattern="^[가-힣]+$" class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동요개인성명 테스트 "?>">
+                    <input required  pattern="^[가-힣]+$" class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동요개인성명테스트"?>">
                 </div>
 
                 <div>
@@ -157,9 +157,9 @@
 
                 <div>
                     <h4>학교/학년/지역</h4>
-                    <input class="jy-personal-item" type="text" pattern="^[가-힣\s]+$" name="개인학교" value="<?=DEBUG === false ? "":"동요개인학교 테스트 "?>" style="width:33%; display:inline-block;" placeholder="학교">
+                    <input class="jy-personal-item" type="text" pattern="^[가-힣\s]+$" name="개인학교" value="<?=DEBUG === false ? "":"동요개인학교테스트"?>" style="width:33%; display:inline-block;" placeholder="학교">
 
-                    <input class="jy-personal-item" type="number" name="개인학년" value="<?=DEBUG === false ? "":"동요개인학년 테스트 "?>" style="width:32%; display:inline-block;" placeholder="학년">
+                    <input class="jy-personal-item" type="number" name="개인학년" value="<?=DEBUG === false ? "":"동요개인학년테스트"?>" style="width:32%; display:inline-block;" placeholder="학년">
 
                     <select name="지역" class="budget" style="width:33%; display:inline-block;">
                         <option selected="selected">서울특별시</option>
@@ -197,8 +197,8 @@
             <div class="jy-group-wapper">
                 <legend>단체</legend>
                 <div>
-                    <input type="text" name="중창단명" value="<?=DEBUG === false ? "":"중창단명 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="중창단명">
-                    <input type="text" name="총인원" value="<?=DEBUG === false ? "":"총인원 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="총 인원">
+                    <input type="text" name="중창단명" value="<?=DEBUG === false ? "":"중창단명테스트"?>" style="width:49.6%; display:inline-block;" placeholder="중창단명">
+                    <input type="text" name="총인원" value="<?=DEBUG === false ? "":"총인원테스트"?>" style="width:49.6%; display:inline-block;" placeholder="총 인원">
                 </div>
 
                 <div>
@@ -260,7 +260,7 @@
         <!-- 동요 단체 끝 -->
         <div>
             <label class="project_label">신청인</label>
-            <input type="text" pattern="^[가-힣]+$" name="신청인" value="<?=DEBUG === false ? "":"신청인 테스트 "?>">
+            <input type="text" pattern="^[가-힣]+$" name="신청인" value="<?=DEBUG === false ? "":"신청인테스트"?>">
         </div>
         <div>
         </div>
@@ -278,8 +278,8 @@
                 <legend>공통</legend>
 
                 <div>
-                    <input required type="text"  pattern="^[가-힣]+$" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
-                    <input required type="text" pattern="^([0-9]{3})-?([0-9]{3,4})-?([0-9]{4})$" name="지도교사및보호자연락처" value="<?=DEBUG === false ? "":"지도교사및보호자연락처 테스트 "?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
+                    <input required type="text"  pattern="^[가-힣]+$" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명테스트"?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
+                    <input required type="text" pattern="^([0-9]{3})-?([0-9]{3,4})-?([0-9]{4})$" name="지도교사및보호자연락처" value="<?=DEBUG === false ? "":"0105000000"?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
                 </div>
 
             </div>
@@ -289,7 +289,7 @@
                 <legend>개인</legend>
                 <div>
                     <label class="project_label">성명</label>
-                    <input required  pattern="^[가-힣]+$" class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동시개인성명 테스트 "?>">
+                    <input required  pattern="^[가-힣]+$" class="jy-personal-item" type="text" name="개인성명" value="<?=DEBUG === false ? "":"동시개인성명테스트"?>">
                 </div>
 
                 <div>
@@ -307,22 +307,22 @@
 
                 <div>
                     <h4>학교/학년/반/지역</h4>
-                    <input class="jy-personal-item" type="text" pattern="^[가-힣\s]+$" name="개인학교" value="<?=DEBUG === false ? "":"동시개인학교 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학교">
+                    <input class="jy-personal-item" type="text" pattern="^[가-힣\s]+$" name="개인학교" value="<?=DEBUG === false ? "":"동시개인학교테스트"?>" style="width:24.3%; display:inline-block;" placeholder="학교">
 
-                    <input class="jy-personal-item" type="number" name="개인학년" value="<?=DEBUG === false ? "":"동시개인학년 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="학년">
+                    <input class="jy-personal-item" type="number" name="개인학년" value="<?=DEBUG === false ? "":"동시개인학년테스트"?>" style="width:24.3%; display:inline-block;" placeholder="학년">
 
-                    <input class="jy-personal-item" type="number" name="개인반" value="<?=DEBUG === false ? "":"동시개인반 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="반">
+                    <input class="jy-personal-item" type="number" name="개인반" value="<?=DEBUG === false ? "":"동시개인반테스트"?>" style="width:24.3%; display:inline-block;" placeholder="반">
 
-                    <input type="text" name="지역" required  pattern="^[가-힣]+$" value="<?=DEBUG === false ? "":"동시개인지역 테스트 "?>" style="width:24.3%; display:inline-block;" placeholder="지역">
+                    <input type="text" name="지역" required  pattern="^[가-힣]+$" value="<?=DEBUG === false ? "":"동시개인지역테스트"?>" style="width:24.3%; display:inline-block;" placeholder="지역">
                 </div>
 
                 <div>
 
                     <h4>주소</h4>
 
-                    <input class="jy-personal-item" required id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? "":"동시개인신주소 테스트 "?>">
-                    <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? "" : "동시개인 지번 테스트 " ?>">
-                    <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? "": "동시개인 구주소 테스트 " ?>">
+                    <input class="jy-personal-item" required id="sample4_roadAddress" onclick="sample4_execDaumPostcode();" type="text" name="신주소" placeholder="주소" value="<?=DEBUG === false ? "":"동시개인신주소테스트"?>">
+                    <input type="hidden" id="sample4_postcode" name="지번" value="<?=DEBUG === false ? "" : "동시개인 지번테스트" ?>">
+                    <input type="hidden" id="sample4_jibunAddress" name="구주소" value="<?=DEBUG === false ? "": "동시개인 구주소테스트" ?>">
 
                 </div>
                 <div style="margin-top:20px;">
@@ -392,13 +392,21 @@
         <!-- 동시 단체 끝 -->
         <div>
             <label class="project_label">신청인</label>
-            <input  pattern="^[가-힣]+$" type="text" name="신청인" value="<?=DEBUG === false ? "":"신청인 테스트 "?>">
+            <input  pattern="^[가-힣]+$" type="text" name="신청인" value="<?=DEBUG === false ? "":"신청인테스트"?>">
         </div>
         <div>
         </div>
         <?php endif; ?>
         <!-- 동시 끝 -->
-
+        <div>
+        <select name="신청경로" class="budget" style="width:33%; display:inline-block;">
+            <option selected="selected">직접입력</option>
+            <option>TV광고</option>
+            <option>인터넷 광고</option>
+        </select>
+        <label class="project_label">신청경로</label>
+        <input  type="text" name="신청경로직접입력" placeholder="직접입력" style="width:66%; display:inline-block;" value="<?=DEBUG === false ? "":"신청경로직접입력테스트 "?>">
+        </div>
         <?php include_once(APPPATH."modules/applicationn/views/base/termOfUse.php") ?>
         <button type="submit" style="background-color:#f7312e;">신청</button>
     </form>

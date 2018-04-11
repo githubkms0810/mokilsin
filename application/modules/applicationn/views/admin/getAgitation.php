@@ -33,7 +33,7 @@
   </tr>
   <tr>
     <td class="tg-yj5y" colspan="2">학교</td>
-    <td class="tg-3xi5"><?=$applicant[0]->학교?></td>
+    <td class="tg-3xi5"><?=$applicant[0]->학교?> <?=$applicant[0]->학년?>학년</td>
     <td class="tg-yj5y">지역</td>
     <td class="tg-3xi5"><?=$row->지역?></td>
   </tr>
@@ -138,6 +138,13 @@
   <?php endif; ?>
 
 </table>
+<ul>
+<li><b>지도교사 및 보호자 성명 : <?=$row->지도교사및보호자성명?></b></li>
+<li><b>신청경로 : <?=$row->신청경로?></b></li>
+<li><b>신청경로 직접입력 : <?=$row->신청경로직접입력?></b></li>
+<li><b>신청인 : <?=$row->신청인?></b></li>
+<li><b>신청일 : <?=$row->created?></b></li>
+</ul>
 
 <hr/>
 
