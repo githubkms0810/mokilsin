@@ -399,12 +399,12 @@
         <?php endif; ?>
         <!-- 동시 끝 -->
         <div>
+        <label class="project_label">신청경로</label>
         <select name="신청경로" class="budget" style="width:33%; display:inline-block;">
             <option selected="selected">직접입력</option>
             <option>TV광고</option>
             <option>인터넷 광고</option>
         </select>
-        <label class="project_label">신청경로</label>
         <input  type="text" name="신청경로직접입력" placeholder="직접입력" style="width:66%; display:inline-block;" value="<?=DEBUG === false ? "":"신청경로직접입력테스트 "?>">
         </div>
         <?php include_once(APPPATH."modules/applicationn/views/base/termOfUse.php") ?>
