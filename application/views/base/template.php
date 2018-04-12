@@ -10,7 +10,7 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="목일신 기념사업회">
         <meta property="og:description" content="전남 고흥이 낳은 천재 동요작가이자 항일 운동가이신 목일신 선생의 업적을 기리고 맑고 아름다운 동요와 동시의 참다운 가치를 일깨워주기 위한 [제 9회 목일신 동요제 및 동시대회]에 여러분을 초대합니다.">
-        <meta property="og:image" content="/public/images/logo.png">
+        <meta property="og:image" content="/public/mokilsin/images/logo_thum.jpg">
         <meta property="og:url" content="http://mokilsin.or.kr">
         
         <link rel="shortcut icon" href="/public/mokilsin/images/favicon.ico">
