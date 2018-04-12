@@ -6,7 +6,7 @@
     <th class="tg-agg0">학교</th>
     <th class="tg-agg0">학년</th>
     <th class="tg-agg0">예선(자유곡)</th>
-    <th class="tg-agg0">본선(지정곡)</th>
+    <th class="tg-agg0">반주자</th>
   </tr>
   <?php $i=0; foreach ( $rows as $key=>$row ): ?>
     <tr>

@@ -5,6 +5,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+        
+        <meta name="description" content="전남 고흥이 낳은 천재 동요작가이자 항일 운동가이신 목일신 선생의 업적을 기리고 맑고 아름다운 동요와 동시의 참다운 가치를 일깨워주기 위한 [제 9회 목일신 동요제 및 동시대회]에 여러분을 초대합니다.">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="목일신 기념사업회">
+        <meta property="og:description" content="전남 고흥이 낳은 천재 동요작가이자 항일 운동가이신 목일신 선생의 업적을 기리고 맑고 아름다운 동요와 동시의 참다운 가치를 일깨워주기 위한 [제 9회 목일신 동요제 및 동시대회]에 여러분을 초대합니다.">
+        <meta property="og:image" content="/public/images/thum.jpg">
+        <meta property="og:url" content="http://mokilsin.or.kr">
+        
         <link rel="shortcut icon" href="/public/mokilsin/images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="/public/mokilsin/css/jquery.bxslider.css" media="all">
         <link rel="stylesheet" type="text/css" href="/public/mokilsin/css/swiper.min.css" media="all">
@@ -20,7 +28,7 @@
         <script src="/public/mokilsin/js/front-ui.js" type="text/javascript"></script>
 
         
-
+        
     </head>
     <body>
         <div class="wrap">
