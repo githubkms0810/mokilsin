@@ -313,7 +313,7 @@
 
                     <input class="jy-personal-item" type="number" name="개인반" value="<?=DEBUG === false ? "":"동시개인반테스트"?>" style="width:24.3%; display:inline-block;" placeholder="반">
 
-                    <input type="text" name="지역" required  pattern="^[가-힣]+$" value="<?=DEBUG === false ? "":"동시개인지역테스트"?>" style="width:24.3%; display:inline-block;" placeholder="지역">
+                    <input class="jy-personal-item" type="text" name="지역"  pattern="^[가-힣]+$" value="<?=DEBUG === false ? "":"동시개인지역테스트"?>" style="width:24.3%; display:inline-block;" placeholder="지역">
                 </div>
 
                 <div>
@@ -326,8 +326,8 @@
 
                 </div>
                 <div style="margin-top:20px;">
-                    <label class="jy-personal-item" required class="project_label">상세 주소</label>
-                    <input required type="text" name="상세주소" value="<?=DEBUG === false ? "" : "동시개인 상세주소테스트 " ?>">
+                    <label class="project_label" required >상세 주소</label>
+                    <input class="jy-personal-item" required type="text" name="상세주소" value="<?=DEBUG === false ? "" : "동시개인 상세주소테스트 " ?>">
                     <span id="guide" style="color:#999"></span>
                 </div>
 
