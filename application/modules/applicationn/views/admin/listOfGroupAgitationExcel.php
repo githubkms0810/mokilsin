@@ -4,9 +4,11 @@
     <th class="tg-agg0">단평</th>
     <th class="tg-agg0">지역</th>
     <th class="tg-agg0">인원</th>
-    <th class="tg-agg0">지도자</th>
+    <th class="tg-agg0">지도자 성명</th>
     <th class="tg-agg0">지도자 연락처</th>
-    <th class="tg-agg0">예선(자유곡)</th>
+      <th class="tg-agg0">지도자 e-mail</th>
+      <th class="tg-agg0">지도자 주소</th>
+    <th class="tg-agg0">곡명</th>
     <th class="tg-agg0">반주자</th>
   </tr>
   <?php $i=0; foreach ( $rows as $key=>$row ): ?>
@@ -17,6 +19,8 @@
         <td style="text-align:center; font-size:20px; padding:5 20; " class="tg-yw4l"><?=$row->총인원?></td>
         <td style="text-align:center; font-size:20px; padding:5 20; " class="tg-yw4l"><?=$row->지도교사및보호자성명?></td>
         <td style="text-align:center; font-size:20px; padding:5 20; " class="tg-yw4l"><?=$row->가창지도자연락처?></td>
+        <td style="text-align:center; font-size:20px; padding:5 20; " class="tg-yw4l"><?=$row->가창지도자이메일 ?? ""?></td>
+        <td style="text-align:center; font-size:20px; padding:5 20; " class="tg-yw4l"><?=$row->가창지도자주소 ?? ""?></td>
         <td style="text-align:center; font-size:20px; padding:5 20; " class="tg-yw4l"><?=$row->자유곡?></td>
         <td style="text-align:center; font-size:20px; padding:5 20; " class="tg-yw4l"><?=$row->지정곡?></td>
     </tr>
