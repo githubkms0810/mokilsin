@@ -33,19 +33,11 @@ class Admin extends \Admin_Controller {
     }
     public function excel()
     {
-        // header( "Content-type: application/vnd.ms-excel; charset=euc-kr" ); 
-        // header( "Content-Disposition: attachment; filename = invoice.xls" ); 
-        // header( "Content-Description: PHP4 Generated Data" );
-        // echo "<meta http-equiv='Content-Type' content='text/html; charset=euc-kr'> ";
-        // // print("<meta http-equiv=\"Content-Type\" content=\"application/vnd.ms-excel; charset=euc-kr\">");
         $kind =get("kind");
         $personalOrGroup =get("personalOrGroup");
         header( "Content-type: application/vnd.ms-excel" );   
-
         header( "Content-type: application/vnd.ms-excel; charset=utf-8");  
-    
         header( "Content-Disposition: attachment; filename = mokilsin.xls" );   
-    
         header( "Content-Description: PHP4 Generated Data" );  
         print("<meta http-equiv=\"Content-Type\" content=\"application/vnd.ms-excel; charset=utf-8\">"); 
     
@@ -60,20 +52,6 @@ class Admin extends \Admin_Controller {
         elseif($kind === "동시" && $personalOrGroup === "단체")
             $this->load->view("admin/listOfGroupPeomExcel",$data);
         return;
-        header( "Content-type: application/vnd.ms-excel" ); 
-        header( "Content-type: application/vnd.ms-excel; charset=utf-8");
-        header( "Content-Disposition: attachment; filename = invoice.xls" ); 
-        header( "Content-Description: PHP4 Generated Data" );
-        $data['row'] = $row = $this->{$this->modelName}->get($id);
-        $this->load->model('file/file_m');
-        $data["files"]  = $this->file_m->list_ByGroupId($row->file_group_id);
-        $this->load->model("applicant/applicant_m");
-        $data["applicant"] = $this->applicant_m->list();
-        echo "<meta http-equiv='Content-Type' content='text/html; charset=euc-kr'> ";
-        // $this->load->view("admin/get",$data);
-        $data['content_view'] = "admin/get";
-        $this->template->render($data);
-        // echo $EXCEL_STR;
     }
 }
 
