@@ -63,9 +63,10 @@ class Applicationn_M extends Pagination_Model
 	// }
 
 	protected function _update_admin($id)
-	{
-		parent::_update_admin($id);
-	}
+    {
+        $this->_set_allPost_inTableField(['0']);
+        return $this->p_update($id);
+    }
 	// protected function _add_base()
 	// {
 	// 	$this->set_post("name");
