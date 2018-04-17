@@ -183,12 +183,12 @@
                 </div>
                 <div>
                     <h4>사진</h4>
-                    <input class="personal_file" type="file" name="files[]">
+                    <input required class="personal_file" type="file" name="files[]">
                 </div>
 
                 <div>
                     <h4>악보</h4>
-                    <input class="personal_file" type="file" name="sheetMusic[]">
+                    <input required class="personal_file" type="file" name="sheetMusic[]">
                 </div>
             </div>
             <!-- 동요 개인 끝 -->

@@ -35,9 +35,12 @@ class Admin extends \Admin_Controller {
     {
         $kind =get("kind");
         $personalOrGroup =get("personalOrGroup");
+
+        $excelnm = iconv('UTF-8','EUC-KR',$kind." ".$personalOrGroup);
+
         header( "Content-type: application/vnd.ms-excel" );   
         header( "Content-type: application/vnd.ms-excel; charset=utf-8");  
-        header( "Content-Disposition: attachment; filename = mokilsin.xls" );   
+        header( "Content-Disposition: attachment; filename = $excelnm.xls" );   
         header( "Content-Description: PHP4 Generated Data" );  
         print("<meta http-equiv=\"Content-Type\" content=\"application/vnd.ms-excel; charset=utf-8\">"); 
     
@@ -53,6 +56,48 @@ class Admin extends \Admin_Controller {
             $this->load->view("admin/listOfGroupPeomExcel",$data);
         return;
     }
+
+    protected function _ajaxUpdate($id,$callback =null)
+	{
+		$result =null;
+		 //post
+		 $this->ajax_helper->headerJson();
+		 $this->{$this->modelName}->id = $id;
+		 $this->{$this->modelName}->{"set_rules_update_".$this->className}();
+		//  $this->{$this->modelName}->_set_rules_addUpdate();
+		 if ($this->form_validation->run() === false) 
+		 {
+			$data = $this->ajax_helper->get_messageData("유효성검사", $this->form_validation->errors("<br>"),"info");
+		 } 
+		 else 
+		 {
+			$this->db->trans_start();	
+			$result = $this->{$this->modelName}->update($id);
+			$this->db->trans_complete();
+
+			if ($this->db->trans_status() === FALSE) 
+				$this->ajax_helper->set_flashMessage("수정 실패.","danger");
+			else
+				$this->ajax_helper->set_flashMessage("수정 되었습니다.","success");
+
+			if($this->className ==="admin")
+			{
+				
+				$data["reload"] = true;
+				// $data["none"] = "true";
+			}
+			else
+			{
+				$data['redirect'] = my_site_url("/{$this->moduleName}/$id");
+			}
+
+		 }
+		 if($callback !== null) $callback($result);
+		 $this->data += $data;
+		 $this->ajax_helper->json($this->data);
+    }
+    
+    
 }
 
 /* End of file Admin.php */

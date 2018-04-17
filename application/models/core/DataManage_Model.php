@@ -61,7 +61,7 @@ abstract class DataManage_Model extends MY_Model
 
     protected function _update_admin($id)
     {
-        $this->_set_allPost_inTableField();
+        $this->_set_allPost_inTableField(['0']);
         return $this->p_update($id);
     }
 

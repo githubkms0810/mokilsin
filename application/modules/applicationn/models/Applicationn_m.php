@@ -62,10 +62,10 @@ class Applicationn_M extends Pagination_Model
 	// 	return parent::_add_admin();
 	// }
 
-	// protected function _update_admin($id)
-	// {
-	// 	parent::_update_admin($id);
-	// }
+	protected function _update_admin($id)
+	{
+		parent::_update_admin($id);
+	}
 	// protected function _add_base()
 	// {
 	// 	$this->set_post("name");
@@ -103,10 +103,10 @@ class Applicationn_M extends Pagination_Model
 	// {
 	// 	$this->form_validation->set_rules('name', '이름', 'trim|required');
 	// }
-	// protected function _set_rules_update_admin()
-	// {
-	// 	$this->form_validation->set_rules('name', '이름', 'trim|required');
-	// }
+	protected function _set_rules_update_admin()
+	{
+		$this->form_validation->set_rules('id', 'id', 'trim|required');
+	}
 
 	// protected function _set_rules_addUpdate_base()
 	// {
@@ -227,13 +227,48 @@ class Applicationn_M extends Pagination_Model
 	}
 	protected function _list_admin()
 	{
-		$this->db->order_by("id","asc");
+		$this->db->select('group_concat(applicant.성명) as 성명');
+		$this->db->join("applicant", "{$this->as}.id = applicant.application_id", "LEFT");
+		$this->db->order_by("{$this->as}.id","asc");
+		$this->db->group_by("applicationn.id");
+
 	}
 	protected function _list_base()
 	{
 	
 	}
-	
+	public function listPagination($where=null,$inConfig=array())
+    {
+        $config["pgi_style"]  = $inConfig['pgi_style'] ?? "default";
+        $config["per_page"]  = $inConfig['per_page'] ?? "10";
+        $config["isIgnoreCountOnAdminPage"]  = $inConfig['isIgnoreCountOnAdminPage'] ?? false;
+
+        if(isset($inConfig['get_count_field']))
+        {
+            $config["get_count_field"] = $inConfig['get_count_field'];
+        }
+        $config["is_numrow"] =  $inConfig["is_numrow"] ?? null;
+        //전체열갯수   
+        $config["get_num_rows_func"] = function() use ($where){   
+            // return $this->get_num_rows($where);
+			$this->db->select("count(*) as count");
+			$count= $this->db->get($this->table)->row();
+			return $count->count;
+            return $this->listCount($where);
+            // return count($this->list($where));
+        };
+        //offset부터 limit까지 페이지네이션 rows를 구합니다
+        $config["get_rows_func"] = function($offset,$per_page) use($where)
+        {
+			parent::_where($where);
+            $this->db->limit($per_page,$offset);
+            //gets()를 재정의해주세요.
+			return $this->list();
+        };
+
+        return $this->p_listPagination_func($config);
+    }
+
 
 	//@listGet 필드네임 정의
 	//admin
@@ -241,6 +276,7 @@ class Applicationn_M extends Pagination_Model
 	{
 		return array(
 			array("displayName"=>"ID","fieldName"=>"id"),
+			array("displayName"=>"성명","fieldName"=>"성명"),
 			array("displayName"=>"동요/동시","fieldName"=>"동요동시"),
 			array("displayName"=>"개인단체","fieldName"=>"개인단체"),
 		);
