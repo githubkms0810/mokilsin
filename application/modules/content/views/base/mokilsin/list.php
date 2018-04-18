@@ -58,72 +58,7 @@
 		<!-- end post -->
 		
 		<?php endforeach; ?>
-        
-        <?php if ( $board_key === "free" ): ?>
-        
-        <div id="content">
-    <script type="text/javascript">
-        $(document).ready(function() {});
-
-        function search() {
-            location.href = "/board?board_id=182&menu_id=961&site_id=41&" + $("#frm").serialize();
-        }
-
-    </script>
-    <dl class="totalNum">
-        <dt>전체 :</dt>
-        <dd><strong>5</strong>건</dd>
-        <dt>현재 :</dt>
-        <dd><strong>1</strong>/1페이지</dd>
-    </dl>
-    <table summary="문화예술인_자료실 게시판으로 해당 글제목과 작성자, 작성일 등을 제공하고 있습니다." class="boardList">
-        <caption>문화예술인_자료실 목록</caption>
-        <colgroup>
-            <col width="50" />
-            <col />
-            <col width="150" />
-            <col width="80" />
-            <col width="60" />
-        </colgroup>
-        <thead>
-            <tr>
-                <th scope="col" abbr="번호">번호</th>
-                <th scope="col" abbr="제목">제목</th>
-                <th scope="col" abbr="작성자">작성자</th>
-                <th scope="col" abbr="작성일">작성일</th>
-                <th scope="col" abbr="조회" class="bgNone">조회</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    5
-                </td>
-                <td class="txt_left">
-                    <a href="/boardview?board_no=21584&site_id=41&board_id=182&menu_id=961">제1회「고흥군 송수권 시문학상」시낭송대회 참가신청서                  </a>
-                    </a>
-                </td>
-                <td>고흥문화예술팀</td>
-                <td>2015-07-28</td>
-                <td>278</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="pagingType">
-        <div class="floatR">
-
-        </div>
-        <div class="paging">
-            <div class="paging"><strong>1</strong>
-            </div>
-        </div>
-    </div>
-
-</div>
-<?php endif; ?>
-        
-	
-		
+       
 	</div>
 	</section>
 	<!-- End Featured
