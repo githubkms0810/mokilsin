@@ -233,7 +233,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
+                    <?php for ( $i = 0 ; $i < 12 ; $i++ ): ?>
                         <tr>
                             <td style="text-align:center;"><?=$i+1?></td>
                             <td><input <?=$i <2 ? "required" : "" ?>  pattern="^[가-힣]+$" class="jy-group-item<?=$i+1?>" type="text" name="성명[]" title="성명" maxlength="30" /></td>

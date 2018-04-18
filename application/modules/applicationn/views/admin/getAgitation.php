@@ -87,12 +87,12 @@
     <td class="tg-3xi5" colspan="2"><?=$row->가창지도자주소?></td>
   </tr>
   <tr>
-    <td class="tg-yj5y" rowspan="12">중창(가창자)</td>
+    <td class="tg-yj5y" rowspan="14">중창(가창자)</td>
     <td class="tg-yj5y" colspan="2">중창단명(팀명)</td>
     <td class="tg-3xi5"><?=$row->중창단명?></td>
     <td class="tg-yj5y">총인원</td>
     <td class="tg-3xi5"><?=$row->총인원?>명</td>
-    <td class="tg-3xi5" colspan="2" rowspan="12">파일리스트는 아래에</td>
+    <td class="tg-3xi5" colspan="2" rowspan="14">파일리스트는 아래에</td>
   </tr>
  
   <tr>
@@ -103,7 +103,7 @@
     <td class="tg-yj5y">성별</td>
   </tr>
   <?php if ( $row->개인단체 === "독창" ): ?>
-  <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
+  <?php for ( $i = 0 ; $i < 12 ; $i++ ): ?>
   <tr>
     <td class="tg-3xi5"></td>
     <td class="tg-3xi5"></td>
@@ -114,7 +114,7 @@
   <?php endfor; ?>
 
   <?php elseif($row->개인단체 === "중창") : ?>
-  <?php for ( $i = 0 ; $i < 10 ; $i++ ): ?>
+  <?php for ( $i = 0 ; $i < 12 ; $i++ ): ?>
     <?php if ( isset($applicant[$i]) ): ?>
   <tr>
       
