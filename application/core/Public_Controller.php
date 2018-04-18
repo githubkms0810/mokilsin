@@ -27,11 +27,11 @@ class Public_Controller extends MX_Controller {
 		if($this->input->method() === "post" && DEBUG === true)
 		{
 			$size = (int) $this->input->server("CONTENT_LENGTH");
-			if($size >= 8388608 )
+			if($size >= 838860800 )
 			{
 				ob_clean();
 				header("content-type:application/json");
-				$data["alert"] = "파일 데이터가 너무 큽니다. (8MB 이하가능)";
+				$data["alert"] = "파일 데이터가 너무 큽니다. (800MB 이하가능)";
 				echo json_encode($data,JSON_UNESCAPED_UNICODE);
 				exit;
 			}
