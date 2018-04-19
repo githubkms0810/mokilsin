@@ -78,7 +78,7 @@
                                 <li>
                                     <a style="font-size:12px; font-weight:400;" href="/content/list?board_key=notice">공지사항</a>
                                     <a style="font-size:12px; font-weight:400;" href="/content/list?board_key=data">자료실</a>
-                                    <a style="font-size:12px; font-weight:400;" href="/content/list?board_key=free">동요제 지정곡</a>
+                                    <a style="font-size:12px; font-weight:400;" href="/mokilsin/list_akbo">동요제 지정곡</a>
                                 </li>
                             </ul>
                     </li>
