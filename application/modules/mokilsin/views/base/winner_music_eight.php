@@ -135,7 +135,7 @@
                         <tr>
                             <td>은 상</td>
                             <td class="td_prize_left">곽 세 원</td>
-                            <td class="td_prize_left liNone">순천ㄴ용당초</td>
+                            <td class="td_prize_left liNone">순천용당초</td>
                         </tr>
                         <tr>
                             <td>은 상</td>

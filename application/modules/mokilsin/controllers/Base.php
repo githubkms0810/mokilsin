@@ -15,6 +15,12 @@ class Base extends \Base_Controller {
         // $this->noDisplay = true;
     }
     
+    public function list_akbo()
+    {
+        $data["content_view"] = "base/list_akbo";
+        $this->template->render($data);
+    }
+    
     public function birth()
     {
         $data["content_view"] = "base/birth";

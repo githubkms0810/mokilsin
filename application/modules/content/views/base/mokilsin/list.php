@@ -20,7 +20,7 @@
 	<div class="section-title">
 		<h2><span><a href="/content/list?board_key=notice" style="color: #292b2c; font-weight: 400; font-size: 22px;">공지사항</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="/content/list?board_key=data" style="color: #292b2c; font-weight: 400; font-size: 22px;">자료실</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="/content/list?board_key=free" style="color: #292b2c; font-weight: 400; font-size: 22px;">동요제 지정곡</a></span></h2>
+            <a href="/mokilsin/list_akbo" style="color: #292b2c; font-weight: 400; font-size: 22px;">동요제 지정곡</a></span></h2>
 		
 	</div>
 	<div class="card-columns listfeaturedtag">
