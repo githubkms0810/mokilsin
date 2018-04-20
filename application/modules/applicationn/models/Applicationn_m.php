@@ -127,10 +127,10 @@ class Applicationn_M extends Pagination_Model
 		$this->form_validation->set_rules('동요동시', '동요동시', 'trim|required');
 		if(post('동요동시') === "동요"){
 			$this->form_validation->set_rules('지도교사및보호자성명', '지도교사및보호자성명', 'trim|required');
-			$this->form_validation->set_rules('가창지도자연락처', '가창지도자연락처', 'trim|required');
+			// $this->form_validation->set_rules('가창지도자연락처', '가창지도자연락처', 'trim|required');
 			// $this->form_validation->set_rules('가창지도자이메일', '가창지도자이메일', 'trim|required');
-			$this->form_validation->set_rules('가창지도자주소', '가창지도자주소', 'trim|required');
-			$this->form_validation->set_rules('가창지도자상세주소', '가창지도자상세주소', 'trim|required');
+			// $this->form_validation->set_rules('가창지도자주소', '가창지도자주소', 'trim|required');
+			// $this->form_validation->set_rules('가창지도자상세주소', '가창지도자상세주소', 'trim|required');
 			if(post('개인단체') === "독창"){
 				$this->form_validation->set_rules('개인성명', '개인성명', 'trim|required');
 				$this->form_validation->set_rules('개인학교', '개인학교', 'trim|required');
