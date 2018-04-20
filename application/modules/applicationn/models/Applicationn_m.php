@@ -278,7 +278,8 @@ class Applicationn_M extends Pagination_Model
 		return array(
 			array("displayName"=>"ID","fieldName"=>"id"),
 			array("displayName"=>"성명","fieldName"=>"성명"),
-			array("displayName"=>"동요/동시","fieldName"=>"동요동시"),
+            array("displayName"=>"지도교사및보호자성명","fieldName"=>"지도교사및보호자성명"),
+            array("displayName"=>"동요/동시","fieldName"=>"동요동시"),
 			array("displayName"=>"개인단체","fieldName"=>"개인단체"),
 		);
 	}
