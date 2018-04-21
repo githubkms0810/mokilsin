@@ -203,12 +203,12 @@
 
                 <div>
                     <h4>사진</h4>
-                    <input class="group_file" type="file" name="files[]">
+                    <input class="group_file jy-group-item" type="file" name="files[]">
                 </div>
 
                 <div>
                     <h4>악보</h4>
-                    <input class="group_file" type="file" name="sheetMusic[]">
+                    <input class="group_file jy-group-item" type="file" name="sheetMusic[]">
                 </div>
 
                 <legend>
