@@ -29,7 +29,7 @@
         
         <dl class="totalNum">
             <dt>전체 :</dt>
-            <dd><strong>3</strong>건</dd>
+            <dd><strong>4</strong>건</dd>
             <dt>현재 :</dt>
             <dd><strong>1</strong>/1페이지</dd>
         </dl>
@@ -62,13 +62,13 @@
 
                     <td class="txt_left">
 
-                        2018본선지정곡 악보모음
+                        2017년 우수 창작곡
 
                     </td>
                     <td class="file">
                         <a href="https://www.dropbox.com/s/l1abdc5xovb4use/2017%EB%85%84%20%EC%9A%B0%EC%88%98%EC%B0%BD%EC%9E%91%EA%B3%A1.zip?dl=0" name="btnAttach" target="_blank" title="2017년 우수 창작곡 파일다운로드"><img src="/public/mokilsin/images/common/disket.gif" alt="2017년 우수 창작곡.zip" /></a>
                     </td>
-                    <td>2018-04-19</td>
+                    <td>2018-04-23</td>
                 </tr>
                 
 
