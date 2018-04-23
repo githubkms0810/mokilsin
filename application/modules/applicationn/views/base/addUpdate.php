@@ -103,7 +103,7 @@
                     <h4>지도자 및 학부모</h4>
                 </legend>
                 <input required pattern="^[가-힣]+$" type="text" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명테스트"?>" style="width:32%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
-                <input required type="text" name="가창지도자연락처" value="<?=DEBUG === false ? "":"01055555555"?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
+                <input required type="text" pattern="^([0-9]{2,3})-?([0-9]{3,4})-?([0-9]{4})$" name="가창지도자연락처" value="<?=DEBUG === false ? "":"01055555555"?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
                 <input type="email" name="가창지도자이메일" value="<?=DEBUG === false ? "":"test@test.com"?>" style="width:33%; display:inline-block;" placeholder="지도교사 및 보호자 이메일">
             </div>
             <div>
@@ -279,7 +279,7 @@
 
                 <div>
                     <input required type="text"  pattern="^[가-힣]+$" name="지도교사및보호자성명" value="<?=DEBUG === false ? "":"지도교사및보호자성명테스트"?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 성명">
-                    <input required type="text" name="지도교사및보호자연락처" value="<?=DEBUG === false ? "":"0105000000"?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
+                    <input required type="text" pattern="^([0-9]{2,3})-?([0-9]{3,4})-?([0-9]{4})$" name="지도교사및보호자연락처" value="<?=DEBUG === false ? "":"0105000000"?>" style="width:49.6%; display:inline-block;" placeholder="지도교사 및 보호자 연락처">
                 </div>
 
             </div>
