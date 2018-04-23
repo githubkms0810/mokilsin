@@ -16,10 +16,10 @@ class MY_Upload extends CI_Upload {
         $config['overwrite'] = FALSE;
         if($kind === "image")
         {
-            $config['max_size'] = '10000000'; //10mg
+            $config['max_size'] = uploadLimitSize; //10mg
             $config['allowed_types'] = '*';
-            $config['max_width']  = '10240';
-            $config['max_height']  = '7680';
+            $config['max_width']  = '102400';
+            $config['max_height']  = '76800';
         }
         else if($kind === "file")
         {
