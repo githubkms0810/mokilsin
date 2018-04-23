@@ -54,6 +54,23 @@
 
 
 
+                <tr>
+                    <td>
+                        4
+
+                    </td>
+
+                    <td class="txt_left">
+
+                        2018본선지정곡 악보모음
+
+                    </td>
+                    <td class="file">
+                        <a href="https://www.dropbox.com/s/l1abdc5xovb4use/2017%EB%85%84%20%EC%9A%B0%EC%88%98%EC%B0%BD%EC%9E%91%EA%B3%A1.zip?dl=0" name="btnAttach" target="_blank" title="2017년 우수 창작곡 파일다운로드"><img src="/public/mokilsin/images/common/disket.gif" alt="2017년 우수 창작곡.zip" /></a>
+                    </td>
+                    <td>2018-04-19</td>
+                </tr>
+                
 
                 <tr>
                     <td>
@@ -67,7 +84,7 @@
 
                     </td>
                     <td class="file">
-                        <a href="https://www.dropbox.com/s/h12hq0ws2mieub2/18%EC%A7%80%EC%A0%95%EA%B3%A1%EC%95%85%EB%B3%B4.zip?dl=0" name="btnAttach" target="_blank" title="2018본선지정곡 악보모음 파일다운로드"><img src="/public/mokilsin/images/common/disket.gif" alt="2018본선지정곡 악보모음.pdf" /></a>
+                        <a href="https://www.dropbox.com/s/h12hq0ws2mieub2/18%EC%A7%80%EC%A0%95%EA%B3%A1%EC%95%85%EB%B3%B4.zip?dl=0" name="btnAttach" target="_blank" title="2018본선지정곡 악보모음 파일다운로드"><img src="/public/mokilsin/images/common/disket.gif" alt="2018본선지정곡 악보모음.zip" /></a>
                     </td>
                     <td>2018-04-19</td>
                 </tr>
@@ -86,7 +103,7 @@
 
                     </td>
                     <td class="file">
-                        <a href="https://www.dropbox.com/s/3rnwz2w92rwhslj/18%EC%A7%80%EC%A0%95%EA%B3%A1MR.zip?dl=0" name="btnAttach" target="_blank" title="2018본선지정곡 MR모음 파일다운로드"><img src="/public/mokilsin/images/common/disket.gif" alt="2018본선지정곡 MR모음.pdf" /></a>
+                        <a href="https://www.dropbox.com/s/3rnwz2w92rwhslj/18%EC%A7%80%EC%A0%95%EA%B3%A1MR.zip?dl=0" name="btnAttach" target="_blank" title="2018본선지정곡 MR모음 파일다운로드"><img src="/public/mokilsin/images/common/disket.gif" alt="2018본선지정곡 MR모음.zip" /></a>
                     </td>
                     <td>2018-04-19</td>
                 </tr>
@@ -105,7 +122,7 @@
 
                     </td>
                     <td class="file">
-                        <a href="https://www.dropbox.com/s/fxdqsurtcm892zc/18%EC%A7%80%EC%A0%95%EA%B3%A1.zip?dl=0" name="btnAttach" target="_blank" title="2018본선지정곡 음원모음 파일다운로드"><img src="/public/mokilsin/images/common/disket.gif" alt="2018본선지정곡 음원모음.pdf" /></a>
+                        <a href="https://www.dropbox.com/s/fxdqsurtcm892zc/18%EC%A7%80%EC%A0%95%EA%B3%A1.zip?dl=0" name="btnAttach" target="_blank" title="2018본선지정곡 음원모음 파일다운로드"><img src="/public/mokilsin/images/common/disket.gif" alt="2018본선지정곡 음원모음.zip" /></a>
                     </td>
                     <td>2018-04-19</td>
                 </tr>

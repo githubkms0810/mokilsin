@@ -25,7 +25,7 @@ class Admin_Controller extends Public_Controller
         // $this->menudata_creator->addMainMenu("유저","user","user_log",site_url("admin/user_log/list"));
         
         $this->menudata_creator->addMainMenu("게시판","board","contents",site_url("admin/content/list"));
-        $this->menudata_creator->addMainMenu("신청서","applicationn","applicationn_list",site_url("admin/applicationn/list"));
+        $this->menudata_creator->addMainMenu("신청서","applicationn","applicationn_list",site_url("admin/applicationn/list?orderBy=newest"));
         
 
 		return $this->menudata_creator->getMainMenus();
