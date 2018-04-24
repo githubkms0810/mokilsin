@@ -1,5 +1,15 @@
 
+
+
 <?php defined('BASEPATH') OR exit('no direct script access allrowed');
+
+if(!function_exists('alert_validationErrors')){
+    function alert_validationErrors(){
+        if(!empty(validation_errors())){
+           echo "<script>alert('". preg_replace( "/\r|\n/", "", validation_errors(false,"\\n") )."'); </script>";
+        }
+    }
+}
 
 
 if(!function_exists('splitWithComma')){

@@ -33,6 +33,7 @@ class Base extends \Base_Controller {
             $data['kind'] = get("kind");
             $data["content_view"] = "base/addUpdate";
             if($fileSizeValidation === false) alert("업로드는 파일 하나당 2mb 이하만 가능합니다.");
+            alert_validationErrors();
             $this->template->render($data);
         }
         else{
