@@ -56,6 +56,16 @@
             $(".jy-group-item2").prop('required', true)
         });
     });
+    
+    window.onload = function () {
+        
+        var edate= new Date("2018/04/26 00:00:00");
+        
+        if(Date.now() >= edate){
+            alert('신청이 마감되었습니다. 문의사항은 mokilsin@hanmail.net 으로 보내주세요.');
+            document.location.href="/main/index";
+        }
+    };
 
 </script>
 <div class="container" style="margin-top:100px; margin-bottom:100px;">

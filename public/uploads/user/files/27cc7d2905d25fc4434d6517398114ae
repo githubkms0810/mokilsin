@@ -1,0 +1,116 @@
+버전관리 시스템은 소스코드의 중요한 변화들을 기록하는 행위라고 할 수있습니다.
+이것은 어떤 문제가 발생했을때 문제의 맥락을 파악할 수 있도록 도와주고, 변화에 실패헷을때 과거의 상태로 쉽게 돌아갈  수 있게 해줍니다. 결과적으로 실패에 대한 부담이 줄어들고 좀 더 자신있게 공부할 수 있는 효과가 있습니다. 뿐만 아니라 버전관리는 백업, 협업과같은 중대한 장점을 제공합니다.
+
+버전관리 시스템
+version control system
+
+버전
+의미있는 변화들
+-----------
+기능 개선
+버그 수정
+고객 요구에 맞게 커스터마이징 제공
+
+버전관리 시스템->변화의 관리
+
+새로 내용을 바꿀때
+번호붙ㅇㅕ서 하느거
+
+현실예
+제품설명서1, 제품설명서2
+위키피디아-위키백과
+
+드롭박스
+
+mysql - uroot -p
+
+creat database name character set utf8
+
+$this->topic_model->
+return $this->db->query('select * from topic')->result();
+
+http://ooo2.org/index.php/topic/get/1
+
+
+application/controller/topic.php
+class Topic extends CI_controller{
+function get($id){
+$this->load->model('topic_model');
+$topic = $this->topic_model->get($id);
+$this->load->view('topic',array('topic'=>$topic));
+}
+}
+
+application/models/topic_model.php
+
+class Topic_model extends CI_Model{
+function get($topic_id){
+return $value;
+}
+}
+
+application/view/topic.php
+
+<html>
+<head><?=$topic['title']?></head>
+</html>
+
+<?php
+header("content-type:image/png");
+$string=$_GET['text'];
+$im=imagecreatfrompng("button.png");
+$orange=imagecolorallocate($im,60,87,156);
+$px=(imagesx($im)-7.5*strlen($string))/2;
+imagestring($im,4,$px,9,$string,$orange);
+imagepng($im);
+imagedestroy($im);
+?>
+
+
+namespace language|en
+function welcome(){
+ return 'hello';
+}
+=>echo language\en\welcome();
+
+
+
+
+
+일본골프,골프예약,해외골프,일본,챔피언코스,칸사이골프,나라,골프여행,골프부킹,나라골프
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
