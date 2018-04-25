@@ -57,9 +57,9 @@ class MY_Pagination extends CI_Pagination {
         $config [ 'first_tag_open'] = '<li>';
         $config [ 'first_tag_close'] = '</li>';
 
-        // $config [ 'last_link'] = "끝";
-        $config [ 'last_link'] =false;
-        $config [ 'last_tag_open'] = '<li">';
+        $config [ 'last_link'] = "끝";
+        // $config [ 'last_link'] =false;
+        $config [ 'last_tag_open'] = '<li>';
         $config [ 'last_tag_close'] = '</li>';
 
         $config [ 'prev_link'] = false;
