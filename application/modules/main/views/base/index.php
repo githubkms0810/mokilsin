@@ -1,3 +1,8 @@
+
+<script>
+    window.open('public/popup.html', 'popup01', 'width=500, height=700, scrollbars= 0, toolbar=0, menubar=no');
+</script>
+
 <!-- visual -->
 <div class="visual">
     <ul class="v-slide">
