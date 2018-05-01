@@ -1,6 +1,6 @@
 
 <script>
-    window.open('public/popup.html', 'popup01', 'width=500, height=700, scrollbars= 0, toolbar=0, menubar=no');
+    window.open('http://mokilsin.or.kr/public/popup.html', 'popup01', 'width=436, height=629, scrollbars= 0, toolbar=0, menubar=no');
 </script>
 
 <!-- visual -->
