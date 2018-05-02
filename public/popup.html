@@ -1,26 +1,68 @@
 <!doctype html>
 <html lang="ko">
-    <style>
-        html, body {
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-        }
-        p {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
-    <body>
-        <p><img src="images/1.png" width="420px" height="621px;" border="0" usemap="#ImageMap1"></p>
-        <map name="ImageMap1">
-            <area shape="rect" coords="44, 585, 187, 615"  href="#" onclick="javascript:opener.location.href='http://mokilsin.or.kr/content/20?board_key=notice';self.close();">
-            <area shape="rect" coords="233, 585, 375, 615"  href="#" onclick="javascript:opener.location.href='http://mokilsin.or.kr/mokilsin/list_akbo';self.close();">
-        </map>
-    </body>
+<style>
+    html,
+    body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .popup-btn {
+        width:210px;
+        position: absolute;
+        top:580px;
+        display: inline-block;
+        height: 40px;        
+    }
+
+
+    .popup-btn_application {
+        background-color: transparent;
+        width: 210px;
+        height: 100%;
+        display: inline-block;
+    }
+    .popup-btn_musicdown {
+        background-color: transparent;
+        width: 210px;
+        height: 100%;
+        display: inline-block;
+    }
+
+</style>
+
+<body>
+    <p><img src="images/1.png" width="420px" height="621px;" border="0"></p>
+    <div class="popup-btn" style="left:0;">
+        <a href="#" onclick="javascript:opener.location.href='http://mokilsin.or.kr/content/20?board_key=notice';self.close();">
+            <div class="popup-btn_application">
+            </div>
+        </a>
+    </div>
+    <div class="popup-btn" style="left: 210px;">
+        <a href="#" onclick="javascript:opener.location.href='http://mokilsin.or.kr/mokilsin/list_akbo';self.close();">
+            <div class="popup-btn_musicdown">
+            </div>
+        </a>
+    </div>
+</body>
+
 </html>
 
 <!--
 <a href="#" onclick="javascript:opener.location.href='http://mokilsin.or.kr/content/20?board_key=notice';self.close();"><img src="images/2.png" style="display: inline; border: 0; float: left;"></a>
 <a href="#" onclick="javascript:opener.location.href='http://mokilsin.or.kr/mokilsin/list_akbo';self.close();"><img src="images/3.png" style="display: inline; border: 0; float: left;"></a>
+
+
+
+<map name="ImageMap1">
+            <area shape="rect" coords="44, 585, 187, 615"  href="#" onclick="javascript:opener.location.href='http://mokilsin.or.kr/content/20?board_key=notice';self.close();">
+            <area shape="rect" coords="233, 585, 375, 615"  href="#" onclick="javascript:opener.location.href='http://mokilsin.or.kr/mokilsin/list_akbo';self.close();">
+        </map>
 -->
