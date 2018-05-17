@@ -119,7 +119,14 @@
         <script src="/public/libraries/summernote/summernote.js"></script><!-- 서머노트 위지위그 에디터 -->
         <script src="/public/libraries/bootstrapNotify/bootstrap-notify.js" type="text/javascript"></script>
         <?= !AJAX_DEBUG ? $this->ajax_helper->createScript() : ""; ?>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- 모달버그(모달창 바로꺼짐) 시작 :: 부트스트랩 js하고 커스텀 모달(confirm_callback)하고 겹치는듯, 아마도 class명 겹치는듯?
+        미봉책 코드 -->
+        <?php if ( strpos(current_url(),'content/update') === false  ): ?>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <?php endif; ?>
+        <!-- 모달버그(모달창 바로꺼짐) 끝 :: 부트스트랩 js하고 커스텀 모달(confirm_callback)하고 겹치는듯, 아마도 class명 겹치는듯?
+        미봉책 코드 -->
         <script src="/public/js/common.js" type="text/javascript"></script>
         <script src="/public/js/jy/common.js" type="text/javascript"></script>
         <script>
